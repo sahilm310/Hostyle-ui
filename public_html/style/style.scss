@@ -1,0 +1,9 @@
+$blue : #0a3155;
+body{
+    background:$blue;
+    color:$blue;
+}
+
+.inactive{
+    pointer-events: none
+}

@@ -1,0 +1,9 @@
+body {
+  background: #0a3155;
+  color: #0a3155;
+}
+
+.inactive {
+  pointer-events: none;
+}
+/*# sourceMappingURL=style.css.map */
