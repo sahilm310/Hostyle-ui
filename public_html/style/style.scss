@@ -1,9 +1,42 @@
 $blue : #0a3155;
+$white: aliceblue;
 body{
-    background:$blue;
-    color:$blue;
+    background: $blue;
+    color: lighten($color: $blue, $amount: 40%);
+    
 }
 
+
+.home{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    ". . ."
+    "b1 b1 b2"
+    "b3 b3 b3"
+    ;
+}
+
+.b1{
+    grid-area: b1;
+    background:darken($color: $blue, $amount: 80%);
+    align-self: center;
+}
+.b2{
+    grid-area: b2;
+    background: lighten($color: $blue, $amount: 30%);
+}
+
+.b3{
+    grid-area: b3;
+    
+    text-align: center;
+}
+
+// Makes originally clickable elements
+// inactive and 
 .inactive{
-    pointer-events: none
+    pointer-events: none;
 }

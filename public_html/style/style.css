@@ -1,6 +1,43 @@
 body {
   background: #0a3155;
-  color: #0a3155;
+  color: #4299e9;
+}
+
+.home {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: ". . ." "b1 b1 b2" "b3 b3 b3";
+}
+
+.b1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: b1;
+  background: black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.b2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: b2;
+  background: #1a80de;
+}
+
+.b3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: b3;
+  text-align: center;
 }
 
 .inactive {
