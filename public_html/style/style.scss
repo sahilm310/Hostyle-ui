@@ -10,7 +10,6 @@ $white: aliceblue;
 body{
     background: $blue;
     color: lighten($color: $blue, $amount: 40%);
-    
 }
 
 .home{
@@ -23,13 +22,17 @@ body{
 
 .b1{
     grid-area: b1;
-    background:darken($color: $blue, $amount: 80%);
+    background:darken($color: $blue, $amount: 70%);
     align-self: center;
+    text-align: center;
     @include border-radius(10px); 
 }
+
 .b2{
     grid-area: b2;
     background: lighten($color: $blue, $amount: 30%);
+    text-align: center;
+    vertical-align: center;
 }
 
 .b3{
@@ -37,8 +40,7 @@ body{
     text-align: center;
 }
 
-// Makes originally clickable elements
-// inactive and 
+/* Makes originally clickable elements inactive */
 .inactive{
     pointer-events: none;
 }

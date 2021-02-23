@@ -23,6 +23,7 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  text-align: center;
   border-radius: 10px;
 }
 
@@ -31,6 +32,8 @@ body {
   -ms-grid-column: 4;
   grid-area: b2;
   background: #1a80de;
+  text-align: center;
+  vertical-align: center;
 }
 
 .b3 {
@@ -41,6 +44,7 @@ body {
   text-align: center;
 }
 
+/* Makes originally clickable elements inactive */
 .inactive {
   pointer-events: none;
 }

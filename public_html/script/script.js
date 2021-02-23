@@ -1,6 +1,6 @@
 // 
-// element.className += "newClass";
-// element.classList.add("newClass");
-function print(){
-    console.log("click.")
+// element.classList.toggle("newClass");
+function toggle(){
+    var np = document.getElementById("nextPage");
+    np.classList.toggle("inactive");
 }
