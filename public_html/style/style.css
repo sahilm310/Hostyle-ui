@@ -1,6 +1,8 @@
 body {
   background: #0a3155;
   color: #4299e9;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
 }
 
 .home {
@@ -9,39 +11,67 @@ body {
   display: grid;
   -ms-grid-columns: .3fr 1fr 1fr 1fr .3fr;
       grid-template-columns: .3fr 1fr 1fr 1fr .3fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: ". . . . ." ". b1 b1 b2 ." ". b3 b3 b3 .";
+  -ms-grid-rows: 1fr 1fr 0.5fr 1fr;
+      grid-template-rows: 1fr 1fr 0.5fr 1fr;
+      grid-template-areas: ". . . . ." ". b2 b1 b1 ." ". . . . ." ". b3 b3 b3 .";
 }
 
 .b1 {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: b1;
-  background: black;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
   text-align: center;
   border-radius: 10px;
 }
 
 .b2 {
   -ms-grid-row: 2;
-  -ms-grid-column: 4;
+  -ms-grid-column: 2;
   grid-area: b2;
-  background: #1a80de;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-align: center;
   vertical-align: center;
 }
 
+.b2 img {
+  width: 50%;
+}
+
 .b3 {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: b3;
   text-align: center;
+}
+
+.btn-toggle {
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.tr-hide {
+  background: #0a3155;
+  overflow: hidden;
+}
+
+.tr-main {
+  -webkit-transform: translateY(120%);
+          transform: translateY(120%);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Caveat', cursive;
 }
 
 /* Makes originally clickable elements inactive */
