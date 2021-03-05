@@ -1,0 +1,28 @@
+.home{
+    height: 100vh;
+    display: grid; 
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 0.5fr 1fr;
+    grid-template-areas:". . ." "b2 b1 b1" ". . ." "b3 b3 b3";
+}
+.b1{
+    grid-area: b1;
+    align-self: center !important;
+    text-align: center;
+    @include border-radius(10px);
+}
+
+.b2{
+    grid-area: b2;
+    align-self: center;
+    text-align: center;
+    vertical-align: center;
+    img{
+        width: 50%;
+    }
+}
+
+.b3{
+    grid-area: b3;
+    text-align: center;
+}

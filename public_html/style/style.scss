@@ -1,5 +1,7 @@
 $blue : #0a3155;
 $white: aliceblue;
+$osward: 'Oswald', sans-serif;
+$caveat: 'Caveat', cursive;
 
 @mixin border-radius($r) {
     -webkit-border-radius: $r;
@@ -7,45 +9,28 @@ $white: aliceblue;
     border-radius: $r;
 }
 
+
 body{
     background: $blue;
     color: lighten($color: $blue, $amount: 40%);
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
+    font-family: $osward;
+    font-size: 2vmax;
 }
 
-.home{
-    height: 100vh;
-    display: grid; 
-    grid-template-columns: .3fr 1fr 1fr 1fr .3fr;
-    grid-template-rows: 1fr 1fr 0.5fr 1fr;
-    grid-template-areas:". . . . ." ". b2 b1 b1 ." ". . . . ." ". b3 b3 b3 .";
-}
-.b1{
-    grid-area: b1;
-    align-self: center !important;
-    text-align: center;
-    @include border-radius(10px);
+h1{
+    font-size: 4vmax;
 }
 
-.b2{
-    grid-area: b2;
-    align-self: center;
-    text-align: center;
-    vertical-align: center;
-    img{
-        width: 50%;
-    }
-}
-
-.b3{
-    grid-area: b3;
-    text-align: center;
+h2{
+    font-family: $caveat;
+    font-size: 2vmax;
 }
 
 .btn-toggle{
-    padding: 5px;
-    @include border-radius(20px); 
+    font-family: $caveat;
+    padding: 1px 20px !important;
+    border: none;
+    font-size: 1.5vmax;
 }
 
 .tr-hide {
@@ -55,14 +40,10 @@ body{
 
 .tr-main{
     transform: translateY(120%);
-    
 }
-h1{
-    font-size: 3rem;
-}
-h2{
-    font-family: 'Caveat', cursive;
-}
+
+@import "home";
+
 
 /* Makes originally clickable elements inactive */
 .inactive{

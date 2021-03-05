@@ -1,24 +1,50 @@
 body {
   background: #0a3155;
   color: #4299e9;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2vmax;
+}
+
+h1 {
+  font-size: 4vmax;
+}
+
+h2 {
+  font-family: "Caveat", cursive;
+  font-size: 2vmax;
+}
+
+.btn-toggle {
+  font-family: "Caveat", cursive;
+  padding: 1px 20px !important;
+  border: none;
+  font-size: 1.5vmax;
+}
+
+.tr-hide {
+  background: #0a3155;
+  overflow: hidden;
+}
+
+.tr-main {
+  -webkit-transform: translateY(120%);
+          transform: translateY(120%);
 }
 
 .home {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: .3fr 1fr 1fr 1fr .3fr;
-      grid-template-columns: .3fr 1fr 1fr 1fr .3fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 0.5fr 1fr;
       grid-template-rows: 1fr 1fr 0.5fr 1fr;
-      grid-template-areas: ". . . . ." ". b2 b1 b1 ." ". . . . ." ". b3 b3 b3 .";
+      grid-template-areas: ". . ." "b2 b1 b1" ". . ." "b3 b3 b3";
 }
 
 .b1 {
   -ms-grid-row: 2;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: b1;
   -ms-flex-item-align: center !important;
@@ -30,7 +56,7 @@ body {
 
 .b2 {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: b2;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -45,33 +71,10 @@ body {
 
 .b3 {
   -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: b3;
   text-align: center;
-}
-
-.btn-toggle {
-  padding: 5px;
-  border-radius: 20px;
-}
-
-.tr-hide {
-  background: #0a3155;
-  overflow: hidden;
-}
-
-.tr-main {
-  -webkit-transform: translateY(120%);
-          transform: translateY(120%);
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-family: 'Caveat', cursive;
 }
 
 /* Makes originally clickable elements inactive */
