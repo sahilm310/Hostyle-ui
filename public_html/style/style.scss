@@ -9,7 +9,7 @@ $caveat: 'Caveat', cursive;
     border-radius: $r;
 }
 
-
+/* Will change font sizes to rem later on */
 body{
     background: $blue;
     color: lighten($color: $blue, $amount: 40%);
@@ -43,6 +43,19 @@ h2{
 }
 
 @import "home";
+
+.click{
+    height: 100vh;
+    display: grid; 
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 0.2fr 1fr 0.5fr 1fr;
+    grid-template-areas:". . ." ". b1 ." ". . ." "b2 . .";
+
+
+}
+.al-vert{
+    align-self: baseline;
+}
 
 /* Makes originally clickable elements inactive */
 .inactive{

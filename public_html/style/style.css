@@ -1,3 +1,4 @@
+/* Will change font sizes to rem later on */
 body {
   background: #0a3155;
   color: #4299e9;
@@ -45,21 +46,18 @@ h2 {
 .b1 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: b1;
   -ms-flex-item-align: center !important;
-      -ms-grid-row-align: center !important;
       align-self: center !important;
   text-align: center;
   border-radius: 10px;
 }
 
 .b2 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: b2;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
   vertical-align: center;
@@ -75,6 +73,22 @@ h2 {
   -ms-grid-column-span: 3;
   grid-area: b3;
   text-align: center;
+}
+
+.click {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 0.2fr 1fr 0.5fr 1fr;
+      grid-template-rows: 0.2fr 1fr 0.5fr 1fr;
+      grid-template-areas: ". . ." ". b1 ." ". . ." "b2 . .";
+}
+
+.al-vert {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
 
 /* Makes originally clickable elements inactive */
