@@ -1,1 +1,3 @@
-The public_html folder is the blank project folder
+# **Hostyle UI**
+
+Project folder is in the `/hui` directory.
