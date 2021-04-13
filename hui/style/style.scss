@@ -23,6 +23,9 @@ h1{
 
 h2{
     font-family: $caveat;
+    font-size: 2rem;
+}
+p{
     font-size: 1.5rem;
 }
 
@@ -30,7 +33,7 @@ h2{
     font-family: $caveat;
     padding: 1px 20px !important;
     border: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .tr-hide {
@@ -49,21 +52,20 @@ h2{
     display: grid; 
     grid-template-columns:  1fr 1fr 1fr ;
     grid-template-rows: 0.2fr 1fr 0.5fr 1fr;
-    grid-template-areas:". . ." ". b1 ." ". . ." "b2 . .";
+    grid-template-areas:". . ." ". b1 ." ". . ." "b2 b3 .";
 }
 .al-vert{
-    align-self: baseline;
+    align-self: center;
 }
 
 /* Makes originally clickable elements inactive */
 .inactive{
     pointer-events: none;
 }
-@media screen and (max-width: 600px) {
-    h2{font-size:1rem}
+@media screen and (max-width: 720px) {
+    h2{font-size:1.5rem}
     .click{
-        grid-template-columns:  1fr 1fr 1fr ;
-        grid-template-rows: 0.2fr 1fr 0.5fr 1fr;
-        grid-template-areas:"b1 b1 b1" "b1 b1 b1" ". . ." "b2 . .";
+        grid-template-rows: 0.2fr 1fr 1fr 1fr;
+        grid-template-areas:"b1 b1 b1" "b1 b1 b1" "b2 b2 b2" ". b3 .";
     }
 } 
