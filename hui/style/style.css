@@ -3,23 +3,23 @@ body {
   background: #0a3155;
   color: #4299e9;
   font-family: "Oswald", sans-serif;
-  font-size: 2vmax;
+  font-size: 62.5%;
 }
 
 h1 {
-  font-size: 4vmax;
+  font-size: 3rem;
 }
 
 h2 {
   font-family: "Caveat", cursive;
-  font-size: 2vmax;
+  font-size: 1.5rem;
 }
 
 .btn-toggle {
   font-family: "Caveat", cursive;
   padding: 1px 20px !important;
   border: none;
-  font-size: 1.5vmax;
+  font-size: 1rem;
 }
 
 .tr-hide {
@@ -94,5 +94,18 @@ h2 {
 /* Makes originally clickable elements inactive */
 .inactive {
   pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 1rem;
+  }
+  .click {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 0.2fr 1fr 0.5fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.5fr 1fr;
+        grid-template-areas: "b1 b1 b1" "b1 b1 b1" ". . ." "b2 . .";
+  }
 }
 /*# sourceMappingURL=style.css.map */
