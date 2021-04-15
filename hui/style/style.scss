@@ -50,9 +50,9 @@ p{
 .click{
     height: 100vh;
     display: grid; 
-    grid-template-columns:  1fr 1fr 1fr ;
-    grid-template-rows: 0.2fr 1fr 0.5fr 1fr;
-    grid-template-areas:". . ." ". b1 ." ". . ." "b2 b3 .";
+    grid-template-columns:  1fr 0.5fr 0.5fr 1fr ;
+    grid-template-rows: 0.2fr 1fr 0.3fr 1fr;
+    grid-template-areas:". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
 }
 .al-vert{
     align-self: center;
@@ -63,8 +63,9 @@ p{
     pointer-events: none;
 }
 @media screen and (max-width: 720px) {
-    h2{font-size:1.5rem}
+    h2{font-size: 1.5rem}
     .click{
+        grid-template-columns:  1fr 1fr 1fr ;
         grid-template-rows: 0.2fr 1fr 1fr 1fr;
         grid-template-areas:"b1 b1 b1" "b1 b1 b1" "b2 b2 b2" ". b3 .";
     }
