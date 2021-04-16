@@ -58,6 +58,12 @@ p{
     align-self: center;
 }
 
+.demo-btn-1{
+    font-size: 0.8rem;
+    padding: 0px;
+    border-radius: 10px;
+}
+
 /* Makes originally clickable elements inactive */
 .inactive{
     pointer-events: none;
