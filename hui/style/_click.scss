@@ -1,0 +1,22 @@
+.click{
+    height: 100vh;
+    display: grid; 
+    grid-template-columns:  1fr 0.5fr 0.5fr 1fr ;
+    grid-template-rows: 0.2fr 1fr 0.3fr 1fr;
+    grid-template-areas:". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
+}
+
+.demo-btn-1{
+    font-size: 0.8rem;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 720px) {
+    h2{font-size: 1.5rem}
+    .click{
+        grid-template-columns:  1fr 1fr 1fr ;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr;
+        grid-template-areas:"b1 b1 b1" "b1 b1 b1" "b2 b2 b2" ". b3 .";
+    }
+} 
