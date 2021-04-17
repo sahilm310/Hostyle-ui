@@ -32,8 +32,8 @@ p {
 }
 
 .tr-main {
-  -webkit-transform: translateY(120%);
-          transform: translateY(120%);
+  -webkit-transform: translateY(280%);
+          transform: translateY(280%);
 }
 
 .al-vert {
@@ -67,6 +67,7 @@ p {
       align-self: center !important;
   text-align: center;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .b2 {
@@ -78,6 +79,7 @@ p {
       align-self: center;
   text-align: center;
   vertical-align: center;
+  padding: 10px;
 }
 
 .b2 img {
@@ -85,6 +87,7 @@ p {
 }
 
 .b3 {
+  padding: 10px;
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
@@ -93,6 +96,9 @@ p {
 }
 
 @media screen and (max-width: 720px) {
+  .b2 img {
+    width: 50%;
+  }
   .home {
     -ms-grid-rows: 0.3fr 1fr 1fr 1fr;
         grid-template-rows: 0.3fr 1fr 1fr 1fr;

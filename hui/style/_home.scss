@@ -10,6 +10,7 @@
     align-self: center !important;
     text-align: center;
     @include border-radius(10px);
+    padding: 10px;
 }
 
 .b2{
@@ -17,16 +18,21 @@
     align-self: center;
     text-align: center;
     vertical-align: center;
+    padding: 10px;
     img{
         width: 70%;
     }
 }
 
 .b3{
+    padding: 10px;
     grid-area: b3;
     text-align: center;
 }
 @media screen and (max-width: 720px) {
+    .b2 img{
+        width: 50%;
+    }
     .home{
         grid-template-rows: 0.3fr 1fr 1fr 1fr;
         grid-template-areas:". . ." "b2 b2 b2" "b1 b1 b1" "b3 b3 b3";
