@@ -8,13 +8,23 @@
 
 .demo-btn-1{
     font-size: 0.8rem;
-    padding: 0px;
-    border-radius: 10px;
+    padding: 3px;
+    border:none;
+    background-color: lighten($color: $blue, $amount: 80%);
+    transition: 1s transform ease, 
+                1s background-color ease,
+                1s padding ease,
+                1s color ease,
+                1s border-radius ease;
+                
 }
 .demo-btn-1-click{
     /* mixin for transform: scale */
-    @include scale-xy(1.7,1.4); 
-    padding: 5px;
+    background: lighten($color: $blue, $amount: 65%);
+    color:  $blue;
+    @include scale-xy(1.8,1.5); 
+    @include border-radius(5px); 
+    padding: 6px 10px;
 }
 
 @media screen and (max-width: 720px) {

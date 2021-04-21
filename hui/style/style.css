@@ -119,15 +119,23 @@ p {
 
 .demo-btn-1 {
   font-size: 0.8rem;
-  padding: 0px;
-  border-radius: 10px;
+  padding: 3px;
+  border: none;
+  background-color: #f9fcfe;
+  -webkit-transition: 1s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
+  transition: 1s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
+  transition: 1s transform ease,  1s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease;
+  transition: 1s transform ease,  1s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
 }
 
 .demo-btn-1-click {
   /* mixin for transform: scale */
-  -webkit-transform: scale(1.7, 1.4);
-  transform: scale(1.7, 1.4);
-  padding: 5px;
+  background: #b4d7f6;
+  color: #0a3155;
+  -webkit-transform: scale(1.8, 1.5);
+  transform: scale(1.8, 1.5);
+  border-radius: 5px;
+  padding: 6px 10px;
 }
 
 @media screen and (max-width: 720px) {
