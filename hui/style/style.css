@@ -132,10 +132,10 @@ a {
   padding: 3px;
   border: none;
   background-color: #f9fcfe;
-  -webkit-transition: 1s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
-  transition: 1s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
-  transition: 1s transform ease,  1s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease;
-  transition: 1s transform ease,  1s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
+  -webkit-transition: 0.5s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
+  transition: 0.5s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
+  transition: 1s transform ease,  0.5s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease;
+  transition: 1s transform ease,  0.5s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
 }
 
 .demo-btn-1-click {
@@ -146,6 +146,10 @@ a {
   transform: scale(1.8, 1.5);
   border-radius: 5px;
   padding: 6px 10px;
+}
+
+.demo-btn-1-click:hover {
+  background: #87bef1;
 }
 
 @media screen and (max-width: 720px) {

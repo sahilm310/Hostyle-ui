@@ -16,7 +16,7 @@
     border:none;
     background-color: lighten($color: $blue, $amount: 80%);
     transition: 1s transform ease, 
-                1s background-color ease,
+                0.5s background-color ease,
                 1s padding ease,
                 1s color ease,
                 1s border-radius ease;
@@ -29,6 +29,10 @@
     @include scale-xy(1.8,1.5); 
     @include border-radius(5px); 
     padding: 6px 10px;
+}
+
+.demo-btn-1-click:hover{
+    background: lighten($color: $blue, $amount: 55%);
 }
 
 @media screen and (max-width: 720px) {
