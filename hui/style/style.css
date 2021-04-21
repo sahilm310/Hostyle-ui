@@ -123,6 +123,13 @@ p {
   border-radius: 10px;
 }
 
+.demo-btn-1-click {
+  /* mixin for transform: scale */
+  -webkit-transform: scale(1.7, 1.4);
+  transform: scale(1.7, 1.4);
+  padding: 5px;
+}
+
 @media screen and (max-width: 720px) {
   h2 {
     font-size: 1.5rem;
