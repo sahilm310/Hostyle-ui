@@ -1,7 +1,7 @@
 /* Will change font sizes to rem later on */
 body {
   background: #0a3155;
-  color: #4299e9;
+  color: #59a5eb;
   font-family: "Oswald", sans-serif;
   font-size: 62.5%;
 }
@@ -16,6 +16,10 @@ h2 {
 }
 
 p {
+  font-size: 1.5rem;
+}
+
+a {
   font-size: 1.5rem;
 }
 
@@ -117,6 +121,12 @@ p {
       grid-template-areas: ". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
 }
 
+.btn-demo {
+  background: #092c4c;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .demo-btn-1 {
   font-size: 0.8rem;
   padding: 3px;
@@ -140,14 +150,14 @@ p {
 
 @media screen and (max-width: 720px) {
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .click {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 0.2fr 1fr 1fr 1fr;
         grid-template-rows: 0.2fr 1fr 1fr 1fr;
-        grid-template-areas: "b1 b1 b1" "b1 b1 b1" "b2 b2 b2" ". b3 .";
+        grid-template-areas: "b1 b1 b1" "b1 b1 b1" "b2 b2 b2" "b3 b3 b3";
   }
 }
 /*# sourceMappingURL=style.css.map */

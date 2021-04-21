@@ -18,7 +18,7 @@ $caveat: 'Caveat', cursive;
 /* Will change font sizes to rem later on */
 body{
     background: $blue;
-    color: lighten($color: $blue, $amount: 40%);
+    color: lighten($color: $blue, $amount: 45%);
     font-family: $osward;
     font-size: 62.5%;
 }
@@ -35,6 +35,9 @@ p{
     font-size: 1.5rem;
 }
 
+a{
+    font-size: 1.5rem;
+}
 .btn-toggle{
     font-family: $caveat;
     padding: 1px 20px !important;
