@@ -46,6 +46,18 @@ a {
       align-self: center;
 }
 
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* Makes originally clickable elements inactive */
 .inactive {
   pointer-events: none;
@@ -125,6 +137,7 @@ a {
   background: #092c4c;
   padding: 10px;
   border-radius: 10px;
+  height: clamp(260px, 22vw, 50px);
 }
 
 .demo-btn-1 {

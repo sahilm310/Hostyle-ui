@@ -9,6 +9,7 @@
     background: darken($color: $blue, $amount: 2%);
     padding: 10px;
     @include border-radius(10px);
+    height:clamp(260px, 22vw,50px)
 }
 .demo-btn-1{
     font-size: 0.8rem;
@@ -36,6 +37,7 @@
 }
 
 @media screen and (max-width: 720px) {
+
     h2{font-size: 1.7rem}
     .click{
         grid-template-columns:  1fr 1fr 1fr ;

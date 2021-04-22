@@ -59,7 +59,11 @@ a{
 .al-vert{
     align-self: center;
 }
-
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* Makes originally clickable elements inactive */
 .inactive{
     pointer-events: none;
