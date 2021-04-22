@@ -13,6 +13,13 @@ const tl = gsap.timeline({ defaults: { ease: "power2.easeOut" } });
 
 tl.to(".tr-main", { y: "0%", duration: 1, stagger: 0.4 });
 
+
+clickCounter = 0;
+function npClick(){
+    clickCounter++
+    document.getElementById("click-counter").innerHTML = clickCounter;
+}
+
 // bootstrap tooltips
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
