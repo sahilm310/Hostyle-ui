@@ -11,6 +11,19 @@
     @include border-radius(10px);
     height:clamp(260px, 22vw,50px)
 }
+#demo-btn-basic{
+    font-size: 1.2rem;
+}
+
+#symbol-demo::after{
+    content: "\27B2";
+}
+#symbol-demo:hover{
+    cursor:pointer;
+}
+#symbol-demo:hover::after{
+    content: "\00A0 \27B2";
+}
 .demo-btn-1{
     font-size: 0.8rem;
     padding: 3px;

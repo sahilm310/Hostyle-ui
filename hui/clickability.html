@@ -25,7 +25,7 @@
 </head>
 <body>
     <div class="container-xl">
-        <main class="click">
+        <div class="click">
             <div class="b1 tr-hide">
                 <h1 class="tr-main"><b>Clickability</b></h1>
                 <br>
@@ -36,13 +36,17 @@
                     <div class="al-vert">
                         <h2>Users also need to know what they are able click...</h2>
                         <br>
-                        <a href="#you-just-clicked-a-link">Text Links</a>
+                        <a href="#just-clicked-a-link" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Keep an eye on how the cursor changes...</b>">
+                            Text Links
+                        </a>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <button class="" href="#you-just-clicked-a-link2">Buttons</button>
+
+                        <button id="demo-btn-basic" href="#just-clicked-a-button" data-toggle="tooltip" data-placement="top" data-html="true" title="<b>Keep an eye on how the cursor changes...</b>">Buttons</button>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a>Symbols <strong> &#10162;</strong></a>
+
+                        <a id="symbol-demo">Symbols </a>
                         <br><br>
-                        <h2>These are examples of how to let users know </h2>
+                        <h2>Here are some ways to let users know what they can click.</h2>
                     </div>
                 </div>
             </div>
@@ -57,7 +61,7 @@
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
 
 
