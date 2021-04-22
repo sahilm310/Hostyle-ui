@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Will change font sizes to rem later on */
 body {
   background: #0a3155;
@@ -133,6 +137,17 @@ a {
       grid-template-areas: ". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
 }
 
+.click-next-page {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 0.5fr 0.5fr;
+      grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  -ms-grid-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr;
+      grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr;
+      grid-template-areas: ". . ."  ". . ." ". . ."  ". . ." ". . ."  ". . .";
+}
+
 .demo-box {
   background: #092c4c;
   padding: 10px;
@@ -182,14 +197,20 @@ a {
 }
 
 @media screen and (max-width: 720px) {
+  #demo-box-1 a {
+    font-size: 1.2rem;
+  }
+  #demo-box-1 button {
+    font-size: 1.1rem;
+  }
   h2 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .click {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.2fr 1fr 1fr 1fr;
-        grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    -ms-grid-rows: 0.05fr 0.8fr 1fr 1fr;
+        grid-template-rows: 0.05fr 0.8fr 1fr 1fr;
         grid-template-areas: "b1 b1 b1" "b1 b1 b1" "b2 b2 b2" "b3 b3 b3";
   }
 }

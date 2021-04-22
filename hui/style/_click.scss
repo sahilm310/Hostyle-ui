@@ -5,6 +5,18 @@
     grid-template-rows: 0.2fr 1fr 0.3fr 1fr;
     grid-template-areas:". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
 }
+.click-next-page{
+    height: 100vh;
+    display: grid; 
+    grid-template-columns:  0.5fr 0.5fr 0.5fr  ;
+    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr;
+    grid-template-areas:". . ." 
+                        ". . ."
+                        ". . ." 
+                        ". . ."
+                        ". . ." 
+                        ". . .";
+}
 .demo-box{
     background: darken($color: $blue, $amount: 2%);
     padding: 10px;
@@ -50,11 +62,14 @@
 }
 
 @media screen and (max-width: 720px) {
-
-    h2{font-size: 1.7rem}
+    #demo-box-1{
+        a{font-size: 1.2rem;}
+        button{font-size: 1.1rem;}
+    }
+    h2{font-size: 1.6rem}
     .click{
         grid-template-columns:  1fr 1fr 1fr ;
-        grid-template-rows: 0.2fr 1fr 1fr 1fr;
+        grid-template-rows: 0.05fr 0.8fr 1fr 1fr;
         grid-template-areas:"b1 b1 b1" "b1 b1 b1" "b2 b2 b2" "b3 b3 b3";
     }
 } 
