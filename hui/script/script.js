@@ -12,3 +12,5 @@ function toggleClass(elem,className) {
 const tl = gsap.timeline({ defaults: { ease: "power2.easeOut" } });
 
 tl.to(".tr-main", { y: "0%", duration: 1, stagger: 0.4 });
+
+$("#demo-box-1").height($("#demo-box-2").height());

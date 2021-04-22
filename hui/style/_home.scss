@@ -10,7 +10,7 @@
     align-self: center !important;
     text-align: center;
     @include border-radius(10px);
-    padding: 10px;
+    padding: 5px;
 }
 
 .b2{
@@ -18,14 +18,14 @@
     align-self: center;
     text-align: center;
     vertical-align: center;
-    padding: 10px;
+    padding: 5px;
     img{
         width: 70%;
     }
 }
 
 .b3{
-    padding: 10px;
+    padding: 5px;
     grid-area: b3;
     text-align: center;
 }
