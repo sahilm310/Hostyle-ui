@@ -11,12 +11,12 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(2.7rem, 3.5vw, 3.2rem);
 }
 
 h2 {
   font-family: "Caveat", cursive;
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
 }
 
 p {
@@ -115,10 +115,14 @@ a {
   text-align: center;
 }
 
+.b2 img {
+  width: clamp(180px, 20vw, 270px);
+}
+
 @media screen and (max-width: 720px) {
-  .b2 img {
-    width: 50%;
-  }
+  /*.b2 img{
+        width: 50%;
+    }*/
   .home {
     -ms-grid-rows: 0.3fr 1fr 1fr 1fr;
         grid-template-rows: 0.3fr 1fr 1fr 1fr;

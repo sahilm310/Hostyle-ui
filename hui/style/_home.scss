@@ -29,10 +29,13 @@
     grid-area: b3;
     text-align: center;
 }
+.b2 img{
+    width: clamp(180px,20vw,270px);
+}
 @media screen and (max-width: 720px) {
-    .b2 img{
+    /*.b2 img{
         width: 50%;
-    }
+    }*/
     .home{
         grid-template-rows: 0.3fr 1fr 1fr 1fr;
         grid-template-areas:". . ." "b2 b2 b2" "b1 b1 b1" "b3 b3 b3";
