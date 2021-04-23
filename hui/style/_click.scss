@@ -9,14 +9,28 @@
     height: 100vh;
     display: grid; 
     grid-template-columns:  0.5fr 0.5fr 0.5fr  ;
-    grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr;
     grid-template-areas:". . ." 
-                        ". . ."
-                        ". . ." 
-                        ". . ."
-                        ". . ." 
+                        "q q q"
+                        ". cc ."
+                        "np1 np2 np3" 
+                        "np4 np5 np6" 
+                        "np7 np8 np9" 
                         ". . .";
+    text-align: center;
+    .np-task{grid-area: q}
+    .clicks{grid-area: cc}
+    .np1{grid-area: np1}
+    .np2{grid-area: np2}
+    .np3{grid-area: np3}
+    .np4{grid-area: np4}
+    .np5{grid-area: np5}
+    .np6{grid-area: np6}
+    .np7{grid-area: np7}
+    .np8{grid-area: np8}
+    .np9{grid-area: np9}
 }
+
 .demo-box{
     background: darken($color: $blue, $amount: 2%);
     padding: 10px;

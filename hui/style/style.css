@@ -143,9 +143,77 @@ a {
   display: grid;
   -ms-grid-columns: 0.5fr 0.5fr 0.5fr;
       grid-template-columns: 0.5fr 0.5fr 0.5fr;
-  -ms-grid-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr;
-      grid-template-rows: 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr;
-      grid-template-areas: ". . ."  ". . ." ". . ."  ". . ." ". . ."  ". . .";
+  -ms-grid-rows: 0.2fr 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr;
+      grid-template-rows: 0.2fr 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr;
+      grid-template-areas: ". . ."  "q q q" ". cc ." "np1 np2 np3"  "np4 np5 np6"  "np7 np8 np9"  ". . .";
+  text-align: center;
+}
+
+.click-next-page .np-task {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: q;
+}
+
+.click-next-page .clicks {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: cc;
+}
+
+.click-next-page .np1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: np1;
+}
+
+.click-next-page .np2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: np2;
+}
+
+.click-next-page .np3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: np3;
+}
+
+.click-next-page .np4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: np4;
+}
+
+.click-next-page .np5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: np5;
+}
+
+.click-next-page .np6 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: np6;
+}
+
+.click-next-page .np7 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: np7;
+}
+
+.click-next-page .np8 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: np8;
+}
+
+.click-next-page .np9 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: np9;
 }
 
 .demo-box {
