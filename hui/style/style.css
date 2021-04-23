@@ -142,11 +142,84 @@ a {
 }
 
 .click h1 {
-  font-size: clamp(2.7rem, 3.5vw, 3.2rem);
+  font-size: clamp(2.7rem, 4vw, 3.2rem);
 }
 
 .click h2 {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+}
+
+.click .demo-box {
+  background: #092c4c;
+  padding: 10px;
+  border-radius: 10px;
+  height: clamp(260px, 22vw, 50px);
+}
+
+.click .demo-box h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+}
+
+.click .demo-box a {
+  font-size: clamp(1.2rem, 2.3vw, 1.8rem);
+}
+
+.click .demo-box #demo-btn-basic {
+  font-size: clamp(1rem, 2.3vw, 1.5rem);
+}
+
+.click .btn-outline-primary {
+  color: #59a5eb !important;
+  border-color: #59a5eb !important;
+}
+
+.click .btn-outline-primary:hover, .click .btn-outline-primary:focus,
+.click .btn-outline-primary:active, .click .btn-outline-primary:visited {
+  background-color: #59a5eb !important;
+  color: aliceblue !important;
+  border-color: #59a5eb !important;
+}
+
+.click #symbol-demo::after {
+  content: "\27B2";
+}
+
+.click #symbol-demo:hover {
+  cursor: pointer;
+}
+
+.click #symbol-demo:hover::after {
+  content: "\00A0 \27B2";
+}
+
+.click .demo-btn-1 {
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  padding: 3px;
+  border: none;
+  background-color: #f9fcfe;
+  -webkit-transition: 1s background-color ease, 1s padding ease, 1s color ease 0.2s, 1s border-radius ease,  1s -webkit-transform ease;
+  transition: 1s background-color ease, 1s padding ease, 1s color ease 0.2s, 1s border-radius ease,  1s -webkit-transform ease;
+  transition: 1s transform ease,  1s background-color ease, 1s padding ease, 1s color ease 0.2s, 1s border-radius ease;
+  transition: 1s transform ease,  1s background-color ease, 1s padding ease, 1s color ease 0.2s, 1s border-radius ease,  1s -webkit-transform ease;
+  outline: 0 !important;
+}
+
+.click .demo-btn-1-click {
+  /* mixin for transform: scale */
+  background: #59a5eb;
+  color: aliceblue;
+  -webkit-transform: scale(1.8, 1.5);
+  transform: scale(1.8, 1.5);
+  border-radius: 3px;
+  padding: 6px 10px;
+}
+
+.click .demo-btn-1-click:hover {
+  background: #2b8ce6;
+}
+
+.click .space-sep::after {
+  content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0";
 }
 
 .click-next-page {
@@ -234,66 +307,6 @@ a {
   -ms-grid-row: 6;
   -ms-grid-column: 3;
   grid-area: np9;
-}
-
-.demo-box {
-  background: #092c4c;
-  padding: 10px;
-  border-radius: 10px;
-  height: clamp(260px, 22vw, 50px);
-}
-
-.demo-box h2 {
-  font-size: clamp(1.6rem, 2.5vw, 2rem);
-}
-
-.demo-box a {
-  font-size: clamp(1.2rem, 2.3vw, 1.8rem);
-}
-
-.demo-box #demo-btn-basic {
-  font-size: clamp(1.1rem, 2.3vw, 1.7rem);
-}
-
-#demo-btn-basic {
-  font-size: 1.2rem;
-}
-
-#symbol-demo::after {
-  content: "\27B2";
-}
-
-#symbol-demo:hover {
-  cursor: pointer;
-}
-
-#symbol-demo:hover::after {
-  content: "\00A0 \27B2";
-}
-
-.demo-btn-1 {
-  font-size: clamp(0.8rem, 2vw, 0.9rem);
-  padding: 3px;
-  border: none;
-  background-color: #f9fcfe;
-  -webkit-transition: 0.5s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
-  transition: 0.5s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
-  transition: 1s transform ease,  0.5s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease;
-  transition: 1s transform ease,  0.5s background-color ease, 1s padding ease, 1s color ease, 1s border-radius ease,  1s -webkit-transform ease;
-}
-
-.demo-btn-1-click {
-  /* mixin for transform: scale */
-  background: #b4d7f6;
-  color: #0a3155;
-  -webkit-transform: scale(1.8, 1.5);
-  transform: scale(1.8, 1.5);
-  border-radius: 5px;
-  padding: 6px 10px;
-}
-
-.demo-btn-1-click:hover {
-  background: #87bef1;
 }
 
 @media screen and (max-width: 720px) {

@@ -4,10 +4,73 @@
     grid-template-columns:  1fr 0.5fr 0.5fr 1fr ;
     grid-template-rows: 0.2fr 1fr 0.3fr 1fr;
     grid-template-areas:". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
-    h1{font-size:clamp(2.7rem,3.5vw, 3.2rem);}
-    h2{font-size:clamp(1.8rem,2.5vw, 2.3rem);}
+    h1{font-size:clamp(2.7rem,4vw, 3.2rem);}
+    h2{font-size:clamp(1.8rem,3vw, 2.3rem);}
+    .demo-box{
+        background: darken($color: $blue, $amount: 2%);
+        padding: 10px;
+        @include border-radius(10px);
+        height:clamp(260px, 22vw,50px);
+        h2{
+            font-size: clamp(1.6rem, 2.5vw, 2rem);
+        }
+        a{font-size: clamp(1.2rem, 2.3vw, 1.8rem);}
+        #demo-btn-basic{
+            font-size: clamp(1rem, 2.3vw, 1.5rem);
+        }
+    }
+
+    .btn-outline-primary{
+        color: $lBlue !important;
+        border-color: $lBlue!important;
+    }
+    .btn-outline-primary:hover, .btn-outline-primary:focus,
+    .btn-outline-primary:active, .btn-outline-primary:visited {
+        background-color: $lBlue!important;
+        color:aliceblue !important;
+        border-color: $lBlue!important;
+    }
     
+    #symbol-demo::after{
+        content: "\27B2";
+    }
+    #symbol-demo:hover{
+        cursor:pointer;
+    }
+    #symbol-demo:hover::after{
+        content: "\00A0 \27B2";
+    }
+    .demo-btn-1{
+        font-size: clamp(0.8rem,2vw,0.9rem);
+        padding: 3px;
+        border:none;
+        background-color: lighten($color: $blue, $amount: 80%);
+        transition: 1s transform ease, 
+                    1s background-color ease,
+                    1s padding ease,
+                    1s color ease 0.2s,
+                    1s border-radius ease;
+        outline: 0!important;
+    }
+    
+    .demo-btn-1-click{
+        /* mixin for transform: scale */
+        background: $lBlue;
+        color:  aliceblue;
+        @include scale-xy(1.8,1.5); 
+        @include border-radius(3px); 
+        padding: 6px 10px;
+    }
+    
+    .demo-btn-1-click:hover{
+        background: darken($color: $lBlue, $amount: 10%);
+    }
+    
+    .space-sep::after{
+        content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0";
+    }
 }
+
 .click-next-page{
     height: 100vh;
     display: grid; 
@@ -34,55 +97,6 @@
     .np7{grid-area: np7}
     .np8{grid-area: np8}
     .np9{grid-area: np9}
-}
-
-.demo-box{
-    background: darken($color: $blue, $amount: 2%);
-    padding: 10px;
-    @include border-radius(10px);
-    height:clamp(260px, 22vw,50px);
-    h2{
-        font-size: clamp(1.6rem,2.5vw,2rem);
-    }
-    a{font-size: clamp(1.2rem,2.3vw,1.8rem);}
-    #demo-btn-basic{font-size: clamp(1.1rem,2.3vw,1.7rem);}
-}
-#demo-btn-basic{
-    font-size: 1.2rem;
-}
-
-#symbol-demo::after{
-    content: "\27B2";
-}
-#symbol-demo:hover{
-    cursor:pointer;
-}
-#symbol-demo:hover::after{
-    content: "\00A0 \27B2";
-}
-.demo-btn-1{
-    font-size: clamp(0.8rem,2vw,0.9rem);
-    padding: 3px;
-    border:none;
-    background-color: lighten($color: $blue, $amount: 80%);
-    transition: 1s transform ease, 
-                0.5s background-color ease,
-                1s padding ease,
-                1s color ease,
-                1s border-radius ease;
-                
-}
-.demo-btn-1-click{
-    /* mixin for transform: scale */
-    background: lighten($color: $blue, $amount: 65%);
-    color:  $blue;
-    @include scale-xy(1.8,1.5); 
-    @include border-radius(5px); 
-    padding: 6px 10px;
-}
-
-.demo-btn-1-click:hover{
-    background: lighten($color: $blue, $amount: 55%);
 }
 
 @media screen and (max-width: 720px) {

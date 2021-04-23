@@ -2,7 +2,7 @@ $blue : #0a3155;
 $white: aliceblue;
 $osward: 'Oswald', sans-serif;
 $caveat: 'Caveat', cursive;
-
+$lBlue:lighten($color: $blue, $amount: 45%);
 @mixin border-radius($r) {
     -webkit-border-radius: $r;
     -ms-border-radius: $r;
@@ -21,7 +21,7 @@ html {
 /* Will change font sizes to rem later on */
 body{
     background: $blue;
-    color: lighten($color: $blue, $amount: 45%);
+    color: $lBlue;
     font-family: $osward;
     font-size: 62.5%;
 }
