@@ -23,6 +23,8 @@
     .btn-outline-primary{
         color: $lBlue !important;
         border-color: $lBlue!important;
+        vertical-align: baseline;
+        padding: 4px 10px;
     }
     .btn-outline-primary:hover, .btn-outline-primary:focus,
     .btn-outline-primary:active, .btn-outline-primary:visited {
@@ -96,7 +98,14 @@
     .np6{grid-area: np6}
     .np7{grid-area: np7}
     .np8{grid-area: np8}
-    .np9{grid-area: np9}
+    .np9{grid-area: np9;}
+    a{font-size: clamp(1.3rem, 1.8vw, 2rem)}
+    .btn-primary{
+        color: aliceblue;
+        background-color: $lBlue;
+        font-size: clamp(1.3rem, 1.8vw, 2rem);
+    }
+
 }
 
 @media screen and (max-width: 720px) {

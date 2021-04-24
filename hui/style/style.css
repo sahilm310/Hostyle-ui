@@ -171,6 +171,8 @@ a {
 .click .btn-outline-primary {
   color: #59a5eb !important;
   border-color: #59a5eb !important;
+  vertical-align: baseline;
+  padding: 4px 10px;
 }
 
 .click .btn-outline-primary:hover, .click .btn-outline-primary:focus,
@@ -307,6 +309,16 @@ a {
   -ms-grid-row: 6;
   -ms-grid-column: 3;
   grid-area: np9;
+}
+
+.click-next-page a {
+  font-size: clamp(1.3rem, 1.8vw, 2rem);
+}
+
+.click-next-page .btn-primary {
+  color: aliceblue;
+  background-color: #59a5eb;
+  font-size: clamp(1.3rem, 1.8vw, 2rem);
 }
 
 @media screen and (max-width: 720px) {
