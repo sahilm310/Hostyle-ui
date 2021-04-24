@@ -1,5 +1,14 @@
-// 
-// element.classList.toggle("newClass");
+// cookie
+function session() {
+    if (document.cookie.indexOf("visited") >= 0) {
+        $('.b1').remove();
+    } else {
+        document.cookie = "visited; Secure";
+    }
+}
+session()
+
+
 function toggle(id){
     var np = document.getElementById(id);
     np.classList.toggle("inactive");
@@ -25,11 +34,3 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-function session() {
-    if (document.cookie.indexOf("visited") >= 0) {
-        $('.b1').remove();
-    } else {
-        document.cookie = "visited";
-    }
-}
-session()
