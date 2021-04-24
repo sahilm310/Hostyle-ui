@@ -23,4 +23,12 @@ function npClick(){
 // bootstrap tooltips
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-  })
+})
+
+function session() {
+    if (document.cookie.indexOf("visited") >= 0) {
+        $('.b1').remove();
+    } else {
+        document.cookie = "visited";
+    }
+}
