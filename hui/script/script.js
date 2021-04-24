@@ -32,3 +32,4 @@ function session() {
         document.cookie = "visited";
     }
 }
+session()
