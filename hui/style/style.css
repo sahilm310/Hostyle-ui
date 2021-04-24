@@ -222,16 +222,31 @@ a {
   border-color: #59a5eb !important;
 }
 
-.click #symbol-demo::after {
-  content: "\27B2";
+.click .symbol-demo {
+  position: relative;
 }
 
-.click #symbol-demo:hover {
+.click .symbol-demo:hover {
   cursor: pointer;
 }
 
-.click #symbol-demo:hover::after {
-  content: "\00A0 \27B2";
+.click .symbol-demo::after {
+  content: "\27B2";
+  position: absolute;
+  bottom: 0;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: 250ms font-size ease, 250ms font-weight ease;
+  transition: 250ms font-size ease, 250ms font-weight ease;
+}
+
+.click .symbol-demo:hover::after {
+  content: "\27B2";
+  position: absolute;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
 .click .demo-btn-1 {

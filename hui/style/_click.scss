@@ -32,16 +32,32 @@
         color:aliceblue !important;
         border-color: $lBlue!important;
     }
+
     
-    #symbol-demo::after{
-        content: "\27B2";
+    .symbol-demo{
+        position: relative;
+        
     }
-    #symbol-demo:hover{
+    .symbol-demo:hover{
         cursor:pointer;
     }
-    #symbol-demo:hover::after{
-        content: "\00A0 \27B2";
+    .symbol-demo::after{
+        content: "\27B2";
+        position: absolute;
+        bottom: 0;
+        transform-origin: bottom;
+        transition: 250ms font-size ease,
+                    250ms font-weight ease;
     }
+    
+    .symbol-demo:hover::after{
+        content: "\27B2";
+        position: absolute;
+        transform-origin:bottom;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
     .demo-btn-1{
         font-size: clamp(0.8rem,2vw,0.9rem);
         padding: 3px;
