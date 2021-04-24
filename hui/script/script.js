@@ -1,7 +1,9 @@
 // cookie
 function session() {
     if (document.cookie.indexOf("visited") >= 0) {
-        $('.b1').remove();
+        //$('.b1').remove();
+        // nav bar hidden by default
+        // and displayed here if user has visited site before
     } else {
         document.cookie = "visited; Secure";
     }
