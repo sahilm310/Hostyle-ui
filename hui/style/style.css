@@ -90,7 +90,7 @@ a {
   height: 3px;
   background-color: currentColor;
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
   -webkit-transition: 250ms -webkit-transform ease;
   transition: 250ms -webkit-transform ease;
   transition: 250ms transform ease;
@@ -99,7 +99,7 @@ a {
 
 .ani-links:hover::after {
   -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* Makes originally clickable elements inactive */
@@ -223,10 +223,9 @@ a {
 }
 
 .click .symbol-demo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
-}
-
-.click .symbol-demo:hover {
   cursor: pointer;
 }
 
@@ -236,6 +235,7 @@ a {
   bottom: 0;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
+  font-size: 1.1em;
   -webkit-transition: 250ms font-size ease, 250ms font-weight ease;
   transition: 250ms font-size ease, 250ms font-weight ease;
 }

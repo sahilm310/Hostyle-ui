@@ -1,8 +1,8 @@
 $blue : #0a3155;
 $white: aliceblue;
+$lBlue:lighten($color: $blue, $amount: 45%);
 $osward: 'Oswald', sans-serif;
 $caveat: 'Caveat', cursive;
-$lBlue:lighten($color: $blue, $amount: 45%);
 @mixin border-radius($r) {
     -webkit-border-radius: $r;
     -ms-border-radius: $r;
@@ -13,6 +13,12 @@ $lBlue:lighten($color: $blue, $amount: 45%);
     -webkit-transform: scale($x,$y);
     -ms-transform: scale($x,$y);
     transform: scale($x,$y);
+}
+
+@mixin scale-x($x) {
+    -webkit-transform: scaleX($x);
+    -ms-transform: scaleX($x);
+    transform: scaleX($x);
 }
 html {
     scroll-behavior: smooth;
@@ -87,11 +93,11 @@ a{
     width: 100%;
     height: 3px;
     background-color: currentColor;
-    transform: scaleX(0);
+    @include scale-x(0);
     transition: 250ms transform ease;
 }
 .ani-links:hover::after{
-    transform: scaleX(1);
+    @include scale-x(1);
 }
 
 /* Makes originally clickable elements inactive */

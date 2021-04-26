@@ -33,19 +33,18 @@
         border-color: $lBlue!important;
     }
 
-    
     .symbol-demo{
+        box-sizing: border-box;
         position: relative;
-        
-    }
-    .symbol-demo:hover{
         cursor:pointer;
     }
+
     .symbol-demo::after{
         content: "\27B2";
         position: absolute;
         bottom: 0;
         transform-origin: bottom;
+        font-size: 1.1em;
         transition: 250ms font-size ease,
                     250ms font-weight ease;
     }
