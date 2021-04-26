@@ -40,6 +40,39 @@ a {
   font-size: 1.2rem;
 }
 
+/* #region bootstrap button styling */
+.btn:active {
+  border: none;
+}
+
+.btn-primary {
+  color: aliceblue;
+  background-color: #59a5eb;
+  font-size: clamp(1.3rem, 1.8vw, 2rem);
+}
+
+.btn-primary:hover, .btn-primary:focus,
+.btn-primary:active, .btn-primary:visited {
+  background-color: #2b8ce6 !important;
+  color: aliceblue !important;
+  border-color: #2b8ce6 !important;
+}
+
+.btn-outline-primary {
+  color: #59a5eb !important;
+  border-color: #59a5eb !important;
+  vertical-align: baseline;
+  padding: 4px 10px;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus,
+.btn-outline-primary:active, .btn-outline-primary:visited {
+  background-color: #59a5eb !important;
+  color: aliceblue !important;
+  border-color: #59a5eb !important;
+}
+
+/* #endregion */
 .tr-hide {
   background: #0a3155;
   overflow: hidden;
@@ -87,6 +120,7 @@ a {
   position: absolute;
   left: 0;
   bottom: 0;
+  border-radius: 5px;
   width: 100%;
   height: 3px;
   background-color: currentColor;
@@ -207,20 +241,6 @@ a {
 
 .click .demo-box #demo-btn-basic {
   font-size: clamp(1rem, 2.3vw, 1.5rem);
-}
-
-.click .btn-outline-primary {
-  color: #59a5eb !important;
-  border-color: #59a5eb !important;
-  vertical-align: baseline;
-  padding: 4px 10px;
-}
-
-.click .btn-outline-primary:hover, .click .btn-outline-primary:focus,
-.click .btn-outline-primary:active, .click .btn-outline-primary:visited {
-  background-color: #59a5eb !important;
-  color: aliceblue !important;
-  border-color: #59a5eb !important;
 }
 
 .click .symbol-demo {
