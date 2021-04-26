@@ -20,9 +20,9 @@ function toggleClass(elem,className) {
     elem.classList.toggle(className);
 }
 
-const tl = gsap.timeline({ defaults: { ease: "power2.easeOut" } });
+const tl = gsap.timeline({ defaults: { ease: "power4.easeInOut" } });
 
-tl.to(".tr-main", { y: "0%", duration: 1, stagger: 0.4 });
+tl.to(".tr-main", { y: "0%", opacity:"100%", duration: 1, stagger: 0.2 });
 
 
 clickCounter = 0;
