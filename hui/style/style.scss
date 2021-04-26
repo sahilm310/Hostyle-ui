@@ -57,20 +57,31 @@ a{
     font-size: 1.2rem;
 }
 /* #region bootstrap button styling */
-.btn:active{
-    border: none;
-}
+
 .btn-primary{
-    color: aliceblue;
-    background-color: $lBlue;
-    font-size: clamp(1.3rem, 1.8vw, 2rem);
+    color: aliceblue!important;
+    background-color: $lBlue!important;
+    font-size: clamp(1.3rem, 1.8vw, 2rem)!important;
+    border-color: darken($color:$lBlue, $amount:10%)!important;
+    transition: 200ms border ease-out;
 }
-.btn-primary:hover, .btn-primary:focus,
-.btn-primary:active, .btn-primary:visited {
+
+.btn-primary:hover {
     background-color: darken($color:$lBlue, $amount:10%)!important;
     color:aliceblue !important;
     border-color: darken($color:$lBlue, $amount:10%)!important;
 }
+
+.btn-primary:active {
+    border: none;
+    
+}
+
+.btn-primary:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+
 .btn-outline-primary{
     color: $lBlue !important;
     border-color: $lBlue!important;

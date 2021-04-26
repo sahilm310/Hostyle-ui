@@ -71,7 +71,7 @@
     .demo-btn-1-click:hover{
         background: darken($color: $lBlue, $amount: 10%);
     }
-    
+    /* white space in HTML */
     .space-sep::after{
         content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0";
     }
@@ -104,11 +104,7 @@
     .np8{grid-area: np8}
     .np9{grid-area: np9;}
     a{font-size: clamp(1.3rem, 1.8vw, 2rem)}
-    .btn-primary{
-        color: aliceblue;
-        background-color: $lBlue;
-        font-size: clamp(1.3rem, 1.8vw, 2rem);
-    }
+
 
 }
 

@@ -41,21 +41,29 @@ a {
 }
 
 /* #region bootstrap button styling */
-.btn:active {
-  border: none;
-}
-
 .btn-primary {
-  color: aliceblue;
-  background-color: #59a5eb;
-  font-size: clamp(1.3rem, 1.8vw, 2rem);
+  color: aliceblue !important;
+  background-color: #59a5eb !important;
+  font-size: clamp(1.3rem, 1.8vw, 2rem) !important;
+  border-color: #2b8ce6 !important;
+  -webkit-transition: 200ms border ease-out;
+  transition: 200ms border ease-out;
 }
 
-.btn-primary:hover, .btn-primary:focus,
-.btn-primary:active, .btn-primary:visited {
+.btn-primary:hover {
   background-color: #2b8ce6 !important;
   color: aliceblue !important;
   border-color: #2b8ce6 !important;
+}
+
+.btn-primary:active {
+  border: none;
+}
+
+.btn-primary:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .btn-outline-primary {
@@ -214,6 +222,7 @@ a {
   -ms-grid-rows: 0.2fr 1fr 0.3fr 1fr;
       grid-template-rows: 0.2fr 1fr 0.3fr 1fr;
       grid-template-areas: ". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
+  /* white space in HTML */
 }
 
 .click h1 {
@@ -388,12 +397,6 @@ a {
 }
 
 .click-next-page a {
-  font-size: clamp(1.3rem, 1.8vw, 2rem);
-}
-
-.click-next-page .btn-primary {
-  color: aliceblue;
-  background-color: #59a5eb;
   font-size: clamp(1.3rem, 1.8vw, 2rem);
 }
 
