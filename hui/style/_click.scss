@@ -100,6 +100,30 @@
     .np4{grid-area: np4}
     .np5{grid-area: np5}
     .np6{grid-area: np6}
+    .symbol{
+        box-sizing: border-box;
+        position: relative;
+        cursor:text;
+        
+    }
+
+    .symbol::after{
+        content: "\279C";
+        position: absolute;
+        bottom: 100;
+        transform-origin:center;
+        font-size:0em;
+        transform: rotate(300deg);
+        transition: 250ms font-size ease,
+                    250ms transform ease;
+    }
+    
+    .symbol:hover::after{
+        content: " \279C";
+        position: absolute;
+        transform: rotate(360deg);
+        font-size: 3.5em;
+    }
     .np7{grid-area: np7}
     .np8{grid-area: np8}
     .np9{grid-area: np9;}

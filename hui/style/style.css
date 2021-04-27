@@ -41,6 +41,13 @@ a {
 }
 
 /* #region bootstrap button styling */
+/* remove unwanted oulines from all btn */
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .btn-primary {
   color: aliceblue !important;
   background-color: #59a5eb !important;
@@ -58,12 +65,6 @@ a {
 
 .btn-primary:active {
   border: none;
-}
-
-.btn-primary:focus {
-  outline: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
 }
 
 .btn-outline-primary {
@@ -376,6 +377,36 @@ a {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
   grid-area: np6;
+}
+
+.click-next-page .symbol {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  cursor: text;
+}
+
+.click-next-page .symbol::after {
+  content: "\279C";
+  position: absolute;
+  bottom: 100;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  font-size: 0em;
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+  -webkit-transition: 250ms font-size ease, 250ms -webkit-transform ease;
+  transition: 250ms font-size ease, 250ms -webkit-transform ease;
+  transition: 250ms font-size ease, 250ms transform ease;
+  transition: 250ms font-size ease, 250ms transform ease, 250ms -webkit-transform ease;
+}
+
+.click-next-page .symbol:hover::after {
+  content: " \279C";
+  position: absolute;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  font-size: 3.5em;
 }
 
 .click-next-page .np7 {

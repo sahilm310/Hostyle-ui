@@ -57,7 +57,11 @@ a{
     font-size: 1.2rem;
 }
 /* #region bootstrap button styling */
-
+/* remove unwanted oulines from all btn */
+.btn:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
 .btn-primary{
     color: aliceblue!important;
     background-color: $lBlue!important;
@@ -75,11 +79,6 @@ a{
 .btn-primary:active {
     border: none;
     
-}
-
-.btn-primary:focus{
-    outline: none!important;
-    box-shadow: none!important;
 }
 
 .btn-outline-primary{
