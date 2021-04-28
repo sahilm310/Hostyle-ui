@@ -1,4 +1,7 @@
+/* #region main content grid */
 .click{
+
+    /* #region general setup*/
     height: 100vh;
     display: grid; 
     grid-template-columns:  1fr 0.5fr 0.5fr 1fr ;
@@ -6,6 +9,9 @@
     grid-template-areas:". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
     h1{font-size:clamp(2.7rem,4vw, 3.2rem);}
     h2{font-size:clamp(1.8rem,3vw, 2.3rem);}
+    /* #endregion */
+
+    /* #region setup demo box/card*/
     .demo-box{
         background: darken($color: $blue, $amount: 2%);
         padding: 10px;
@@ -19,15 +25,18 @@
             font-size: clamp(1rem, 2.3vw, 1.5rem);
         }
     }
-
+    /* white space in HTML */
+    .space-sep::after{
+        content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0";
+    }
+    /* #endregion */
     
-
+    /* #region symbol demo animation*/
     .symbol-demo{
         box-sizing: border-box;
         position: relative;
         cursor:pointer;
     }
-
     .symbol-demo::after{
         content: "\27B2";
         position: absolute;
@@ -35,9 +44,8 @@
         transform-origin: bottom;
         font-size: 1.1em;
         transition: 250ms font-size ease,
-                    250ms font-weight ease;
+        250ms font-weight ease;
     }
-    
     .symbol-demo:hover::after{
         content: "\27B2";
         position: absolute;
@@ -45,7 +53,9 @@
         font-weight: bold;
         font-size: 1.3em;
     }
-
+    /* #endregion */
+    
+    /* #region demo click button styling*/
     .demo-btn-1{
         font-size: clamp(0.8rem,2vw,0.9rem);
         padding: 3px;
@@ -58,26 +68,25 @@
                     1s border-radius ease;
         outline: 0!important;
     }
-    
+    /* styling for the toggled class (larger btn) */
     .demo-btn-1-click{
-        /* mixin for transform: scale */
         background: $lBlue;
         color:  aliceblue;
+        /* mixin for transform: scale */
         @include scale-xy(1.8,1.5); 
-        @include border-radius(3px); 
-        padding: 6px 10px;
+        @include border-radius(0.2rem); 
+        padding: .5rem .7rem;
     }
-    
     .demo-btn-1-click:hover{
         background: darken($color: $lBlue, $amount: 10%);
     }
-    /* white space in HTML */
-    .space-sep::after{
-        content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0";
-    }
+    /* #endregion */
 }
+/* #endregion */
 
+/* #region next page buttons */
 .click-next-page{
+    /* #region general stylings and grid setup*/
     height: 100vh;
     display: grid; 
     grid-template-columns:  0.5fr 0.5fr 0.5fr  ;
@@ -92,45 +101,51 @@
     text-align: center;
     h1{font-size:clamp(2rem,3vw,2.6rem);}
     h2{font-size:clamp(1.9rem,2.8vw,2.2rem);}
-    .np-task{grid-area: q}
-    .clicks{grid-area: cc}
-    .np1{grid-area: np1}
-    .np2{grid-area: np2}
-    .np3{grid-area: np3}
-    .np4{grid-area: np4}
-    .np5{grid-area: np5}
-    .np6{grid-area: np6}
+    a{font-size: clamp(1.3rem, 1.8vw, 2rem)}
+    /* #endregion */
+
+    /* #region grid items setup */
+    .np-task{grid-area: q;}
+    .clicks{grid-area: cc;}
+    .np1{grid-area: np1;}
+    .np2{grid-area: np2;}
+    .np3{grid-area: np3;}
+    .np4{grid-area: np4;}
+    .np5{grid-area: np5;}
+    .np6{grid-area: np6;}
+    .np7{grid-area: np7;}
+    .np8{grid-area: np8;}
+    .np9{grid-area: np9;}
+    /* #endregion */
+
+    /* #region Arrow symbol animation*/
     .symbol{
         box-sizing: border-box;
         position: relative;
         cursor:text;
-        
     }
-
     .symbol::after{
+        /* code for rounded arrow */
         content: "\279C";
         position: absolute;
         bottom: 100;
         transform-origin:center;
         font-size:0em;
+        /* set rotation to start at 300 deg (facing upwards)*/
         transform: rotate(300deg);
         transition: 250ms font-size ease,
                     250ms transform ease;
     }
-    
     .symbol:hover::after{
         content: " \279C";
         position: absolute;
+        /* rotation on hover becomes 360 deg (right) */
         transform: rotate(360deg);
         font-size: 3.5em;
     }
-    .np7{grid-area: np7}
-    .np8{grid-area: np8}
-    .np9{grid-area: np9;}
-    a{font-size: clamp(1.3rem, 1.8vw, 2rem)}
-
-
+    /* #endregion */
 }
+/* #endregion */
 
 @media screen and (max-width: 720px) {
     .click{

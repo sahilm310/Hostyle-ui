@@ -1,8 +1,12 @@
+/* #region global variables */
+/* #endregion */
+/* #region Mixins*/
+/* #endregion */
+/* #region general page styling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Will change font sizes to rem later on */
 body {
   background: #0a3155;
   color: #59a5eb;
@@ -33,6 +37,12 @@ a {
   font-size: 1.5rem;
 }
 
+/* Makes originally clickable elements inactive */
+.inactive {
+  pointer-events: none;
+}
+
+/* not currently being used */
 .btn-toggle {
   font-family: "Caveat", cursive;
   padding: 1px 20px !important;
@@ -40,6 +50,7 @@ a {
   font-size: 1.2rem;
 }
 
+/* #endregion */
 /* #region bootstrap button styling */
 /* remove unwanted oulines from all btn */
 .btn:focus {
@@ -98,6 +109,7 @@ a {
 }
 
 /* #endregion */
+/* #region div styling for transition on screen load */
 .tr-hide {
   background: #0a3155;
   overflow: hidden;
@@ -109,6 +121,8 @@ a {
           transform: translateY(280%);
 }
 
+/* #endregion */
+/* #region Div and element alignment */
 .al-vert {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -127,6 +141,8 @@ a {
           justify-content: center;
 }
 
+/* #endregion */
+/* #region animating links */
 .ani-links {
   text-decoration: none;
   color: #87bef1;
@@ -162,11 +178,8 @@ a {
   transform: scaleX(1);
 }
 
-/* Makes originally clickable elements inactive */
-.inactive {
-  pointer-events: none;
-}
-
+/* #endregion */
+/* #region set up grid */
 .home {
   height: 100vh;
   display: -ms-grid;
@@ -178,6 +191,8 @@ a {
       grid-template-areas: ". . ." "b2 b1 b1" ". . ." "b3 b3 b3";
 }
 
+/* #endregion */
+/* #region  grid items set up and styling*/
 .b1 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -186,7 +201,6 @@ a {
   -ms-flex-item-align: center !important;
       align-self: center !important;
   text-align: center;
-  border-radius: 10px;
   padding: 5px;
 }
 
@@ -203,7 +217,7 @@ a {
 }
 
 .b2 img {
-  width: 70%;
+  width: clamp(180px, 20vw, 270px);
 }
 
 .b3 {
@@ -215,14 +229,9 @@ a {
   text-align: center;
 }
 
-.b2 img {
-  width: clamp(180px, 20vw, 270px);
-}
-
+/* #endregion */
+/* #region media query to rearrange grid */
 @media screen and (max-width: 720px) {
-  /*.b2 img{
-        width: 50%;
-    }*/
   .home {
     -ms-grid-rows: 0.3fr 1fr 1fr 1fr;
         grid-template-rows: 0.3fr 1fr 1fr 1fr;
@@ -230,7 +239,10 @@ a {
   }
 }
 
+/* #endregion */
+/* #region main content grid */
 .click {
+  /* #region general setup*/
   height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -239,7 +251,15 @@ a {
   -ms-grid-rows: 0.2fr 1fr 0.3fr 1fr;
       grid-template-rows: 0.2fr 1fr 0.3fr 1fr;
       grid-template-areas: ". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
+  /* #endregion */
+  /* #region setup demo box/card*/
   /* white space in HTML */
+  /* #endregion */
+  /* #region symbol demo animation*/
+  /* #endregion */
+  /* #region demo click button styling*/
+  /* styling for the toggled class (larger btn) */
+  /* #endregion */
 }
 
 .click h1 {
@@ -267,6 +287,10 @@ a {
 
 .click .demo-box #demo-btn-basic {
   font-size: clamp(1rem, 2.3vw, 1.5rem);
+}
+
+.click .space-sep::after {
+  content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0";
 }
 
 .click .symbol-demo {
@@ -309,24 +333,23 @@ a {
 }
 
 .click .demo-btn-1-click {
-  /* mixin for transform: scale */
   background: #59a5eb;
   color: aliceblue;
+  /* mixin for transform: scale */
   -webkit-transform: scale(1.8, 1.5);
   transform: scale(1.8, 1.5);
-  border-radius: 3px;
-  padding: 6px 10px;
+  border-radius: 0.2rem;
+  padding: .5rem .7rem;
 }
 
 .click .demo-btn-1-click:hover {
   background: #2b8ce6;
 }
 
-.click .space-sep::after {
-  content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0";
-}
-
+/* #endregion */
+/* #region next page buttons */
 .click-next-page {
+  /* #region general stylings and grid setup*/
   height: 100vh;
   display: -ms-grid;
   display: grid;
@@ -336,6 +359,11 @@ a {
       grid-template-rows: 0.2fr 0.2fr 0.2fr 0.3fr 0.3fr 0.3fr 0.2fr;
       grid-template-areas: ". . ."  "q q q" ". cc ." "np1 np2 np3"  "np4 np5 np6"  "np7 np8 np9"  ". . .";
   text-align: center;
+  /* #endregion */
+  /* #region grid items setup */
+  /* #endregion */
+  /* #region Arrow symbol animation*/
+  /* #endregion */
 }
 
 .click-next-page h1 {
@@ -344,6 +372,10 @@ a {
 
 .click-next-page h2 {
   font-size: clamp(1.9rem, 2.8vw, 2.2rem);
+}
+
+.click-next-page a {
+  font-size: clamp(1.3rem, 1.8vw, 2rem);
 }
 
 .click-next-page .np-task {
@@ -395,36 +427,6 @@ a {
   grid-area: np6;
 }
 
-.click-next-page .symbol {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  cursor: text;
-}
-
-.click-next-page .symbol::after {
-  content: "\279C";
-  position: absolute;
-  bottom: 100;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  font-size: 0em;
-  -webkit-transform: rotate(300deg);
-          transform: rotate(300deg);
-  -webkit-transition: 250ms font-size ease, 250ms -webkit-transform ease;
-  transition: 250ms font-size ease, 250ms -webkit-transform ease;
-  transition: 250ms font-size ease, 250ms transform ease;
-  transition: 250ms font-size ease, 250ms transform ease, 250ms -webkit-transform ease;
-}
-
-.click-next-page .symbol:hover::after {
-  content: " \279C";
-  position: absolute;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  font-size: 3.5em;
-}
-
 .click-next-page .np7 {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
@@ -443,10 +445,40 @@ a {
   grid-area: np9;
 }
 
-.click-next-page a {
-  font-size: clamp(1.3rem, 1.8vw, 2rem);
+.click-next-page .symbol {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  cursor: text;
 }
 
+.click-next-page .symbol::after {
+  /* code for rounded arrow */
+  content: "\279C";
+  position: absolute;
+  bottom: 100;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  font-size: 0em;
+  /* set rotation to start at 300 deg (facing upwards)*/
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+  -webkit-transition: 250ms font-size ease, 250ms -webkit-transform ease;
+  transition: 250ms font-size ease, 250ms -webkit-transform ease;
+  transition: 250ms font-size ease, 250ms transform ease;
+  transition: 250ms font-size ease, 250ms transform ease, 250ms -webkit-transform ease;
+}
+
+.click-next-page .symbol:hover::after {
+  content: " \279C";
+  position: absolute;
+  /* rotation on hover becomes 360 deg (right) */
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  font-size: 3.5em;
+}
+
+/* #endregion */
 @media screen and (max-width: 720px) {
   .click {
     -ms-grid-columns: 1fr 1fr 1fr;

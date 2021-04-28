@@ -1,8 +1,12 @@
+/* #region global variables */
 $blue : #0a3155;
 $white: aliceblue;
 $lBlue:lighten($color: $blue, $amount: 45%);
 $osward: 'Oswald', sans-serif;
 $caveat: 'Caveat', cursive;
+/* #endregion */
+
+/* #region Mixins*/
 @mixin border-radius($r) {
     -webkit-border-radius: $r;
     -ms-border-radius: $r;
@@ -20,42 +24,46 @@ $caveat: 'Caveat', cursive;
     -ms-transform: scaleX($x);
     transform: scaleX($x);
 }
+/* #endregion */
+
+/* #region general page styling */
 html {
     scroll-behavior: smooth;
 }
-/* Will change font sizes to rem later on */
+
 body{
     background: $blue;
     color: $lBlue;
     font-family: $osward;
     font-size: 62.5%;
 }
+
 *::after,
-*::after{
-    box-sizing: border-box;
-}
+*::after{box-sizing: border-box;}
 
 h1{font-size:clamp(2.7rem,3.5vw, 3.2rem);}
-
 h2{
     font-family: $caveat;
     font-size:clamp(1.8rem,2.5vw, 2.3rem);
 }
+p{font-size: 1.5rem;}
+a{font-size: 1.5rem;}
 
-p{
-    font-size: 1.5rem;
+/* Makes originally clickable elements inactive */
+.inactive{
+    pointer-events: none;
 }
 
-a{
-    font-size: 1.5rem;
-}
-
+/* not currently being used */
 .btn-toggle{
     font-family: $caveat;
     padding: 1px 20px !important;
     border: none;
     font-size: 1.2rem;
 }
+
+/* #endregion */
+
 /* #region bootstrap button styling */
 /* remove unwanted oulines from all btn */
 .btn:focus{
@@ -100,26 +108,29 @@ a{
 
 /* #endregion */
 
-
+/* #region div styling for transition on screen load */
 .tr-hide {
     background: $blue;
     overflow: hidden;
 }
-
 .tr-main{
     opacity: 0%;
     transform: translateY(280%);
 }
+/* #endregion */
 
+/* #region Div and element alignment */
 .al-vert{
     align-self: center;
 }
-
 .flex-center{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* #endregion */
+
+/* #region animating links */
 .ani-links{
     text-decoration: none;
     color: lighten($color: $lBlue, $amount:10%);
@@ -145,11 +156,8 @@ a{
 .ani-links:hover::after{
     @include scale-x(1);
 }
+/* #endregion */
 
-/* Makes originally clickable elements inactive */
-.inactive{
-    pointer-events: none;
-}
 
 @import "home";
 
