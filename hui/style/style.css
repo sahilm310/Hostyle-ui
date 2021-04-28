@@ -81,6 +81,22 @@ a {
   border-color: #59a5eb !important;
 }
 
+.alias {
+  cursor: alias;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.crosshair {
+  cursor: crosshair;
+}
+
+.wait {
+  cursor: wait;
+}
+
 /* #endregion */
 .tr-hide {
   background: #0a3155;
