@@ -163,5 +163,11 @@ a{font-size: 1.5rem;}
 
 @import "click";
 
-
+.colour-main{
+    height: 100vh;
+    display: grid; 
+    grid-template-columns:  1fr 0.5fr 0.5fr 1fr ;
+    grid-template-rows: 0.2fr 1fr 0.3fr 1fr;
+    grid-template-areas:". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
+}
 

@@ -488,4 +488,15 @@ a {
         grid-template-areas: "b1 b1 b1" "b1 b1 b1" "b2 b2 b2" "b3 b3 b3";
   }
 }
+
+.colour-main {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.5fr 0.5fr 1fr;
+      grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  -ms-grid-rows: 0.2fr 1fr 0.3fr 1fr;
+      grid-template-rows: 0.2fr 1fr 0.3fr 1fr;
+      grid-template-areas: ". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
+}
 /*# sourceMappingURL=style.css.map */
