@@ -41,8 +41,14 @@ body{
 *::after,
 *::after{box-sizing: border-box;}
 
-h1{font-size:clamp(2.7rem,3.5vw, 3.2rem);}
+h1{
+    font-size:clamp(2.7rem,4vw, 3.2rem);
+    font-weight: bold;
+}
 h2{
+    font-size:clamp(2.5rem,3.5vw, 3rem)
+}
+h3{
     font-family: $caveat;
     font-size:clamp(1.8rem,2.5vw, 2.3rem);
 }

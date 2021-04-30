@@ -21,10 +21,15 @@ body {
 }
 
 h1 {
-  font-size: clamp(2.7rem, 3.5vw, 3.2rem);
+  font-size: clamp(2.7rem, 4vw, 3.2rem);
+  font-weight: bold;
 }
 
 h2 {
+  font-size: clamp(2.5rem, 3.5vw, 3rem);
+}
+
+h3 {
   font-family: "Caveat", cursive;
   font-size: clamp(1.8rem, 2.5vw, 2.3rem);
 }
@@ -262,11 +267,7 @@ a {
   /* #endregion */
 }
 
-.click h1 {
-  font-size: clamp(2.7rem, 4vw, 3.2rem);
-}
-
-.click h2 {
+.click h3 {
   font-size: clamp(1.8rem, 3vw, 2.3rem);
 }
 
@@ -277,7 +278,7 @@ a {
   height: clamp(260px, 22vw, 50px);
 }
 
-.click .demo-box h2 {
+.click .demo-box h3 {
   font-size: clamp(1.6rem, 2.5vw, 2rem);
 }
 
@@ -366,16 +367,12 @@ a {
   /* #endregion */
 }
 
-.click-next-page h1 {
-  font-size: clamp(2rem, 3vw, 2.6rem);
-}
-
-.click-next-page h2 {
+.click-next-page h3 {
   font-size: clamp(1.9rem, 2.8vw, 2.2rem);
 }
 
 .click-next-page a {
-  font-size: clamp(1.3rem, 1.8vw, 2rem);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
 }
 
 .click-next-page .np-task {
