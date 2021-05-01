@@ -505,6 +505,14 @@ a {
   gap: 2em;
 }
 
+.cards-container > * {
+  -ms-flex-preferred-size: calc(calc(800px - 100%) * 999);
+      flex-basis: calc(calc(800px - 100%) * 999);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .cards {
   background-color: #59a5eb;
   color: aliceblue;
