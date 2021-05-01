@@ -53,7 +53,9 @@ h3{
     font-family: $caveat;
     font-size:clamp(1.8rem,2.5vw, 2.3rem);
 }
-p{font-size: 1.5rem;}
+
+h4{font-size: 1.5rem;font-weight: bold;}
+p{font-family: $caveat;font-size: 1.5rem;}
 a{font-size: 1.5rem;}
 .accent{color: $accent;}
 /* Makes originally clickable elements inactive */
@@ -172,6 +174,7 @@ a{font-size: 1.5rem;}
 
 .colour-main{
     height: 100vh;
+    overflow-y: auto;
     display: grid; 
     grid-template-columns:  1fr 1fr 1fr ;
     grid-template-rows: 0.2fr 1fr 0.1fr 1fr;
@@ -180,6 +183,7 @@ a{font-size: 1.5rem;}
 
 .cards{
     display: inline-block;
+    vertical-align: middle;
     width: 30%;
     margin: 0px 1%;
     padding: 6px 0px;
@@ -196,16 +200,28 @@ a{font-size: 1.5rem;}
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-image:   linear-gradient($blue, $blue), 
-                        linear-gradient($lBlue, $lBlue), 
-                        linear-gradient($accent, $accent);
+    linear-gradient($lBlue, $lBlue), 
+    linear-gradient($accent, $accent);
     background-size: 100% 0%,100% 0%,100% 0%;
     box-sizing: border-box;
     //border: 5px solid aliceblue;
     box-shadow: inset 0px 0px 0px 10px $lBlue;
     transition: 2s background-size ease-in-out;
 }
+
 .ratio:hover{
-    background-size: 100% 60%,100% 90%,100% 100%;
+    background-size: 100% 50%,100% 80%,100% 100%;
+}
+.sym{
+    position: relative;
+}
+
+.sym::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+    position: absolute;
+    content: '\f0a6';
 }
 
 

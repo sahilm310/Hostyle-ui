@@ -39,7 +39,13 @@ h3 {
   font-size: clamp(1.8rem, 2.5vw, 2.3rem);
 }
 
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 p {
+  font-family: "Caveat", "Courier New", monospace;
   font-size: 1.5rem;
 }
 
@@ -494,6 +500,7 @@ a {
 
 .colour-main {
   height: 100vh;
+  overflow-y: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -505,6 +512,7 @@ a {
 
 .cards {
   display: inline-block;
+  vertical-align: middle;
   width: 30%;
   margin: 0px 1%;
   padding: 6px 0px;
@@ -533,7 +541,19 @@ a {
 }
 
 .ratio:hover {
-  background-size: 100% 60%,100% 90%,100% 100%;
+  background-size: 100% 50%,100% 80%,100% 100%;
+}
+
+.sym {
+  position: relative;
+}
+
+.sym::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+  position: absolute;
+  content: '\f0a6';
 }
 
 @media screen and (max-width: 720px) {
