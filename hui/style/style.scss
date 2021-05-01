@@ -2,6 +2,7 @@
 $blue : #0a3155;
 $white: aliceblue;
 $lBlue:lighten($color: $blue, $amount: 45%);
+$accent:#CD8115;
 $osward: 'Oswald', sans-serif;
 $caveat: 'Caveat', 'Courier New', monospace;
 /* #endregion */
@@ -54,7 +55,7 @@ h3{
 }
 p{font-size: 1.5rem;}
 a{font-size: 1.5rem;}
-
+.accent{color: $accent;}
 /* Makes originally clickable elements inactive */
 .inactive{
     pointer-events: none;
@@ -203,7 +204,7 @@ a{font-size: 1.5rem;}
     }
     .cards{
         display: block;
-        margin: 20px auto;
+        margin: 25px auto;
         width: 80%;
     }
 } 

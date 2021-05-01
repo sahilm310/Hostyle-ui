@@ -47,6 +47,10 @@ a {
   font-size: 1.5rem;
 }
 
+.accent {
+  color: #CD8115;
+}
+
 /* Makes originally clickable elements inactive */
 .inactive {
   pointer-events: none;
@@ -526,7 +530,7 @@ a {
   }
   .cards {
     display: block;
-    margin: 20px auto;
+    margin: 25px auto;
     width: 80%;
   }
 }
