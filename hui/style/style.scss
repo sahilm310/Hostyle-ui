@@ -184,14 +184,22 @@ a{font-size: 1.5rem;}
     
 }
 .cards-container > *{
-    flex-basis: calc(calc(800px - 100%) * 999);
+    flex-basis: clamp(200px,35em,500px);
+    // flex-basis: calc(calc(800px - 100%) * 999);
     flex-grow: 1;
  
 }
 .cards{
     background-color: $lBlue;
     color: aliceblue;
-
+    @include border-radius(.5em)
 }
 
-
+@media screen and (max-width: 720px) {
+    .colour-main{
+        grid-template-areas:"b1 b1 b1" 
+                            "b1 b1 b1" 
+                            "b2 b2 b2" 
+                            "b2 b2 b2";
+    }
+} 
