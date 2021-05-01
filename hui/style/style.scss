@@ -188,24 +188,42 @@ a{font-size: 1.5rem;}
     @include border-radius(.5em);
     transition: 200ms width ease,150ms margin ease;
 }
+
 .ratio{
-    position: relative;
-}
-.ratio h3{
-    z-index: 2;
+    text-align: center;
+    color: aliceblue;
+    width:30%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-image:   linear-gradient($blue, $blue), 
+                        linear-gradient($lBlue, $lBlue), 
+                        linear-gradient($accent, $accent);
+    background-size: 100% 60%,100% 90%,100% 100%;
+    box-sizing: border-box;
+    //border: 5px solid aliceblue;
+    box-shadow: inset 0px 0px 0px 10px $lBlue;
+
 }
 
-.ratio::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 10px;
-    width: 100%;
-    height: 60%;
-    background-color: red;
-    z-index: -1;
-}
+
+// .pseudo-bg{
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//     box-sizing: border-box;
+//     background-color: green;
+// }
+
+
+// .pseudo-bg::before{
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 60%;
+//     background-color: red;
+// }
 
 @media screen and (max-width: 720px) {
     .colour-main{
