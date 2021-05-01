@@ -178,12 +178,6 @@ a{font-size: 1.5rem;}
     grid-template-areas:". .  ." ". b1 ." ". .  ." "b2 b2 b2";
 }
 
-.cards-container{
-
-    text-align: center;
-    align-items: center;
-}
-
 .cards{
     display: inline-block;
     width: 30%;
@@ -192,7 +186,7 @@ a{font-size: 1.5rem;}
     background-color: $lBlue;
     color: aliceblue;
     @include border-radius(.5em);
-    transition: 250ms width ease,150ms margin ease;
+    transition: 200ms width ease,150ms margin ease;
 }
 
 @media screen and (max-width: 720px) {
@@ -202,13 +196,15 @@ a{font-size: 1.5rem;}
                             "b2 b2 b2" 
                             "b2 b2 b2";
     }
+}
+@media screen and (max-width: 940px) {
     .cards{
         display: block;
         margin: 25px auto;
-        width: 80%;
+        width: 60%;
     }
 } 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 540px) {
     .cards{
         width: 100%;
     }

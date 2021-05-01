@@ -222,8 +222,6 @@ a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: b2;
-  -ms-flex-item-align: center;
-      align-self: center;
   text-align: center;
   vertical-align: center;
   padding: 5px;
@@ -505,13 +503,6 @@ a {
       grid-template-areas: ". .  ." ". b1 ." ". .  ." "b2 b2 b2";
 }
 
-.cards-container {
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .cards {
   display: inline-block;
   width: 30%;
@@ -520,22 +511,25 @@ a {
   background-color: #59a5eb;
   color: aliceblue;
   border-radius: 0.5em;
-  -webkit-transition: 250ms width ease,150ms margin ease;
-  transition: 250ms width ease,150ms margin ease;
+  -webkit-transition: 200ms width ease,150ms margin ease;
+  transition: 200ms width ease,150ms margin ease;
 }
 
 @media screen and (max-width: 720px) {
   .colour-main {
         grid-template-areas: "b1 b1 b1"  "b1 b1 b1"  "b2 b2 b2"  "b2 b2 b2";
   }
+}
+
+@media screen and (max-width: 940px) {
   .cards {
     display: block;
     margin: 25px auto;
-    width: 80%;
+    width: 60%;
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 540px) {
   .cards {
     width: 100%;
   }
