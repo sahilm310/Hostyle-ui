@@ -516,10 +516,11 @@ a {
   vertical-align: middle;
   width: 30%;
   margin: 0px 1%;
-  padding: 6px 0px;
+  padding: 5px 0px;
   background-color: #59a5eb;
   color: aliceblue;
-  border-radius: 0.5em;
+  border: 0.5rem solid #59a5eb;
+  border-radius: 1rem;
   -webkit-transition: 200ms width ease,150ms margin ease;
   transition: 200ms width ease,150ms margin ease;
 }
@@ -535,10 +536,8 @@ a {
   background-image: linear-gradient(#0a3155, #0a3155), linear-gradient(#59a5eb, #59a5eb), linear-gradient(#CD8115, #CD8115);
   background-size: 100% 0%,100% 0%,100% 0%;
   box-sizing: border-box;
-  -webkit-box-shadow: inset 0px 0px 0px 10px #59a5eb;
-          box-shadow: inset 0px 0px 0px 10px #59a5eb;
-  -webkit-transition: 2s background-size ease-in-out;
-  transition: 2s background-size ease-in-out;
+  -webkit-transition: 1s background-size ease-in-out;
+  transition: 1s background-size ease-in-out;
 }
 
 .ratio:hover {
