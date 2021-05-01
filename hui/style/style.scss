@@ -3,7 +3,7 @@ $blue : #0a3155;
 $white: aliceblue;
 $lBlue:lighten($color: $blue, $amount: 45%);
 $osward: 'Oswald', sans-serif;
-$caveat: 'Caveat', cursive;
+$caveat: 'Caveat', 'Courier New', monospace;
 /* #endregion */
 
 /* #region Mixins*/
@@ -172,8 +172,21 @@ a{font-size: 1.5rem;}
 .colour-main{
     height: 100vh;
     display: grid; 
-    grid-template-columns:  1fr 0.5fr 0.5fr 1fr ;
-    grid-template-rows: 0.2fr 1fr 0.3fr 1fr;
-    grid-template-areas:". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 0.2fr 1fr 0.1fr 1fr;
+    grid-template-areas:". .  ." ". b1 ." ". .  ." "b2 b2 b2";
 }
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.cards{
+    background-color: $lBlue;
+    color: aliceblue;
+
+}
+
 

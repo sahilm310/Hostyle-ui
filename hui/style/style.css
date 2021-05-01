@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Caveat", cursive;
+  font-family: "Caveat", "Courier New", monospace;
   font-size: clamp(1.8rem, 2.5vw, 2.3rem);
 }
 
@@ -49,7 +49,7 @@ a {
 
 /* not currently being used */
 .btn-toggle {
-  font-family: "Caveat", cursive;
+  font-family: "Caveat", "Courier New", monospace;
   padding: 1px 20px !important;
   border: none;
   font-size: 1.2rem;
@@ -201,7 +201,6 @@ a {
 .b1 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: b1;
   -ms-flex-item-align: center !important;
       align-self: center !important;
@@ -212,7 +211,7 @@ a {
 .b2 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
+  -ms-grid-column-span: 3;
   grid-area: b2;
   -ms-flex-item-align: center;
       align-self: center;
@@ -490,10 +489,24 @@ a {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 0.5fr 0.5fr 1fr;
-      grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
-  -ms-grid-rows: 0.2fr 1fr 0.3fr 1fr;
-      grid-template-rows: 0.2fr 1fr 0.3fr 1fr;
-      grid-template-areas: ". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 0.2fr 1fr 0.1fr 1fr;
+      grid-template-rows: 0.2fr 1fr 0.1fr 1fr;
+      grid-template-areas: ". .  ." ". b1 ." ". .  ." "b2 b2 b2";
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2em;
+}
+
+.cards {
+  background-color: #59a5eb;
+  color: aliceblue;
 }
 /*# sourceMappingURL=style.css.map */
