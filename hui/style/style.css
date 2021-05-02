@@ -525,6 +525,12 @@ a {
   transition: 200ms width ease,150ms margin ease;
 }
 
+.cards .card-title {
+  color: #0a3155;
+  -webkit-transition: 1s color ease;
+  transition: 1s color ease;
+}
+
 .ratio {
   text-align: center;
   color: aliceblue;
@@ -544,6 +550,10 @@ a {
   background-size: 100% 50%,100% 80%,100% 100%;
 }
 
+.ratio:hover .card-title {
+  color: #59a5eb;
+}
+
 .sym {
   position: relative;
 }
@@ -554,6 +564,13 @@ a {
   font-size: 1.5rem;
   position: absolute;
   content: '\f0a6';
+}
+
+.highlight {
+  background-color: #CD8115;
+  padding: 0px 0.3rem 0px 0.1rem;
+  margin: 0px 0.2rem;
+  border-radius: 0.2rem;
 }
 
 @media screen and (max-width: 720px) {
