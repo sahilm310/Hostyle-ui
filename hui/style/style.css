@@ -70,6 +70,19 @@ a {
   font-size: 1.2rem;
 }
 
+/* Symbol to indicate interactiveness */
+.sym {
+  position: relative;
+}
+
+.sym::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: absolute;
+  content: '\f0a6';
+}
+
 /* #endregion */
 /* #region bootstrap button styling */
 /* remove unwanted oulines from all btn */
@@ -531,6 +544,13 @@ a {
   transition: 1s color ease;
 }
 
+.highlight {
+  background-color: #CD8115;
+  padding: 0px 0.3rem 0px 0.1rem;
+  margin: 0px 0.2rem;
+  border-radius: 0.2rem;
+}
+
 .ratio {
   text-align: center;
   color: aliceblue;
@@ -563,25 +583,6 @@ a {
   .ratio:hover .card-title {
     color: #59a5eb;
   }
-}
-
-.sym {
-  position: relative;
-}
-
-.sym::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 1.5rem;
-  position: absolute;
-  content: '\f0a6';
-}
-
-.highlight {
-  background-color: #CD8115;
-  padding: 0px 0.3rem 0px 0.1rem;
-  margin: 0px 0.2rem;
-  border-radius: 0.2rem;
 }
 
 @media screen and (max-width: 720px) {

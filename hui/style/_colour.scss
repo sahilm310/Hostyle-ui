@@ -1,0 +1,78 @@
+.colour-main{
+    height: 100vh;
+    overflow-y: auto;
+    display: grid; 
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 0.2fr 1fr 0.1fr 1fr;
+    grid-template-areas:". .  ." ". b1 ." ". .  ." "b2 b2 b2";
+}
+
+.cards{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    margin: 0px 1%;
+    padding: 5px 0px;
+    background-color: $lBlue;
+    color: aliceblue;
+    border: 0.5rem solid $lBlue;
+    @include border-radius(1rem);
+    transition: 200ms width ease,150ms margin ease;
+    .card-title{color: $blue; transition: 1s color ease;}
+}
+
+.highlight{
+    background-color: $accent;
+    padding: 0px 0.3rem 0px 0.1rem;
+    margin: 0px 0.2rem;
+    @include border-radius(0.2rem)
+}
+
+.ratio{
+    text-align: center;
+    color: aliceblue;
+    width:30%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-image:   linear-gradient($blue, $blue), 
+    linear-gradient($lBlue, $lBlue), 
+    linear-gradient($accent, $accent);
+    background-size: 100% 50%,100% 80%,100% 100%;
+    box-sizing: border-box;
+    // box-shadow: inset 0px 0px 0px 10px $lBlue;
+    transition: 1s background-size ease-in-out;
+    .card-title{
+        color: $lBlue;
+    }
+}
+
+
+@media(hover){
+    .ratio{
+        background-size: 100% 0%,100% 0%,100% 0%;
+        .card-title{color: $blue;}
+    }
+    .ratio:hover{
+        background-size: 100% 50%,100% 80%,100% 100%;
+        .card-title{color: $lBlue;}
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .colour-main{
+        grid-template-areas:"b1 b1 b1" 
+        "b1 b1 b1" 
+        "b2 b2 b2" 
+        "b2 b2 b2";
+    }
+}
+@media screen and (max-width: 940px) {
+    .cards{
+        display: block;
+        margin: 25px auto;
+        width: 60%;
+    }
+} 
+@media screen and (max-width: 540px) {
+    .cards{width: 100%;}
+}
