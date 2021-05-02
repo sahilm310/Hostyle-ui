@@ -540,18 +540,29 @@ a {
   background-repeat: no-repeat;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0a3155), to(#0a3155)), -webkit-gradient(linear, left top, left bottom, from(#59a5eb), to(#59a5eb)), -webkit-gradient(linear, left top, left bottom, from(#CD8115), to(#CD8115));
   background-image: linear-gradient(#0a3155, #0a3155), linear-gradient(#59a5eb, #59a5eb), linear-gradient(#CD8115, #CD8115);
-  background-size: 100% 0%,100% 0%,100% 0%;
+  background-size: 100% 50%,100% 80%,100% 100%;
   box-sizing: border-box;
   -webkit-transition: 1s background-size ease-in-out;
   transition: 1s background-size ease-in-out;
 }
 
-.ratio:hover {
-  background-size: 100% 50%,100% 80%,100% 100%;
+.ratio .card-title {
+  color: #59a5eb;
 }
 
-.ratio:hover .card-title {
-  color: #59a5eb;
+@media (hover) {
+  .ratio {
+    background-size: 100% 0%,100% 0%,100% 0%;
+  }
+  .ratio .card-title {
+    color: #0a3155;
+  }
+  .ratio:hover {
+    background-size: 100% 50%,100% 80%,100% 100%;
+  }
+  .ratio:hover .card-title {
+    color: #59a5eb;
+  }
 }
 
 .sym {

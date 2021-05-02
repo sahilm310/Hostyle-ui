@@ -205,15 +205,22 @@ a{font-size: 1.5rem;}
     background-image:   linear-gradient($blue, $blue), 
     linear-gradient($lBlue, $lBlue), 
     linear-gradient($accent, $accent);
-    background-size: 100% 0%,100% 0%,100% 0%;
+    background-size: 100% 50%,100% 80%,100% 100%;
     box-sizing: border-box;
     // box-shadow: inset 0px 0px 0px 10px $lBlue;
     transition: 1s background-size ease-in-out;
-}
-
-.ratio:hover{
-    background-size: 100% 50%,100% 80%,100% 100%;
     .card-title{color: $lBlue;}
+
+}
+@media(hover){
+    .ratio{
+        background-size: 100% 0%,100% 0%,100% 0%;
+        .card-title{color: $blue;}
+    }
+    .ratio:hover{
+        background-size: 100% 50%,100% 80%,100% 100%;
+        .card-title{color: $lBlue;}
+    }
 }
 .sym{
     position: relative;
