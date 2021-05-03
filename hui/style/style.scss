@@ -4,6 +4,7 @@ $white: aliceblue;
 $lBlue:#1B81E0;
 // $lBlue:lighten($color: $blue, $amount: 45%);
 $accent:#CD8115;
+$accentD:#A66317;
 $fontA: 'Oswald', sans-serif;
 $fontB: 'Caveat', 'Courier New', monospace;
 /* #endregion */
@@ -55,7 +56,7 @@ h3{
     font-size:clamp(1.8rem,2.5vw, 2.3rem);
 }
 h4{
-    font-size:clamp(1.5rem,1.5vw, 1.8rem);
+    font-size:clamp(1.6rem,1.8vw, 2rem);
     font-weight: bold;
 }
 p{
