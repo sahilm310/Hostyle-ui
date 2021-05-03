@@ -9,7 +9,7 @@ html {
 
 body {
   background: #0a3155;
-  color: #59a5eb;
+  color: #1B81E0;
   font-family: "Oswald", sans-serif;
   font-size: 62.5%;
 }
@@ -94,17 +94,17 @@ a {
 
 .btn-primary {
   color: aliceblue !important;
-  background-color: #59a5eb !important;
+  background-color: #1B81E0 !important;
   font-size: clamp(1.3rem, 1.8vw, 2rem) !important;
-  border-color: #2b8ce6 !important;
+  border-color: #1667b2 !important;
   -webkit-transition: 200ms border ease-out;
   transition: 200ms border ease-out;
 }
 
 .btn-primary:hover {
-  background-color: #2b8ce6 !important;
+  background-color: #1667b2 !important;
   color: aliceblue !important;
-  border-color: #2b8ce6 !important;
+  border-color: #1667b2 !important;
 }
 
 .btn-primary:active {
@@ -112,17 +112,17 @@ a {
 }
 
 .btn-outline-primary {
-  color: #59a5eb !important;
-  border-color: #59a5eb !important;
+  color: #1B81E0 !important;
+  border-color: #1B81E0 !important;
   vertical-align: baseline;
   padding: 4px 10px;
 }
 
 .btn-outline-primary:hover, .btn-outline-primary:focus,
 .btn-outline-primary:active, .btn-outline-primary:visited {
-  background-color: #59a5eb !important;
+  background-color: #1B81E0 !important;
   color: aliceblue !important;
-  border-color: #59a5eb !important;
+  border-color: #1B81E0 !important;
 }
 
 .alias {
@@ -178,7 +178,7 @@ a {
 /* #region animating links */
 .ani-links {
   text-decoration: none;
-  color: #87bef1;
+  color: #459ae9;
   position: relative;
   -webkit-transition: 250ms color ease;
   transition: 250ms color ease;
@@ -186,7 +186,7 @@ a {
 
 .ani-links:hover {
   text-decoration: none;
-  color: #4299e9;
+  color: #1874c9;
 }
 
 .ani-links::after {
@@ -359,7 +359,7 @@ a {
 }
 
 .click .demo-btn-1-click {
-  background: #59a5eb;
+  background: #1B81E0;
   color: aliceblue;
   /* mixin for transform: scale */
   -webkit-transform: scale(1.8, 1.5);
@@ -369,7 +369,7 @@ a {
 }
 
 .click .demo-btn-1-click:hover {
-  background: #2b8ce6;
+  background: #1667b2;
 }
 
 /* #endregion */
@@ -530,9 +530,9 @@ a {
   width: 30%;
   margin: 0px 1%;
   padding: 4px;
-  background-color: #59a5eb;
+  background-color: #1B81E0;
   color: aliceblue;
-  border: 0.5rem solid #59a5eb;
+  border: 0.5rem solid #1B81E0;
   border-radius: 1rem;
   -webkit-transition: 200ms width ease,150ms margin ease;
   transition: 200ms width ease,150ms margin ease;
@@ -589,8 +589,8 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0a3155), to(#0a3155)), -webkit-gradient(linear, left top, left bottom, from(#59a5eb), to(#59a5eb)), -webkit-gradient(linear, left top, left bottom, from(#CD8115), to(#CD8115));
-  background-image: linear-gradient(#0a3155, #0a3155), linear-gradient(#59a5eb, #59a5eb), linear-gradient(#CD8115, #CD8115);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0a3155), to(#0a3155)), -webkit-gradient(linear, left top, left bottom, from(#1B81E0), to(#1B81E0)), -webkit-gradient(linear, left top, left bottom, from(#CD8115), to(#CD8115));
+  background-image: linear-gradient(#0a3155, #0a3155), linear-gradient(#1B81E0, #1B81E0), linear-gradient(#CD8115, #CD8115);
   background-size: 100% 50%,100% 80%,100% 100%;
   box-sizing: border-box;
   -webkit-transition: 1s background-size ease-in-out;
@@ -598,7 +598,7 @@ a {
 }
 
 .ratio .card-title {
-  color: #59a5eb;
+  color: #1B81E0;
 }
 
 @media (hover) {
@@ -612,7 +612,7 @@ a {
     background-size: 100% 50%,100% 80%,100% 100%;
   }
   .ratio:hover .card-title {
-    color: #59a5eb;
+    color: #1B81E0;
   }
 }
 
