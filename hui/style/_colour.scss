@@ -12,7 +12,7 @@
     vertical-align: middle;
     width: 30%;
     margin: 0px 1%;
-    padding: 5px 0px;
+    padding: 4px;
     background-color: $lBlue;
     color: aliceblue;
     border: 0.5rem solid $lBlue;
@@ -20,13 +20,31 @@
     transition: 200ms width ease,150ms margin ease;
     .card-title{color: $blue; transition: 1s color ease;}
 }
-
+.hierarchy a{font-size:clamp(1.3rem,1.2vw, 1.8rem);}
 .highlight{
     background-color: $accent;
-    padding: 0px 0.3rem 0px 0.1rem;
-    margin: 0px 0.2rem;
     @include border-radius(0.2rem)
 }
+.highlight.shift{
+    padding: 0px 0.3rem 0px 0.1rem;
+    margin: 0px 0.2rem;
+}
+.highlight.padding{
+    padding: 0.2rem 0.5rem ;
+}
+.highlight.darker{
+    background-color: darken($color: $accent, $amount: 8%);
+}
+.highlight.light{
+    background-color: rgba($accent, 0.7);
+}
+.highlight.lightest{
+    background-color: rgba($accent, 0.4);
+    
+}
+
+.gap{margin-right:10px;}
+.gap:last-child{margin-right:0px;}
 
 .ratio{
     text-align: center;

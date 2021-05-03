@@ -529,7 +529,7 @@ a {
   vertical-align: middle;
   width: 30%;
   margin: 0px 1%;
-  padding: 5px 0px;
+  padding: 4px;
   background-color: #59a5eb;
   color: aliceblue;
   border: 0.5rem solid #59a5eb;
@@ -544,11 +544,42 @@ a {
   transition: 1s color ease;
 }
 
+.hierarchy a {
+  font-size: clamp(1.3rem, 1.2vw, 1.8rem);
+}
+
 .highlight {
   background-color: #CD8115;
+  border-radius: 0.2rem;
+}
+
+.highlight.shift {
   padding: 0px 0.3rem 0px 0.1rem;
   margin: 0px 0.2rem;
-  border-radius: 0.2rem;
+}
+
+.highlight.padding {
+  padding: 0.2rem 0.5rem;
+}
+
+.highlight.darker {
+  background-color: #a86a11;
+}
+
+.highlight.light {
+  background-color: rgba(205, 129, 21, 0.7);
+}
+
+.highlight.lightest {
+  background-color: rgba(205, 129, 21, 0.4);
+}
+
+.gap {
+  margin-right: 10px;
+}
+
+.gap:last-child {
+  margin-right: 0px;
 }
 
 .ratio {
