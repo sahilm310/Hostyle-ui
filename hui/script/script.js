@@ -36,3 +36,6 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
+function showTooltip(elem){
+    $(elem).tooltip('toggle');
+}
