@@ -20,26 +20,28 @@
     transition: 200ms width ease,150ms margin ease;
     .card-title{color: $blue; transition: 1s color ease;}
 }
-.hierarchy a{font-size:clamp(1.3rem,1.2vw, 1.8rem);}
+// .hierarchy a{}
 .highlight{
     background-color: $accent;
-    @include border-radius(0.2rem)
+    font-size:clamp(1.3rem,1.2vw, 1.8rem);
+    @include border-radius(0.2rem);
 }
-.highlight.shift{
-    padding: 0px 0.3rem 0px 0.1rem;
-    margin: 0px 0.2rem;
+.highlight.or-wh{
+    
+    color: white;
+    font-family: $fontA;
 }
 .highlight.padding{
     padding: 0.2rem 0.5rem ;
 }
 .highlight.darker{
-    background-color: darken($color: $accent, $amount: 8%);
+    background-color: darken($color: $blue, $amount: 3%);
 }
 .highlight.light{
-    background-color: rgba($accent, 0.7);
+    background-color: rgba($blue, 0.5);
 }
 .highlight.lightest{
-    background-color: rgba($accent, 0.4);
+    background-color: rgba($blue, 0.2);
     
 }
 

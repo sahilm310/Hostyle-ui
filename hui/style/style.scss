@@ -4,8 +4,8 @@ $white: aliceblue;
 $lBlue:#1B81E0;
 // $lBlue:lighten($color: $blue, $amount: 45%);
 $accent:#CD8115;
-$osward: 'Oswald', sans-serif;
-$caveat: 'Caveat', 'Courier New', monospace;
+$fontA: 'Oswald', sans-serif;
+$fontB: 'Caveat', 'Courier New', monospace;
 /* #endregion */
 
 /* #region Mixins*/
@@ -36,7 +36,7 @@ html {
 body{
     background: $blue;
     color: $lBlue;
-    font-family: $osward;
+    font-family: $fontA;
     font-size: 62.5%;
 }
 
@@ -51,7 +51,7 @@ h2{
     font-size:clamp(2.5rem,3.5vw, 3rem)
 }
 h3{
-    font-family: $caveat;
+    font-family: $fontB;
     font-size:clamp(1.8rem,2.5vw, 2.3rem);
 }
 h4{
@@ -59,7 +59,7 @@ h4{
     font-weight: bold;
 }
 p{
-    font-family: $caveat;
+    font-family: $fontB;
     font-size:clamp(1.5rem,2vw, 1.8rem);
 }
 a{font-size: 1.5rem;}
@@ -71,7 +71,7 @@ a{font-size: 1.5rem;}
 
 /* not currently being used */
 .btn-toggle{
-    font-family: $caveat;
+    font-family: $fontB;
     padding: 1px 20px !important;
     border: none;
     font-size: 1.2rem;

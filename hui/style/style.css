@@ -544,18 +544,15 @@ a {
   transition: 1s color ease;
 }
 
-.hierarchy a {
-  font-size: clamp(1.3rem, 1.2vw, 1.8rem);
-}
-
 .highlight {
   background-color: #CD8115;
+  font-size: clamp(1.3rem, 1.2vw, 1.8rem);
   border-radius: 0.2rem;
 }
 
-.highlight.shift {
-  padding: 0px 0.3rem 0px 0.1rem;
-  margin: 0px 0.2rem;
+.highlight.or-wh {
+  color: white;
+  font-family: "Oswald", sans-serif;
 }
 
 .highlight.padding {
@@ -563,15 +560,15 @@ a {
 }
 
 .highlight.darker {
-  background-color: #a86a11;
+  background-color: #082947;
 }
 
 .highlight.light {
-  background-color: rgba(205, 129, 21, 0.7);
+  background-color: rgba(10, 49, 85, 0.5);
 }
 
 .highlight.lightest {
-  background-color: rgba(205, 129, 21, 0.4);
+  background-color: rgba(10, 49, 85, 0.2);
 }
 
 .gap {
