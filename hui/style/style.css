@@ -602,25 +602,6 @@ a {
   color: #1B81E0;
 }
 
-.warm {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: w;
-}
-
-.cool {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: c;
-}
-
-.all-warm {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  grid-area: aw;
-}
-
 .clr-grid {
   display: -ms-grid;
   display: grid;
@@ -630,6 +611,25 @@ a {
   -ms-grid-rows: 0.5fr 1fr 1fr 1fr;
       grid-template-rows: 0.5fr 1fr 1fr 1fr;
       grid-template-areas: "w . c" "aw . ." "aw . ." "aw . .";
+}
+
+.clr-grid .warm {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: w;
+}
+
+.clr-grid .cool {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
+}
+
+.clr-grid .all-warm {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: aw;
 }
 
 .fa-card {
@@ -644,13 +644,17 @@ a {
   transition: 250ms transform ease, 250ms -webkit-transform ease;
 }
 
+.fa-card:hover, .fa-card:focus-within {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .fa-card.red {
   color: #992624;
 }
 
-.fa-card:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.fa-card.orange {
+  color: #A66317;
 }
 
 @media (hover) {
