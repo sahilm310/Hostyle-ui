@@ -20,7 +20,9 @@
     transition: 200ms width ease,150ms margin ease;
     .card-title{color: $blue; transition: 1s color ease;}
 }
-// .hierarchy a{}
+.hierarchy a{
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+}
 .highlight{
     background-color: $accent;
     font-size:clamp(1.3rem,1.2vw, 1.8rem);
@@ -50,7 +52,7 @@
 
 .ratio{
     text-align: center;
-    color: aliceblue;
+    color: white;
     width:30%;
     box-sizing: border-box;
     background-repeat: no-repeat;
@@ -58,7 +60,7 @@
     linear-gradient($lBlue, $lBlue), 
     linear-gradient($accent, $accent);
     background-size: 100% 50%,100% 80%,100% 100%;
-    box-sizing: border-box;
+
     // box-shadow: inset 0px 0px 0px 10px $lBlue;
     transition: 1s background-size ease-in-out;
     .card-title{
@@ -66,23 +68,30 @@
     }
 }
 
+$red : #992624;
 
 .clr-grid {
     display: grid;
     height: 100%;
     grid-template-columns: 0.4fr 0.2fr 0.4fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr;
-    grid-template-areas: "w . c" "aw . ac" "aw . ac" "aw . ac";
+    grid-template-rows: 0.1fr 1fr 1fr;
+    grid-template-areas: "w . c" "aw . ac" "aw . ac";
+    background: linear-gradient(to right, 
+                rgba($red,0.9) 10%, 
+                rgba($accent,0.6), 
+                rgba($blue,0.9) 90%);
 
+    background-repeat: no-repeat;
+    @include border-radius(1rem);
+    padding: 2rem;
     .warm {grid-area: w;}
     .cool {grid-area: c;}
     .all-warm {grid-area: aw;}
     .all-cool {grid-area: ac;}
-
 }
 
 .fa-card {
-    font-weight: 900;
+    // font-weight: 900;
     background-color:aliceblue;
     padding: 5px;
     font-size: 2rem;

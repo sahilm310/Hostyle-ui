@@ -548,6 +548,10 @@ a {
   transition: 1s color ease;
 }
 
+.hierarchy a {
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+}
+
 .highlight {
   background-color: #CD8115;
   font-size: clamp(1.3rem, 1.2vw, 1.8rem);
@@ -585,7 +589,7 @@ a {
 
 .ratio {
   text-align: center;
-  color: aliceblue;
+  color: white;
   width: 30%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -593,7 +597,6 @@ a {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0a3155), to(#0a3155)), -webkit-gradient(linear, left top, left bottom, from(#1B81E0), to(#1B81E0)), -webkit-gradient(linear, left top, left bottom, from(#CD8115), to(#CD8115));
   background-image: linear-gradient(#0a3155, #0a3155), linear-gradient(#1B81E0, #1B81E0), linear-gradient(#CD8115, #CD8115);
   background-size: 100% 50%,100% 80%,100% 100%;
-  box-sizing: border-box;
   -webkit-transition: 1s background-size ease-in-out;
   transition: 1s background-size ease-in-out;
 }
@@ -608,9 +611,14 @@ a {
   height: 100%;
   -ms-grid-columns: 0.4fr 0.2fr 0.4fr;
       grid-template-columns: 0.4fr 0.2fr 0.4fr;
-  -ms-grid-rows: 0.5fr 1fr 1fr 1fr;
-      grid-template-rows: 0.5fr 1fr 1fr 1fr;
-      grid-template-areas: "w . c" "aw . ac" "aw . ac" "aw . ac";
+  -ms-grid-rows: 0.1fr 1fr 1fr;
+      grid-template-rows: 0.1fr 1fr 1fr;
+      grid-template-areas: "w . c" "aw . ac" "aw . ac";
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(153, 38, 36, 0.9)), color-stop(rgba(205, 129, 21, 0.6)), color-stop(90%, rgba(10, 49, 85, 0.9)));
+  background: linear-gradient(to right, rgba(153, 38, 36, 0.9) 10%, rgba(205, 129, 21, 0.6), rgba(10, 49, 85, 0.9) 90%);
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
 .clr-grid .warm {
@@ -627,20 +635,19 @@ a {
 
 .clr-grid .all-warm {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: aw;
 }
 
 .clr-grid .all-cool {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: ac;
 }
 
 .fa-card {
-  font-weight: 900;
   background-color: aliceblue;
   padding: 5px;
   font-size: 2rem;
