@@ -44,6 +44,10 @@ h4 {
   font-weight: bold;
 }
 
+h5 {
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
+}
+
 p {
   font-family: "Caveat", "Courier New", monospace;
   font-size: clamp(1.5rem, 2vw, 1.8rem);
@@ -596,6 +600,80 @@ a {
 
 .ratio .card-title {
   color: #1B81E0;
+}
+
+.warm {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: w;
+}
+
+.cool {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
+}
+
+.all-warm {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: aw;
+}
+
+.pseudo-card {
+  position: relative;
+  text-align: center;
+  margin: 25px 0px;
+}
+
+.red.pseudo-card::before,
+.orange.pseudo-card::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: aliceblue;
+  padding: 5px;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  content: "\f53f";
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 250ms font-size ease;
+  transition: 250ms font-size ease;
+}
+
+.red::before {
+  content: "\f55d";
+  color: #992624;
+}
+
+.red:hover::before {
+  font-size: 2.4rem;
+}
+
+.orange::before {
+  content: "\f55d";
+  color: #A66317;
+  background-color: white !important;
+}
+
+.orange:hover::before {
+  color: #A26510;
+  font-size: 2.4rem;
+}
+
+.clr-grid {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-grid-columns: 0.4fr 0.2fr 0.4fr;
+      grid-template-columns: 0.4fr 0.2fr 0.4fr;
+  -ms-grid-rows: 0.5fr 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 1fr 1fr 1fr;
+      grid-template-areas: "w . c" "aw . ." "aw . ." "aw . .";
 }
 
 @media (hover) {
