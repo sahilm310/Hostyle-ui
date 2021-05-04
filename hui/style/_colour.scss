@@ -72,11 +72,12 @@
     height: 100%;
     grid-template-columns: 0.4fr 0.2fr 0.4fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
-    grid-template-areas: "w . c" "aw . ." "aw . ." "aw . .";
+    grid-template-areas: "w . c" "aw . ac" "aw . ac" "aw . ac";
 
     .warm {grid-area: w;}
     .cool {grid-area: c;}
     .all-warm {grid-area: aw;}
+    .all-cool {grid-area: ac;}
 
 }
 
@@ -87,6 +88,8 @@
     font-size: 2rem;
     border-radius:0.5rem;
     transition: 250ms transform ease;
+    color: $blue;
+    margin: 5px;
 }
 .fa-card:hover, .fa-card:focus-within {
     transform: scale(1.2);
@@ -94,6 +97,13 @@
 
 .fa-card.red{color: #992624;}
 .fa-card.orange{color: $accentD;}
+.fa-card.yellow{
+    color: #FFE20A;
+    background-color:#125EA5!important;
+}
+.fa-card.blue{color: #125EA5;}
+.fa-card.green{color: #1D5E3E;}
+.fa-card.purple{color: #312768;}
 
 
 @media(hover){

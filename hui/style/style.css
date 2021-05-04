@@ -610,7 +610,7 @@ a {
       grid-template-columns: 0.4fr 0.2fr 0.4fr;
   -ms-grid-rows: 0.5fr 1fr 1fr 1fr;
       grid-template-rows: 0.5fr 1fr 1fr 1fr;
-      grid-template-areas: "w . c" "aw . ." "aw . ." "aw . .";
+      grid-template-areas: "w . c" "aw . ac" "aw . ac" "aw . ac";
 }
 
 .clr-grid .warm {
@@ -632,6 +632,13 @@ a {
   grid-area: aw;
 }
 
+.clr-grid .all-cool {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: ac;
+}
+
 .fa-card {
   font-weight: 900;
   background-color: aliceblue;
@@ -642,6 +649,8 @@ a {
   transition: 250ms -webkit-transform ease;
   transition: 250ms transform ease;
   transition: 250ms transform ease, 250ms -webkit-transform ease;
+  color: #0a3155;
+  margin: 5px;
 }
 
 .fa-card:hover, .fa-card:focus-within {
@@ -655,6 +664,23 @@ a {
 
 .fa-card.orange {
   color: #A66317;
+}
+
+.fa-card.yellow {
+  color: #FFE20A;
+  background-color: #125EA5 !important;
+}
+
+.fa-card.blue {
+  color: #125EA5;
+}
+
+.fa-card.green {
+  color: #1D5E3E;
+}
+
+.fa-card.purple {
+  color: #312768;
 }
 
 @media (hover) {
