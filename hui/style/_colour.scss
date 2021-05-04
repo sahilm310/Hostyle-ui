@@ -66,28 +66,46 @@
     }
 }
 
-// .clr-grid {
-//     display: grid;
-//     height: 100%;
-//     grid-template-columns: 0.4fr 0.2fr 0.4fr;
-//     grid-template-rows: 0.5fr 1fr 1fr 1fr;
-//     grid-template-areas: "wt . ct" "aw . ac" "aw . ac" "aw . ac";
 
-//     .warm {grid-area: wt;}
-//     .cool {grid-area: ct;}
-//     .all-warm {grid-area: aw;}
-//     .all-cool {grid-area: ac;}
+.warm {
+    grid-area: w;
+}
+.cool {
+    grid-area: c;
+}
+.all-warm {
+    grid-area: aw;
+}
 
-    
-    
-// }
+.clr-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 0.4fr 0.2fr 0.4fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    grid-template-areas: "w . c" "aw . ." "aw . ." "aw . .";
+}
+
+.fa-card{
+    font-weight: 900;
+    background-color:aliceblue;
+    padding: 5px;
+    font-size: 2rem;
+    border-radius:0.5rem;
+    transition: 250ms transform ease;
+}
+.fa-card.red{
+    color: #992624;
+}
+
+.fa-card:hover{
+    transform: scale(1.2);
+}
 
 // .pseudo-card {
-//     position: relative;
-//     text-align: center;
-//     // margin: 25px 0px;
+    //     position: relative;
+    //     text-align: center;
+//     margin: 25px 0px;
 // }
-
 // .red.pseudo-card::before,
 // .orange.pseudo-card::before {
 //     font-family: "Font Awesome 5 Free";
@@ -96,11 +114,11 @@
 //     padding: 5px;
 //     font-size: 2rem;
 //     border-radius:0.5rem;
-//     bottom: 100%;
-//     left: 50%;
-//     position: absolute;
-//     content: "\f55d";
-//     // transform: translate(-50%, -50%);
+//     bottom: 0;
+//     left: 0;
+//     position:absolute;
+//     content: "\f53f";
+//     transform: translate(-50%, -50%);
 //     transition: 250ms font-size ease;
 // }
 
@@ -124,65 +142,6 @@
 //     font-size: 2.4rem;
 // }
 
-.warm {
-    grid-area: w;
-}
-.cool {
-    grid-area: c;
-}
-.all-warm {
-    grid-area: aw;
-}
-
-.pseudo-card {
-    position: relative;
-    text-align: center;
-    margin: 25px 0px;
-}
-
-.red.pseudo-card::before,
-.orange.pseudo-card::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    background-color:aliceblue;
-    padding: 5px;
-    font-size: 2rem;
-    border-radius:0.5rem;
-    bottom: 0;
-    left: 0;
-    position:absolute;
-    content: "\f53f";
-    transform: translate(-50%, -50%);
-    transition: 250ms font-size ease;
-}
-
-
-.red::before {
-    content: "\f55d";
-    color: #992624;
-}
-
-.red:hover::before {
-    font-size: 2.4rem;
-}
-.orange::before {
-    content: "\f55d";
-    color: #A66317;
-    background-color:white!important;
-}
-
-.orange:hover::before {
-    color:#A26510;
-    font-size: 2.4rem;
-}
-
-.clr-grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 0.4fr 0.2fr 0.4fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr;
-    grid-template-areas: "w . c" "aw . ." "aw . ." "aw . .";
-}
 
 
 @media(hover){
