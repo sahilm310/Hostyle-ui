@@ -611,14 +611,11 @@ a {
   height: 100%;
   -ms-grid-columns: 0.4fr 0.2fr 0.4fr;
       grid-template-columns: 0.4fr 0.2fr 0.4fr;
-  -ms-grid-rows: 0.1fr 1fr 1fr;
-      grid-template-rows: 0.1fr 1fr 1fr;
-      grid-template-areas: "w . c" "aw . ac" "aw . ac";
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(153, 38, 36, 0.9)), color-stop(rgba(205, 129, 21, 0.6)), color-stop(90%, rgba(10, 49, 85, 0.9)));
-  background: linear-gradient(to right, rgba(153, 38, 36, 0.9) 10%, rgba(205, 129, 21, 0.6), rgba(10, 49, 85, 0.9) 90%);
+  -ms-grid-rows: 0.1fr 0.1fr 1fr 1fr;
+      grid-template-rows: 0.1fr 0.1fr 1fr 1fr;
+      grid-template-areas: "w . c" "bar bar bar"  "aw . ac"  "aw . ac";
   background-repeat: no-repeat;
-  border-radius: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .clr-grid .warm {
@@ -634,17 +631,30 @@ a {
 }
 
 .clr-grid .all-warm {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: aw;
 }
 
 .clr-grid .all-cool {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: ac;
+}
+
+.clr-grid .bar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: bar;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #1b81e0), color-stop(20%, #992624), color-stop(rgba(205, 129, 21, 0.8)), color-stop(80%, #0a3155), color-stop(97%, #1b81e0));
+  background: linear-gradient(to right, #1b81e0 3%, #992624 20%, rgba(205, 129, 21, 0.8), #0a3155 80%, #1b81e0 97%);
 }
 
 .fa-card {
@@ -707,6 +717,8 @@ a {
 
 @media screen and (max-width: 720px) {
   .colour-main {
+    -ms-grid-rows: 0.4fr 0.4fr 0.1fr 1fr;
+        grid-template-rows: 0.4fr 0.4fr 0.1fr 1fr;
         grid-template-areas: "b1 b1 b1"  "b1 b1 b1"  "b2 b2 b2"  "b2 b2 b2";
   }
 }

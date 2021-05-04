@@ -74,20 +74,30 @@ $red : #992624;
     display: grid;
     height: 100%;
     grid-template-columns: 0.4fr 0.2fr 0.4fr;
-    grid-template-rows: 0.1fr 1fr 1fr;
-    grid-template-areas: "w . c" "aw . ac" "aw . ac";
-    background: linear-gradient(to right, 
-                rgba($red,0.9) 10%, 
-                rgba($accent,0.6), 
-                rgba($blue,0.9) 90%);
+    grid-template-rows: 0.1fr 0.1fr 1fr 1fr;
+    grid-template-areas:"w . c"
+                        "bar bar bar" 
+                        "aw . ac" 
+                        "aw . ac";
+    
 
     background-repeat: no-repeat;
-    @include border-radius(1rem);
-    padding: 2rem;
+    padding: 1rem;
     .warm {grid-area: w;}
     .cool {grid-area: c;}
     .all-warm {grid-area: aw;}
     .all-cool {grid-area: ac;}
+    .bar {
+        grid-area: bar;
+        height: min-content;
+        @include border-radius(1rem);
+        background: linear-gradient(to right, 
+                rgba($lBlue,1) 3%, 
+                rgba($red,1) 20%, 
+                rgba($accent,0.8),
+                rgba($blue,1) 80%,
+                rgba($lBlue,1) 97%);
+    }
 }
 
 .fa-card {
@@ -104,7 +114,7 @@ $red : #992624;
     transform: scale(1.2);
 }
 
-.fa-card.red{color: #992624;}
+.fa-card.red{color: $red;}
 .fa-card.orange{color: $accentD;}
 .fa-card.yellow{
     color: #FFE20A;
@@ -128,6 +138,7 @@ $red : #992624;
 
 @media screen and (max-width: 720px) {
     .colour-main{
+        grid-template-rows: 0.4fr 0.4fr 0.1fr 1fr;
         grid-template-areas:"b1 b1 b1" 
         "b1 b1 b1" 
         "b2 b2 b2" 
