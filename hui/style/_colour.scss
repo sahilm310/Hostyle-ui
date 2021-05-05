@@ -1,9 +1,8 @@
 .colour-main{
-    height: 100vh;
-    overflow-y: auto;
+    height:100vh;
     display: grid; 
     grid-template-columns:  1fr 1fr 1fr ;
-    grid-template-rows: 0.2fr 1fr 0.1fr 1fr;
+    grid-template-rows: 0.2fr 0.3fr 0.1fr 0.8fr;
     grid-template-areas:". .  ." ". b1 ." ". .  ." "b2 b2 b2";
 }
 
@@ -125,6 +124,20 @@ $red : #992624;
 .fa-card.purple{color: #312768;}
 
 
+.colour-a11y{
+    height: 100vh;
+    
+    display: grid; 
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-areas:"h h ." ". . ." ". . ." "b2 b2 b2";
+    .heading{
+        grid-area: h;
+    }
+}
+
+
+
 @media(hover){
     .ratio{
         background-size: 100% 0%,100% 0%,100% 0%;
@@ -137,15 +150,24 @@ $red : #992624;
 }
 
 @media screen and (max-width: 720px) {
+    // .colour-main{
+    //     height: 100%;
+    //     grid-template-rows: 0.2fr 0.2fr 0.1fr 0.9fr;
+    //     grid-template-areas:"b1 b1 b1" 
+    //     "b1 b1 b1" 
+    //     "b2 b2 b2" 
+    //     "b2 b2 b2";
+    // }
+}
+@media screen and (max-width: 940px) {
     .colour-main{
-        grid-template-rows: 0.4fr 0.4fr 0.1fr 1fr;
+        height: 100%;
+        grid-template-rows: 0.2fr 0.2fr 0.1fr 0.9fr;
         grid-template-areas:"b1 b1 b1" 
         "b1 b1 b1" 
         "b2 b2 b2" 
         "b2 b2 b2";
     }
-}
-@media screen and (max-width: 940px) {
     .cards{
         display: block;
         margin: 25px auto;
