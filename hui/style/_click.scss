@@ -47,7 +47,7 @@
         font-size: 1em;
         transition: 250ms font-size ease,
                     250ms font-weight ease,
-                    250ms color ease;
+                    500ms color ease;
     }
     .symbol-demo:hover::after{
         font-family: "FontAwesome";

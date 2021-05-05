@@ -339,8 +339,8 @@ a {
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   font-size: 1em;
-  -webkit-transition: 250ms font-size ease, 250ms font-weight ease, 250ms color ease;
-  transition: 250ms font-size ease, 250ms font-weight ease, 250ms color ease;
+  -webkit-transition: 250ms font-size ease, 250ms font-weight ease, 500ms color ease;
+  transition: 250ms font-size ease, 250ms font-weight ease, 500ms color ease;
 }
 
 .click .symbol-demo:hover::after {
