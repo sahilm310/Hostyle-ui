@@ -160,13 +160,13 @@ a{font-size: 1.5rem;}
 /* #region animating links */
 .ani-links{
     text-decoration: none;
-    color: lighten($color: $lBlue, $amount:10%);
+    color: lighten($color: $accent, $amount:10%);
     position: relative;
     transition: 250ms color ease;
 }
 .ani-links:hover{
     text-decoration: none;
-    color: darken($color: $lBlue, $amount:5%);
+    color: darken($color: $accent, $amount:5%);
 }
 .ani-links::after{
     content: "";

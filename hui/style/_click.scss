@@ -38,20 +38,25 @@
         cursor:pointer;
     }
     .symbol-demo::after{
-        content: "\27B2";
+        font-family: "FontAwesome";
+        content: " \f138";
         position: absolute;
+        display: inline;
         bottom: 0;
         transform-origin: bottom;
-        font-size: 1.1em;
+        font-size: 1em;
         transition: 250ms font-size ease,
-        250ms font-weight ease;
+                    250ms font-weight ease,
+                    250ms color ease;
     }
     .symbol-demo:hover::after{
-        content: "\27B2";
+        font-family: "FontAwesome";
+        content: " \f138";
         position: absolute;
         transform-origin:bottom;
         font-weight: bold;
-        font-size: 1.3em;
+        color: $accent;
+        font-size: 1.2em;
     }
     /* #endregion */
     
@@ -125,22 +130,25 @@
     }
     .symbol::after{
         /* code for rounded arrow */
-        content: "\279C";
+        font-family: "FontAwesome";
+        content: " \f138";
         position: absolute;
-        bottom: 100;
+        margin-left: 5px;
+        bottom: 0;
         transform-origin:center;
-        font-size:0em;
+        font-size: clamp(1.5rem, 1.5vw ,3em);
         /* set rotation to start at 300 deg (facing upwards)*/
-        transform: rotate(300deg);
+        // transform: rotate(300deg);
         transition: 250ms font-size ease,
                     250ms transform ease;
     }
     .symbol:hover::after{
-        content: " \279C";
+        font-family: "FontAwesome";
+        content: " \F138";
         position: absolute;
         /* rotation on hover becomes 360 deg (right) */
         transform: rotate(360deg);
-        font-size: 3.5em;
+        font-size: clamp(1.6rem, 2vw ,3.5em);
     }
     /* #endregion */
 }

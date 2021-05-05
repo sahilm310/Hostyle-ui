@@ -182,7 +182,7 @@ a {
 /* #region animating links */
 .ani-links {
   text-decoration: none;
-  color: #459ae9;
+  color: #e99b2c;
   position: relative;
   -webkit-transition: 250ms color ease;
   transition: 250ms color ease;
@@ -190,7 +190,7 @@ a {
 
 .ani-links:hover {
   text-decoration: none;
-  color: #1874c9;
+  color: #b67213;
 }
 
 .ani-links::after {
@@ -331,23 +331,27 @@ a {
 }
 
 .click .symbol-demo::after {
-  content: "\27B2";
+  font-family: "FontAwesome";
+  content: " \f138";
   position: absolute;
+  display: inline;
   bottom: 0;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
-  font-size: 1.1em;
-  -webkit-transition: 250ms font-size ease, 250ms font-weight ease;
-  transition: 250ms font-size ease, 250ms font-weight ease;
+  font-size: 1em;
+  -webkit-transition: 250ms font-size ease, 250ms font-weight ease, 250ms color ease;
+  transition: 250ms font-size ease, 250ms font-weight ease, 250ms color ease;
 }
 
 .click .symbol-demo:hover::after {
-  content: "\27B2";
+  font-family: "FontAwesome";
+  content: " \f138";
   position: absolute;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   font-weight: bold;
-  font-size: 1.3em;
+  color: #CD8115;
+  font-size: 1.2em;
 }
 
 .click .demo-btn-1 {
@@ -480,15 +484,15 @@ a {
 
 .click-next-page .symbol::after {
   /* code for rounded arrow */
-  content: "\279C";
+  font-family: "FontAwesome";
+  content: " \f138";
   position: absolute;
-  bottom: 100;
+  margin-left: 5px;
+  bottom: 0;
   -webkit-transform-origin: center;
           transform-origin: center;
-  font-size: 0em;
+  font-size: clamp(1.5rem, 1.5vw, 3em);
   /* set rotation to start at 300 deg (facing upwards)*/
-  -webkit-transform: rotate(300deg);
-          transform: rotate(300deg);
   -webkit-transition: 250ms font-size ease, 250ms -webkit-transform ease;
   transition: 250ms font-size ease, 250ms -webkit-transform ease;
   transition: 250ms font-size ease, 250ms transform ease;
@@ -496,12 +500,13 @@ a {
 }
 
 .click-next-page .symbol:hover::after {
-  content: " \279C";
+  font-family: "FontAwesome";
+  content: " \F138";
   position: absolute;
   /* rotation on hover becomes 360 deg (right) */
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  font-size: 3.5em;
+  font-size: clamp(1.6rem, 2vw, 3.5em);
 }
 
 /* #endregion */
