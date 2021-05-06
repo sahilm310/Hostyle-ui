@@ -158,6 +158,10 @@ a {
           transform: translateY(280%);
 }
 
+.tr-opac {
+  opacity: 0%;
+}
+
 /* #endregion */
 /* #region Div and element alignment */
 .al-vert {
@@ -708,11 +712,11 @@ a {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 0.2fr 1fr 1fr 1fr;
-      grid-template-rows: 0.2fr 1fr 1fr 1fr;
-      grid-template-areas: "h h ." ". . ." ". . ." "b2 b2 b2";
+  -ms-grid-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+      grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  -ms-grid-rows: 0.3fr 0.25fr  0.25fr  0.25fr;
+      grid-template-rows: 0.3fr 0.25fr  0.25fr  0.25fr;
+      grid-template-areas: "h h . . ." ". . . . ." ". . . . ." ". . . . .";
 }
 
 .colour-a11y .heading {
@@ -720,6 +724,7 @@ a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: h;
+  padding: 2rem;
 }
 
 @media (hover) {

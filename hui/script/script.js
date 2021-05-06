@@ -23,6 +23,7 @@ function toggleClass(elem,className) {
 const tl = gsap.timeline({ defaults: { ease: "power4.easeInOut" } });
 
 tl.to(".tr-main", { y: "0%", opacity:"100%", duration: 1, stagger: 0.2 });
+tl.to(".tr-opac", { opacity:"100%", duration: 1, stagger: 0.2 });
 
 
 clickCounter = 0;
