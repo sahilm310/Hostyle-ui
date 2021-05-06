@@ -60,12 +60,24 @@ h4{
     font-weight: bold;
 }
 h5{font-size:clamp(1.5rem,2vw, 1.8rem);}
+
 p{
     font-family: $fontB;
     font-size:clamp(1.5rem,2vw, 1.8rem);
 }
+
 a{font-size: 1.5rem;}
+
 .accent{color: $accent;}
+
+.accent-inv{
+    padding: 0px 0.3rem;
+    @include border-radius(0.2rem);
+    color: white;
+    background-color: $accent;
+}
+
+
 /* Makes originally clickable elements inactive */
 .inactive{
     pointer-events: none;

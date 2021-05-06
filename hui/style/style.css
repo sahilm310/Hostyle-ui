@@ -61,6 +61,13 @@ a {
   color: #CD8115;
 }
 
+.accent-inv {
+  padding: 0px 0.3rem;
+  border-radius: 0.2rem;
+  color: white;
+  background-color: #CD8115;
+}
+
 /* Makes originally clickable elements inactive */
 .inactive {
   pointer-events: none;
