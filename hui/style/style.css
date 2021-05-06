@@ -633,8 +633,9 @@ a {
 }
 
 .clr-grid .cool {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: c;
 }
 
@@ -714,17 +715,55 @@ a {
   display: grid;
   -ms-grid-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
       grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-  -ms-grid-rows: 0.3fr 0.25fr  0.25fr  0.25fr;
-      grid-template-rows: 0.3fr 0.25fr  0.25fr  0.25fr;
-      grid-template-areas: "h h . . ." ". . . . ." ". . . . ." ". . . . .";
+  -ms-grid-rows: 0.25fr 0.25fr  0.25fr  0.25fr;
+      grid-template-rows: 0.25fr 0.25fr  0.25fr  0.25fr;
+      grid-template-areas: "h h . . s1" "h h c c ." ". s2 . . s3" ". . cb cb .";
 }
 
 .colour-a11y .heading {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: h;
-  padding: 2rem;
+  padding: 0px 2rem;
+}
+
+.colour-a11y .sqr1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: s1;
+  background-color: #1B81E0;
+}
+
+.colour-a11y .sqr2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: s2;
+  background-color: #1B81E0;
+}
+
+.colour-a11y .sqr3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: s3;
+  background-color: #1B81E0;
+}
+
+.colour-a11y .contrast {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: c;
+  background-color: #1B81E0;
+}
+
+.colour-a11y .colour-blind {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: cb;
+  background-color: #1B81E0;
 }
 
 @media (hover) {

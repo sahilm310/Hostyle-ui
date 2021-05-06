@@ -128,13 +128,18 @@ $red : #992624;
     height: 100vh;
     display: grid; 
     grid-template-columns:  0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-    grid-template-rows: 0.3fr 0.25fr  0.25fr  0.25fr;
-    grid-template-areas:"h h . . ." ". . . . ." ". . . . ." ". . . . .";
+    grid-template-rows: 0.25fr 0.25fr  0.25fr  0.25fr;
+    grid-template-areas:"h h . . s1" "h h c c ." ". s2 . . s3" ". . cb cb .";
     .heading{
         grid-area: h;
         // text-align: center;
-        padding: 2rem;
+        padding: 0px 2rem;
     }
+    .sqr1{grid-area: s1; background-color: $lBlue;}
+    .sqr2{grid-area: s2; background-color: $lBlue;}
+    .sqr3{grid-area: s3; background-color: $lBlue;}
+    .contrast{grid-area: c; background-color: $lBlue;}
+    .colour-blind{grid-area: cb; background-color: $lBlue;}
 }
 
 
@@ -149,7 +154,6 @@ $red : #992624;
         .card-title{color: $lBlue;}
     }
 }
-
 @media screen and (max-width: 720px) {
 
 }
