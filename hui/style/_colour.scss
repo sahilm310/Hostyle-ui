@@ -126,12 +126,13 @@ $red : #992624;
 
 .colour-a11y{
     height: 100vh;
+
     display: grid; 
     // text-align: center;
     
     grid-template-columns:  0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-    grid-template-rows: 0.25fr 0.25fr  0.25fr  0.25fr;
-    grid-template-areas:"h h . . s1"
+    grid-template-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
+    grid-template-areas:". . . . s1"
                         "h h c c ." 
                         ". s2 . . s3" 
                         ". . cb cb .";
@@ -149,15 +150,19 @@ $red : #992624;
     .sqr3{grid-area: s3; background-color: $lBlue;}
 
     .contrast{
+        overflow: scroll;
         grid-area: c;
         background-color: $lBlue;
         color: white;
-        height: 100%;
-        width: 100%;
+        
         padding: 2.5rem;
     }
     
-    .colour-blind{grid-area: cb; background-color: $lBlue;}
+    .colour-blind{
+        grid-area: cb;
+        color: white; 
+        padding: 2.5rem;
+        background-color: $lBlue;}
     
 }
 

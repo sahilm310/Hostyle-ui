@@ -722,9 +722,9 @@ a {
   display: grid;
   -ms-grid-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
       grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-  -ms-grid-rows: 0.25fr 0.25fr  0.25fr  0.25fr;
-      grid-template-rows: 0.25fr 0.25fr  0.25fr  0.25fr;
-      grid-template-areas: "h h . . s1" "h h c c ."  ". s2 . . s3"  ". . cb cb .";
+  -ms-grid-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
+      grid-template-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
+      grid-template-areas: ". . . . s1" "h h c c ."  ". s2 . . s3"  ". . cb cb .";
 }
 
 .colour-a11y h4 {
@@ -732,8 +732,7 @@ a {
 }
 
 .colour-a11y .heading {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: h;
@@ -763,14 +762,13 @@ a {
 }
 
 .colour-a11y .contrast {
+  overflow: scroll;
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: c;
   background-color: #1B81E0;
   color: white;
-  height: 100%;
-  width: 100%;
   padding: 2.5rem;
 }
 
@@ -779,6 +777,8 @@ a {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: cb;
+  color: white;
+  padding: 2.5rem;
   background-color: #1B81E0;
 }
 
