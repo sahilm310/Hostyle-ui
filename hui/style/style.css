@@ -733,7 +733,7 @@ a {
 }
 
 .colour-a11y p {
-  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  font-size: clamp(1.4rem, 2vw, 2rem);
 }
 
 .colour-a11y .heading {
@@ -743,6 +743,7 @@ a {
   grid-area: h;
   text-align: left;
   padding: 0px 2rem;
+  overflow: scroll;
 }
 
 .colour-a11y .sqr1 {
@@ -774,7 +775,7 @@ a {
   grid-area: c;
   background-color: #1B81E0;
   color: white;
-  padding: 2.5rem;
+  padding: clamp(0.8rem, 2vw, 2.5rem) !important;
 }
 
 .colour-a11y .colour-blind {
@@ -784,7 +785,7 @@ a {
   grid-area: cb;
   overflow: scroll;
   color: white;
-  padding: 2.5rem;
+  padding: clamp(0.8rem, 2vw, 2.5rem);
   background-color: #1B81E0;
 }
 

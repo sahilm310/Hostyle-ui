@@ -142,12 +142,13 @@ $red : #992624;
         font-size:clamp(1.6rem,1.8vw, 1.8rem);}
     
     p{
-        font-size:clamp(1.2rem,1.8vw, 1.6rem);
+        font-size:clamp(1.4rem,2vw, 2rem);
     }
     .heading{
         grid-area: h;
         text-align: left;
         padding: 0px 2rem;
+        overflow: scroll;
     }
     
     .sqr1{grid-area: s1; background-color: $lBlue;}
@@ -159,14 +160,14 @@ $red : #992624;
         grid-area: c;
         background-color: $lBlue;
         color: white;
-        padding: 2.5rem;
+        padding: clamp(0.8rem,2vw,2.5rem)!important;
     }
     
     .colour-blind{
         grid-area: cb;
         overflow:scroll;
         color: white; 
-        padding: 2.5rem;
+        padding: clamp(0.8rem,2vw,2.5rem);
         background-color: $lBlue;}
     
 }
@@ -182,7 +183,7 @@ $red : #992624;
         .card-title{color: $lBlue;}
     }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-height: 1120px) {
 
 }
 @media screen and (max-width: 940px) {
