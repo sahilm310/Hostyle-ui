@@ -533,7 +533,8 @@ a {
 }
 
 .colour-main {
-  height: 100vh;
+  min-height: 100vh;
+  height: 800px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
