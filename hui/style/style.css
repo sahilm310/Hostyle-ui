@@ -771,11 +771,21 @@ a {
   -ms-grid-row: 2;
   -ms-grid-column: 5;
   grid-area: ss1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.colour-a11y .or-box {
+  background-color: #CD8115;
   width: 50px;
   height: 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #CD8115;
 }
 
 .colour-a11y .contrast {
