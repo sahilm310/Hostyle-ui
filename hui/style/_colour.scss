@@ -125,8 +125,9 @@ $red : #992624;
 
 
 .colour-a11y{
-    height: 100vh;
-
+    min-height: 100vh;
+    height: 800px;
+    
     display: grid; 
     // text-align: center;
     
@@ -135,7 +136,7 @@ $red : #992624;
     grid-template-areas:". . . ss1 s1"
                         "h h c c ." 
                         ". s2 . . s3" 
-                        ". . cb cb .";
+                        ". ss2 cb cb .";
     
     h4{
         color: $blue;
@@ -155,21 +156,31 @@ $red : #992624;
     .sqr2{grid-area: s2; background-color: $lBlue;}
     .sqr3{grid-area: s3; background-color: $lBlue;}
 
-    .small-sqr1{
-        grid-area: ss1; 
-    }
-    
+    .sml-sqr1{grid-area: ss1;}
+
+    .sml-sqr2{grid-area: ss2;}
+
     .flex-br{
         display: flex;
         align-items:flex-end;
         justify-content: right;
     }
 
+    .flex-tr{
+        display: flex;
+        align-items:top;
+        justify-content: right;
+    }
+
     .or-box{
         background-color: $accent; 
-        width: 50px;
-        height: 50px;
-        
+        width: 75px;
+        height: 75px;
+    }
+
+    .or-box.md{
+        width: 110px!important;
+        height: 110px!important;
     }
 
 

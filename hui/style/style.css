@@ -717,14 +717,15 @@ a {
 }
 
 .colour-a11y {
-  height: 100vh;
+  min-height: 100vh;
+  height: 800px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.3fr 200px 0.35fr 0.35fr 200px;
       grid-template-columns: 0.3fr 200px 0.35fr 0.35fr 200px;
   -ms-grid-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
       grid-template-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
-      grid-template-areas: ". . . ss1 s1" "h h c c ."  ". s2 . . s3"  ". . cb cb .";
+      grid-template-areas: ". . . ss1 s1" "h h c c ."  ". s2 . . s3"  ". ss2 cb cb .";
 }
 
 .colour-a11y h4 {
@@ -767,10 +768,16 @@ a {
   background-color: #1B81E0;
 }
 
-.colour-a11y .small-sqr1 {
+.colour-a11y .sml-sqr1 {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: ss1;
+}
+
+.colour-a11y .sml-sqr2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: ss2;
 }
 
 .colour-a11y .flex-br {
@@ -785,10 +792,27 @@ a {
           justify-content: right;
 }
 
+.colour-a11y .flex-tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
 .colour-a11y .or-box {
   background-color: #CD8115;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
+}
+
+.colour-a11y .or-box.md {
+  width: 110px !important;
+  height: 110px !important;
 }
 
 .colour-a11y .contrast {
