@@ -724,7 +724,7 @@ a {
       grid-template-columns: 0.3fr 200px 0.35fr 0.35fr 200px;
   -ms-grid-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
       grid-template-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
-      grid-template-areas: ". . . . s1" "h h c c ."  ". s2 . . s3"  ". . cb cb .";
+      grid-template-areas: ". . . . s1" "h h c c ss1"  ". s2 . . s3"  ". . cb cb .";
 }
 
 .colour-a11y h4 {
@@ -733,7 +733,7 @@ a {
 }
 
 .colour-a11y p {
-  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
 }
 
 .colour-a11y .heading {
@@ -765,6 +765,17 @@ a {
   -ms-grid-column: 5;
   grid-area: s3;
   background-color: #1B81E0;
+}
+
+.colour-a11y .small-sqr1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  grid-area: ss1;
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #CD8115;
 }
 
 .colour-a11y .contrast {

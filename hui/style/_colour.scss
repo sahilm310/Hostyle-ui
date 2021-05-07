@@ -133,7 +133,7 @@ $red : #992624;
     grid-template-columns:  0.3fr 200px 0.35fr 0.35fr 200px;
     grid-template-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
     grid-template-areas:". . . . s1"
-                        "h h c c ." 
+                        "h h c c ss1" 
                         ". s2 . . s3" 
                         ". . cb cb .";
     
@@ -142,7 +142,7 @@ $red : #992624;
         font-size:clamp(1.6rem,1.8vw, 1.8rem);}
     
     p{
-        font-size:clamp(1.4rem,2vw, 2rem);
+        font-size:clamp(1.4rem,1.8vw, 1.8rem);
     }
     .heading{
         grid-area: h;
@@ -155,6 +155,17 @@ $red : #992624;
     .sqr2{grid-area: s2; background-color: $lBlue;}
     .sqr3{grid-area: s3; background-color: $lBlue;}
 
+    .small-sqr1{
+        grid-area: ss1; 
+        width: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        background-color: $accent; 
+        // background-size: 50px;
+        // background-repeat: no-repeat;
+
+        
+    }
     .contrast{
         overflow: scroll;
         grid-area: c;
