@@ -69,7 +69,6 @@
 }
 
 
-
 .clr-grid {
     display: grid;
     height: 100%;
@@ -87,6 +86,7 @@
     .cool {grid-area: c;}
     .all-warm {grid-area: aw;}
     .all-cool {grid-area: ac;}
+
     .bar {
         grid-area: bar;
         height: min-content;
@@ -98,6 +98,7 @@
                 rgba($blue,1) 80%,
                 rgba($lBlue,1) 97%);
     }
+
     .fa-card {
         background-color:aliceblue;
         padding: 5px;
@@ -122,8 +123,6 @@
         transform: scale(1.2);
     }
 }
-
-
 
 
 .colour-a11y {
@@ -184,8 +183,8 @@
     }
 
     .or-box.md {
-        width: 110px!important;
-        height: 110px!important;
+        width: 110px;
+        height: 110px;
     }
 
     .contrast {
@@ -194,7 +193,7 @@
         background-color: $lBlue;
         color: white;
         padding: clamp(0.8rem,2vw,2.5rem)!important;
-        padding-right: clamp(2rem, 10vw, 5rem)!important;
+        padding-right: clamp(1rem, 10vw, 5rem)!important;
     }
     
     .colour-blind {
@@ -202,7 +201,7 @@
         overflow:scroll;
         color: white; 
         padding: clamp(0.8rem,2vw,2.5rem);
-        padding-right: clamp(2rem, 10vw, 5rem);
+        padding-right: clamp(1rem, 10vw, 5rem);
         background-color: $lBlue;
     }
     
@@ -219,11 +218,9 @@
         .card-title{color: $lBlue;}
     }
 }
-@media screen and (max-height: 1120px) {
 
-}
 @media screen and (max-width: 940px) {
-    .colour-main{
+    .colour-main {
         height: 100%;
         grid-template-rows: 0.2fr 0.2fr 0.1fr 0.9fr;
         grid-template-areas:"b1 b1 b1" 
@@ -231,12 +228,32 @@
         "b2 b2 b2" 
         "b2 b2 b2";
     }
-    .cards{
+    .cards {
         display: block;
         margin: 25px auto;
         width: 60%;
     }
+
+    .colour-a11y {
+        
+        grid-template-columns:  100px 0.3fr 0.35fr 0.35fr 100px;
+        grid-template-rows: 0.2fr 0.35fr  0.1fr  0.35fr;
+        grid-template-areas:"h h h ss1 s1"
+                            ". c c c ." 
+                            "s2 ss2 . . s3" 
+                            "ss3 cb cb cb ss4";
+        
+    }
+    .or-box{
+        width: 30px!important;
+        height: 30px!important;
+    }
+    .or-box.md{
+        width: 75px!important;
+        height: 75px!important;
+    }
 } 
+
 @media screen and (max-width: 540px) {
-    .cards{width: 100%;}
+    .cards {width: 100%;}
 }

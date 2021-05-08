@@ -837,8 +837,8 @@ a {
 }
 
 .colour-a11y .or-box.md {
-  width: 110px !important;
-  height: 110px !important;
+  width: 110px;
+  height: 110px;
 }
 
 .colour-a11y .contrast {
@@ -850,7 +850,7 @@ a {
   background-color: #1B81E0;
   color: white;
   padding: clamp(0.8rem, 2vw, 2.5rem) !important;
-  padding-right: clamp(2rem, 10vw, 5rem) !important;
+  padding-right: clamp(1rem, 10vw, 5rem) !important;
 }
 
 .colour-a11y .colour-blind {
@@ -861,7 +861,7 @@ a {
   overflow: scroll;
   color: white;
   padding: clamp(0.8rem, 2vw, 2.5rem);
-  padding-right: clamp(2rem, 10vw, 5rem);
+  padding-right: clamp(1rem, 10vw, 5rem);
   background-color: #1B81E0;
 }
 
@@ -891,6 +891,21 @@ a {
     display: block;
     margin: 25px auto;
     width: 60%;
+  }
+  .colour-a11y {
+    -ms-grid-columns: 100px 0.3fr 0.35fr 0.35fr 100px;
+        grid-template-columns: 100px 0.3fr 0.35fr 0.35fr 100px;
+    -ms-grid-rows: 0.2fr 0.35fr  0.1fr  0.35fr;
+        grid-template-rows: 0.2fr 0.35fr  0.1fr  0.35fr;
+        grid-template-areas: "h h h ss1 s1" ". c c c ."  "s2 ss2 . . s3"  "ss3 cb cb cb ss4";
+  }
+  .or-box {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .or-box.md {
+    width: 75px !important;
+    height: 75px !important;
   }
 }
 
