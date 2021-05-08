@@ -20,10 +20,14 @@ function toggleClass(elem,className) {
     elem.classList.toggle(className);
 }
 
+gsap.registerPlugin(ScrollTrigger)
+ScrollTrigger.defaults({
+    toggleActions: "play none none none"
+  });
 const tl = gsap.timeline({ defaults: { ease: "power4.easeInOut" } });
 
 tl.to(".tr-main", { y: "0%", opacity:"100%", duration: 1, stagger: 0.2 });
-tl.to(".tr-opac", { opacity:"100%", duration: 1, stagger: 0.4 });
+tl.to(".tr-opac", { ScrollTrigger: ".colour-a11y",opacity:"100%", duration: 1, stagger: 0.4 });
 
 
 clickCounter = 0;
