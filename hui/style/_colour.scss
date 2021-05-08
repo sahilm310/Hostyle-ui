@@ -204,6 +204,8 @@
         padding-right: clamp(1rem, 10vw, 5rem);
         background-color: $lBlue;
     }
+
+    transition: 250ms height ease;
     
 }
 
@@ -236,7 +238,7 @@
 
     .colour-a11y {
         
-        grid-template-columns:  100px 0.3fr 0.35fr 0.35fr 100px;
+        grid-template-columns:  100px 0.3fr 0.4fr 0.3fr 100px;
         grid-template-rows: 0.2fr 0.35fr  0.1fr  0.35fr;
         grid-template-areas:"h h h ss1 s1"
                             ". c c c ." 
@@ -252,7 +254,13 @@
         width: 75px!important;
         height: 75px!important;
     }
-} 
+}
+
+@media screen and (max-width: 720px) {
+    .colour-a11y{
+        height: 140vh;
+    }
+}
 
 @media screen and (max-width: 540px) {
     .cards {width: 100%;}

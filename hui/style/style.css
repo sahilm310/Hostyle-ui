@@ -728,6 +728,8 @@ a {
   -ms-grid-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
       grid-template-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
       grid-template-areas: ". . . ss1 s1" "h h c c ."  ". s2 ss2 . s3"  ". ss3 cb cb ss4";
+  -webkit-transition: 250ms height ease;
+  transition: 250ms height ease;
 }
 
 .colour-a11y h4 {
@@ -893,8 +895,8 @@ a {
     width: 60%;
   }
   .colour-a11y {
-    -ms-grid-columns: 100px 0.3fr 0.35fr 0.35fr 100px;
-        grid-template-columns: 100px 0.3fr 0.35fr 0.35fr 100px;
+    -ms-grid-columns: 100px 0.3fr 0.4fr 0.3fr 100px;
+        grid-template-columns: 100px 0.3fr 0.4fr 0.3fr 100px;
     -ms-grid-rows: 0.2fr 0.35fr  0.1fr  0.35fr;
         grid-template-rows: 0.2fr 0.35fr  0.1fr  0.35fr;
         grid-template-areas: "h h h ss1 s1" ". c c c ."  "s2 ss2 . . s3"  "ss3 cb cb cb ss4";
@@ -906,6 +908,12 @@ a {
   .or-box.md {
     width: 75px !important;
     height: 75px !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .colour-a11y {
+    height: 140vh;
   }
 }
 
