@@ -2,9 +2,9 @@
 $blue : #0a3155;
 $white: aliceblue;
 $lBlue:#1B81E0;
-// $lBlue:lighten($color: $blue, $amount: 45%);
 $accent:#CD8115;
 $accentD:#A66317;
+$red : #992624;
 $fontA: 'Oswald', sans-serif;
 $fontB: 'Caveat', 'Courier New', monospace;
 /* #endregion */
@@ -34,7 +34,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: $blue;
     color: $lBlue;
     font-family: $fontA;
@@ -42,35 +42,38 @@ body{
 }
 
 *::after,
-*::after{box-sizing: border-box;}
+*::after {box-sizing: border-box;}
 * {box-sizing: border-box;}
-h1{
+
+h1 {
     font-size:clamp(2.7rem,4vw, 3.2rem);
     font-weight: bold;
 }
-h2{
-    font-size:clamp(2.5rem,3.5vw, 3rem)
-}
-h3{
+
+h2 {font-size:clamp(2.5rem,3.5vw, 3rem)}
+
+h3 {
     font-family: $fontB;
     font-size:clamp(1.8rem,2.5vw, 2.3rem);
 }
-h4{
+
+h4 {
     font-size:clamp(1.6rem,1.8vw, 2rem);
     font-weight: bold;
 }
-h5{font-size:clamp(1.5rem,2vw, 1.8rem);}
 
-p{
+h5 {font-size:clamp(1.5rem,2vw, 1.8rem);}
+
+p {
     font-family: $fontB;
     font-size:clamp(1.5rem,2vw, 1.8rem);
 }
 
-a{font-size: 1.5rem;}
+a {font-size: 1.5rem;}
 
-.accent{color: $accent;}
+.accent {color: $accent;}
 
-.accent-inv{
+.accent-inv {
     padding: 0px 0.3rem;
     @include border-radius(0.2rem);
     color: white;
@@ -79,12 +82,12 @@ a{font-size: 1.5rem;}
 
 
 /* Makes originally clickable elements inactive */
-.inactive{
+.inactive {
     pointer-events: none;
 }
 
 /* not currently being used */
-.btn-toggle{
+.btn-toggle {
     font-family: $fontB;
     padding: 1px 20px !important;
     border: none;
@@ -92,24 +95,24 @@ a{font-size: 1.5rem;}
 }
 
 /* Symbol to indicate interactiveness */
-.sym{position: relative;}
-.sym::after{
+
+.sym {position: relative;}
+.sym::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 1.5rem;
     position: absolute;
     content: '\f0a6';
 }
-
 /* #endregion */
 
 /* #region bootstrap button styling */
 /* remove unwanted oulines from all btn */
-.btn:focus{
+.btn:focus {
     outline: none!important;
     box-shadow: none!important;
 }
-.btn-primary{
+.btn-primary {
     color: aliceblue!important;
     background-color: $lBlue!important;
     font-size: clamp(1.3rem, 1.8vw, 2rem)!important;
@@ -125,7 +128,6 @@ a{font-size: 1.5rem;}
 
 .btn-primary:active {
     border: none;
-    
 }
 
 .btn-outline-primary{
@@ -134,16 +136,18 @@ a{font-size: 1.5rem;}
     vertical-align: baseline;
     padding: 4px 10px;
 }
+
 .btn-outline-primary:hover, .btn-outline-primary:focus,
 .btn-outline-primary:active, .btn-outline-primary:visited {
     background-color: $lBlue!important;
     color:aliceblue !important;
     border-color: $lBlue!important;
 }
-.alias{cursor: alias;}
-.not-allowed{cursor:not-allowed;}
-.crosshair{cursor: crosshair;}
-.wait{cursor:wait;}
+
+.alias {cursor: alias;}
+.not-allowed {cursor:not-allowed;}
+.crosshair{ cursor: crosshair;}
+.wait {cursor:wait;}
 
 /* #endregion */
 
@@ -152,21 +156,22 @@ a{font-size: 1.5rem;}
     background: $blue;
     overflow: hidden;
 }
-.tr-main{
+
+.tr-main {
     opacity: 0%;
     transform: translateY(280%);
 }
 
-.tr-opac{
+.tr-opac {
     opacity: 0%;
 }
 /* #endregion */
 
 /* #region Div and element alignment */
-.al-vert{
+.al-vert {
     align-self: center;
 }
-.flex-center{
+.flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,17 +179,19 @@ a{font-size: 1.5rem;}
 /* #endregion */
 
 /* #region animating links */
-.ani-links{
+.ani-links {
     text-decoration: none;
     color: lighten($color: $accent, $amount:10%);
     position: relative;
     transition: 250ms color ease;
 }
-.ani-links:hover{
+
+.ani-links:hover {
     text-decoration: none;
     color: darken($color: $accent, $amount:5%);
 }
-.ani-links::after{
+
+.ani-links::after {
     content: "";
     position: absolute;
     left: 0;
@@ -196,9 +203,11 @@ a{font-size: 1.5rem;}
     @include scale-x(0);
     transition: 250ms transform ease;
 }
-.ani-links:hover::after{
+
+.ani-links:hover::after {
     @include scale-x(1);
 }
+
 /* #endregion */
 
 

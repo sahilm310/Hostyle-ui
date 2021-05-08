@@ -564,34 +564,34 @@ a {
   transition: 1s color ease;
 }
 
-.hierarchy a {
+.cards .hierarchy a {
   font-size: clamp(1rem, 1.8vw, 1.5rem);
 }
 
-.highlight {
+.cards .highlight {
   background-color: #CD8115;
   font-size: clamp(1.3rem, 1.2vw, 1.8rem);
   border-radius: 0.2rem;
 }
 
-.highlight.or-wh {
+.cards .highlight.or-wh {
   color: white;
   font-family: "Oswald", sans-serif;
 }
 
-.highlight.padding {
+.cards .highlight.padding {
   padding: 0.2rem 0.5rem;
 }
 
-.highlight.darker {
+.cards .highlight.darker {
   background-color: #082947;
 }
 
-.highlight.light {
+.cards .highlight.light {
   background-color: rgba(10, 49, 85, 0.5);
 }
 
-.highlight.lightest {
+.cards .highlight.lightest {
   background-color: rgba(10, 49, 85, 0.2);
 }
 
@@ -674,7 +674,7 @@ a {
   background: linear-gradient(to right, #1b81e0 3%, #992624 20%, rgba(205, 129, 21, 0.8), #0a3155 80%, #1b81e0 97%);
 }
 
-.fa-card {
+.clr-grid .fa-card {
   background-color: aliceblue;
   padding: 5px;
   font-size: 2rem;
@@ -687,34 +687,35 @@ a {
   margin: 5px;
 }
 
-.fa-card:hover, .fa-card:focus-within {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.fa-card.red {
+.clr-grid .fa-card .red {
   color: #992624;
 }
 
-.fa-card.orange {
+.clr-grid .fa-card .orange {
   color: #A66317;
 }
 
-.fa-card.yellow {
+.clr-grid .fa-card .blue {
+  color: #125EA5;
+}
+
+.clr-grid .fa-card .green {
+  color: #1D5E3E;
+}
+
+.clr-grid .fa-card .purple {
+  color: #312768;
+}
+
+.clr-grid .fa-card .yellow {
   color: #FFE20A;
   background-color: #125EA5 !important;
 }
 
-.fa-card.blue {
-  color: #125EA5;
-}
-
-.fa-card.green {
-  color: #1D5E3E;
-}
-
-.fa-card.purple {
-  color: #312768;
+.clr-grid .fa-card:hover,
+.clr-grid .fa-card:focus-within {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .colour-a11y {
