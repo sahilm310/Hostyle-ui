@@ -728,9 +728,8 @@ a {
   -ms-grid-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
       grid-template-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
       grid-template-areas: ". . . ss1 s1" "h h c c ."  ". s2 ss2 . s3"  ". ss3 cb cb ss4";
-  -webkit-transition: 250ms height ease, 250ms grid-template-areas ease;
-  transition: 250ms height ease, 250ms grid-template-areas ease;
-  transition: 250ms height ease, 250ms grid-template-areas ease, 250ms -ms-grid-template-areas ease;
+  -webkit-transition: 250ms height ease;
+  transition: 250ms height ease;
 }
 
 .colour-a11y h4 {
@@ -912,9 +911,9 @@ a {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 660px) {
   .colour-a11y {
-    height: 140vh;
+    height: 150vh;
   }
 }
 
@@ -928,10 +927,16 @@ a {
         grid-template-columns: 0.4fr 0.4fr 0.2fr;
     -ms-grid-rows: 0.2fr 20px 0.30fr  0.1fr  0.33fr 0.1fr;
         grid-template-rows: 0.2fr 20px 0.30fr  0.1fr  0.33fr 0.1fr;
-        grid-template-areas: "h h h " ". . s1" "c c ."  "ss2 . s2"  "cb cb ss4"  ". ss3 s3";
+        grid-template-areas: "h h . " ". . s1" "c c ."  "ss2 . s2"  "cb cb ss4"  ". ss3 s3";
   }
   .colour-a11y .sml-sqr1 {
     display: none;
+  }
+  .colour-a11y .sqr1 {
+    background-color: #CD8115;
+  }
+  .colour-a11y .heading {
+    padding: 0.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
