@@ -205,7 +205,7 @@
         background-color: $lBlue;
     }
 
-    transition: 250ms height ease;
+    transition: 250ms height ease, 250ms grid-template-areas ease;
     
 }
 
@@ -265,6 +265,20 @@
 @media screen and (max-width: 540px) {
     .cards {width: 100%;}
     .colour-a11y{
-        height: 140vh;
+        height: 160vh;
+        grid-template-columns:  0.4fr 0.4fr 0.2fr;
+        grid-template-rows: 0.2fr 20px 0.30fr  0.1fr  0.33fr 0.1fr;
+        grid-template-areas:"h h h "
+                            ". . s1"
+                            "c c ." 
+                            "ss2 . s2" 
+                            "cb cb ss4" 
+                            ". ss3 s3";
+
+        .sml-sqr1{display: none;}
+        // .sml-sqr2{display: none;}
+        // .sml-sqr3{display: none;}
+        // .sml-sqr4{display: none;}
+        // .sqr3{display: none;}
     }
 }
