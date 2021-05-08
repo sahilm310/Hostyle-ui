@@ -25,7 +25,7 @@ ScrollTrigger.defaults({
     toggleActions: "restart none none none"
 });
 const tl = gsap.timeline({ defaults: { ease: "power4.easeInOut" } });
-const tlCol = gsap.timeline({scrollTrigger: ".colour-a11y", defaults: { ease: "power4.easeInOut" } });
+const tlCol = gsap.timeline({scrollTrigger: ".tr-opac-trigger", defaults: { ease: "power4.easeInOut" } });
 tl.to(".tr-main", { y: "0%", opacity:"100%", duration: 1, stagger: 0.2 });
 tlCol.to(".tr-opac", { opacity:"100%", duration: 0.8, stagger: 0.3 });
 // tl.to(".tr-opac", { ScrollTrigger: ".colour-a11y",opacity:"100%", duration: 1, stagger: 0.4 });
