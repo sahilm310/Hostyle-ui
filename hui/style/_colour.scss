@@ -136,7 +136,7 @@ $red : #992624;
     grid-template-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
     grid-template-areas:". . . ss1 s1"
                         "h h c c ." 
-                        ". s2 . . s3" 
+                        ". s2 . ss3 s3" 
                         ". ss2 cb cb .";
     
     h4{
@@ -160,6 +160,7 @@ $red : #992624;
     .sml-sqr1{grid-area: ss1;}
 
     .sml-sqr2{grid-area: ss2;}
+    .sml-sqr3{grid-area: ss3;}
 
     .flex-br{
         display: flex;
