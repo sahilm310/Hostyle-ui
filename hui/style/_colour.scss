@@ -141,10 +141,10 @@ $red : #992624;
     
     h4{
         color: $blue;
-        font-size:clamp(1.6rem,1.8vw, 1.8rem);}
+        font-size:clamp(1.6rem,2vw, 2rem);}
     
     p{
-        font-size:clamp(1.4rem,1.8vw, 1.8rem);
+        font-size:clamp(1.6rem,1.8vw, 1.8rem);
     }
     .heading{
         grid-area: h;
@@ -191,6 +191,7 @@ $red : #992624;
         background-color: $lBlue;
         color: white;
         padding: clamp(0.8rem,2vw,2.5rem)!important;
+        padding-right: clamp(2rem, 10vw, 5rem)!important;
     }
     
     .colour-blind{
@@ -198,7 +199,9 @@ $red : #992624;
         overflow:scroll;
         color: white; 
         padding: clamp(0.8rem,2vw,2.5rem);
-        background-color: $lBlue;}
+        padding-right: clamp(2rem, 10vw, 5rem);
+        background-color: $lBlue;
+    }
     
 }
 

@@ -731,11 +731,11 @@ a {
 
 .colour-a11y h4 {
   color: #0a3155;
-  font-size: clamp(1.6rem, 1.8vw, 1.8rem);
+  font-size: clamp(1.6rem, 2vw, 2rem);
 }
 
 .colour-a11y p {
-  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+  font-size: clamp(1.6rem, 1.8vw, 1.8rem);
 }
 
 .colour-a11y .heading {
@@ -825,6 +825,7 @@ a {
   background-color: #1B81E0;
   color: white;
   padding: clamp(0.8rem, 2vw, 2.5rem) !important;
+  padding-right: clamp(2rem, 10vw, 5rem) !important;
 }
 
 .colour-a11y .colour-blind {
@@ -835,6 +836,7 @@ a {
   overflow: scroll;
   color: white;
   padding: clamp(0.8rem, 2vw, 2.5rem);
+  padding-right: clamp(2rem, 10vw, 5rem);
   background-color: #1B81E0;
 }
 
