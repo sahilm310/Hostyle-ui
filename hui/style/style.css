@@ -687,27 +687,27 @@ a {
   margin: 5px;
 }
 
-.clr-grid .fa-card .red {
+.clr-grid .fa-card.red {
   color: #992624;
 }
 
-.clr-grid .fa-card .orange {
+.clr-grid .fa-card.orange {
   color: #A66317;
 }
 
-.clr-grid .fa-card .blue {
+.clr-grid .fa-card.blue {
   color: #125EA5;
 }
 
-.clr-grid .fa-card .green {
+.clr-grid .fa-card.green {
   color: #1D5E3E;
 }
 
-.clr-grid .fa-card .purple {
+.clr-grid .fa-card.purple {
   color: #312768;
 }
 
-.clr-grid .fa-card .yellow {
+.clr-grid .fa-card.yellow {
   color: #FFE20A;
   background-color: #125EA5 !important;
 }
@@ -920,6 +920,9 @@ a {
 @media screen and (max-width: 540px) {
   .cards {
     width: 100%;
+  }
+  .colour-a11y {
+    height: 140vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

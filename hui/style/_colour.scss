@@ -108,12 +108,12 @@
         color: $blue;
         margin: 5px;
 
-        .red {color: $red;}
-        .orange {color: $accentD;}
-        .blue {color: #125EA5;}
-        .green {color: #1D5E3E;}
-        .purple{color: #312768;}
-        .yellow {
+        &.red {color: $red;}
+        &.orange {color: $accentD;}
+        &.blue {color: #125EA5;}
+        &.green {color: #1D5E3E;}
+        &.purple{color: #312768;}
+        &.yellow {
             color: #FFE20A;
             background-color:#125EA5!important;
         }
@@ -264,4 +264,7 @@
 
 @media screen and (max-width: 540px) {
     .cards {width: 100%;}
+    .colour-a11y{
+        height: 140vh;
+    }
 }
