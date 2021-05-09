@@ -127,7 +127,7 @@
 
 .colour-a11y {
     min-height: 100vh;
-    height: 800px;
+    height: 900px;
     display: grid; 
     grid-template-columns:  0.3fr 200px 0.35fr 0.35fr 200px;
     grid-template-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
@@ -242,7 +242,7 @@
         grid-template-rows: 0.2fr 0.35fr  0.1fr  0.35fr;
         grid-template-areas:"h h h ss1 s1"
                             ". c c c ." 
-                            "s2 ss2 . . s3" 
+                            "s2 ss2 . s3 s3" 
                             "ss3 cb cb cb ss4";
         
     }
@@ -273,7 +273,7 @@
                             "c c ." 
                             "ss2 . s2" 
                             "cb cb ss4" 
-                            ". ss3 s3";
+                            "ss3 s3 s3";
 
         .sml-sqr1{display: none;}
         // .sml-sqr2{display: none;}

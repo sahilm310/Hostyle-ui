@@ -720,7 +720,7 @@ a {
 
 .colour-a11y {
   min-height: 100vh;
-  height: 800px;
+  height: 900px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.3fr 200px 0.35fr 0.35fr 200px;
@@ -899,7 +899,7 @@ a {
         grid-template-columns: 100px 0.3fr 0.4fr 0.3fr 100px;
     -ms-grid-rows: 0.2fr 0.35fr  0.1fr  0.35fr;
         grid-template-rows: 0.2fr 0.35fr  0.1fr  0.35fr;
-        grid-template-areas: "h h h ss1 s1" ". c c c ."  "s2 ss2 . . s3"  "ss3 cb cb cb ss4";
+        grid-template-areas: "h h h ss1 s1" ". c c c ."  "s2 ss2 . s3 s3"  "ss3 cb cb cb ss4";
   }
   .or-box {
     width: 30px !important;
@@ -927,7 +927,7 @@ a {
         grid-template-columns: 0.4fr 0.4fr 0.2fr;
     -ms-grid-rows: 0.2fr 20px 0.30fr  0.1fr  0.33fr 0.1fr;
         grid-template-rows: 0.2fr 20px 0.30fr  0.1fr  0.33fr 0.1fr;
-        grid-template-areas: "h h . " ". . s1" "c c ."  "ss2 . s2"  "cb cb ss4"  ". ss3 s3";
+        grid-template-areas: "h h . " ". . s1" "c c ."  "ss2 . s2"  "cb cb ss4"  "ss3 s3 s3";
   }
   .colour-a11y .sml-sqr1 {
     display: none;
