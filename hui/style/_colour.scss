@@ -86,7 +86,7 @@
     .all-warm {grid-area: aw;}
     .all-cool {grid-area: ac;}
 
-    .bar {
+    &.bar {
         grid-area: bar;
         height: min-content;
         @include border-radius(1rem);
