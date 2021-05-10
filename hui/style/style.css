@@ -704,7 +704,7 @@ a {
 }
 
 .clr-grid .fa-card.purple {
-  color: #312768;
+  color: #5b3381;
 }
 
 .clr-grid .fa-card.yellow {
@@ -913,7 +913,8 @@ a {
 
 @media screen and (max-width: 660px) {
   .colour-a11y {
-    height: 150vh;
+    min-height: 150vh;
+    height: 1000px;
   }
 }
 
@@ -922,7 +923,8 @@ a {
     width: 100%;
   }
   .colour-a11y {
-    height: 160vh;
+    min-height: 160vh;
+    height: 1200px;
     -ms-grid-columns: 0.4fr 0.4fr 0.2fr;
         grid-template-columns: 0.4fr 0.4fr 0.2fr;
     -ms-grid-rows: 0.2fr 20px 0.30fr  0.1fr  0.33fr 0.1fr;

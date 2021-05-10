@@ -68,7 +68,6 @@
     }
 }
 
-
 .clr-grid {
     display: grid;
     height: 100%;
@@ -112,7 +111,7 @@
         &.orange {color: $accentD;}
         &.blue {color: #125EA5;}
         &.green {color: #1D5E3E;}
-        &.purple{color: #312768;}
+        &.purple{color: #5b3381;}
         &.yellow {
             color: #FFE20A;
             background-color:#125EA5!important;
@@ -232,6 +231,7 @@
         "b2 b2 b2" 
         "b2 b2 b2";
     }
+
     .cards {
         display: block;
         margin: 25px auto;
@@ -239,14 +239,12 @@
     }
 
     .colour-a11y {
-        
         grid-template-columns:  100px 0.3fr 0.4fr 0.3fr 150px;
         grid-template-rows: 0.2fr 0.3fr  0.15fr  0.35fr;
         grid-template-areas:"h h h ss1 s1"
                             ". c c c ." 
                             "s2 ss2 . . s3" 
                             "ss3 cb cb cb ss4";
-        
     }
     .or-box{
         width: 30px!important;
@@ -260,14 +258,17 @@
 
 @media screen and (max-width: 660px) {
     .colour-a11y{
-        height: 150vh;
+        min-height: 150vh;
+        height:1000px;
     }
 }
 
 @media screen and (max-width: 540px) {
     .cards {width: 100%;}
     .colour-a11y{
-        height: 160vh;
+        min-height: 160vh;
+        height:1200px;
+        
         grid-template-columns:  0.4fr 0.4fr 0.2fr;
         grid-template-rows: 0.2fr 20px 0.30fr  0.1fr  0.33fr 0.1fr;
         grid-template-areas:"h h . "
@@ -278,9 +279,6 @@
                             "ss3 s3 s3";
 
         .sml-sqr1{display: none;}
-        // .sml-sqr2{display: none;}
-        // .sml-sqr3{display: none;}
-        // .sml-sqr4{display: none;}
         .sqr1{background-color: $accent;}
         .heading{padding: 0.5rem;}
     }
