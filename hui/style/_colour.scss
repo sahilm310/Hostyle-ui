@@ -22,21 +22,20 @@
         color: $blue; 
         transition: 1s color ease;
     }
-    .hierarchy a{
+    .hierarchy {
         font-size: clamp(1rem, 1.8vw, 1.5rem);
     }
     .highlight{
         background-color: $accent;
         font-size:clamp(1.3rem,1.2vw, 1.8rem);
+        padding: 0.2rem 0.5rem ;
+        margin-bottom: 5px;
         @include border-radius(0.2rem);
     }
+
     .highlight.or-wh{
-        
         color: white;
         font-family: $fontA;
-    }
-    .highlight.padding{
-        padding: 0.2rem 0.5rem ;
     }
     .highlight.darker{
         background-color: darken($color: $blue, $amount: 3%);
@@ -86,7 +85,7 @@
     .all-warm {grid-area: aw;}
     .all-cool {grid-area: ac;}
 
-    &.bar {
+    .bar {
         grid-area: bar;
         height: min-content;
         @include border-radius(1rem);

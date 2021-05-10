@@ -564,23 +564,21 @@ a {
   transition: 1s color ease;
 }
 
-.cards .hierarchy a {
+.cards .hierarchy {
   font-size: clamp(1rem, 1.8vw, 1.5rem);
 }
 
 .cards .highlight {
   background-color: #CD8115;
   font-size: clamp(1.3rem, 1.2vw, 1.8rem);
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 5px;
   border-radius: 0.2rem;
 }
 
 .cards .highlight.or-wh {
   color: white;
   font-family: "Oswald", sans-serif;
-}
-
-.cards .highlight.padding {
-  padding: 0.2rem 0.5rem;
 }
 
 .cards .highlight.darker {
@@ -661,7 +659,7 @@ a {
   grid-area: ac;
 }
 
-.clr-grid.bar {
+.clr-grid .bar {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
