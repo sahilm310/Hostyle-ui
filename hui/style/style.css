@@ -593,6 +593,19 @@ a {
   background-color: rgba(10, 49, 85, 0.2);
 }
 
+.cards .highlight.interactive {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: 250ms outline ease;
+  transition: 250ms outline ease;
+  outline: 0px solid #0a3155;
+}
+
+.cards .highlight.interactive:hover {
+  outline: 3px solid #0a3155;
+}
+
 .gap {
   margin-right: 10px;
 }

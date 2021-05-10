@@ -46,6 +46,16 @@
     .highlight.lightest{
         background-color: rgba($blue, 0.2);
     }
+    .highlight.interactive{
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: 250ms outline ease;
+        outline:0px solid $blue;;
+    }
+    .highlight.interactive:hover{
+        outline: 3px solid $blue;
+    }
+
 }
 
 .gap{margin-right:10px;}
