@@ -5,7 +5,8 @@
         "style.scss",
         "_home.scss",
         "_click.scss",
-        "_colour.scss"
+        "_colour.scss",
+        "_learn.scss"
     ],
     "names": [],
     "file": "style.css"
