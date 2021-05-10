@@ -886,10 +886,12 @@ a {
   .ratio .card-title {
     color: #0a3155;
   }
-  .ratio:hover {
+  .ratio:hover,
+  .ratio:focus-within {
     background-size: 100% 50%,100% 80%,100% 100%;
   }
-  .ratio:hover .card-title {
+  .ratio:hover .card-title,
+  .ratio:focus-within .card-title {
     color: #1B81E0;
   }
 }
