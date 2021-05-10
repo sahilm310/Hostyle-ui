@@ -602,7 +602,8 @@ a {
   outline: 0px solid #0a3155;
 }
 
-.cards .highlight.interactive:hover {
+.cards .highlight.interactive:hover,
+.cards .highlight.interactive:focus-within {
   outline: 3px solid #0a3155;
 }
 
