@@ -164,14 +164,19 @@
     .sqr3 {
         grid-area: s3;
         background-color: darken($color: $lBlue, $amount: 10%);
+        text-align: center;
+        color: aliceblue;
+        padding: 1rem;
         .nxt-page{
             color: aliceblue;
             background-color: $accent;
-            margin: 2rem;
-            transition: 2s background-color ease,1s color ease;
+            margin: 1rem;
+            
+            transition: 2s background-color ease, 1.5s color ease;
+
         }
         .nxt-page:hover{
-            color: red;
+            color: $blue;
             background-color:  darken($color: $lBlue, $amount: 5%);
         }
     }

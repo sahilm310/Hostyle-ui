@@ -104,7 +104,7 @@ a {
 }
 
 .btn-primary {
-  color: aliceblue !important;
+  color: aliceblue;
   background-color: #1B81E0;
   font-size: clamp(1.3rem, 1.8vw, 2rem) !important;
   border-color: #1667b2 !important;
@@ -782,18 +782,21 @@ a {
   -ms-grid-column: 5;
   grid-area: s3;
   background-color: #1667b2;
+  text-align: center;
+  color: aliceblue;
+  padding: 1rem;
 }
 
 .colour-a11y .sqr3 .nxt-page {
   color: aliceblue;
   background-color: #CD8115;
-  margin: 2rem;
-  -webkit-transition: 2s background-color ease,1s color ease;
-  transition: 2s background-color ease,1s color ease;
+  margin: 1rem;
+  -webkit-transition: 2s background-color ease, 1.5s color ease;
+  transition: 2s background-color ease, 1.5s color ease;
 }
 
 .colour-a11y .sqr3 .nxt-page:hover {
-  color: red;
+  color: #0a3155;
   background-color: #1874c9;
 }
 

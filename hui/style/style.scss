@@ -113,7 +113,7 @@ a {font-size: 1.5rem;}
     box-shadow: none!important;
 }
 .btn-primary {
-    color: aliceblue!important;
+    color: aliceblue;
     background-color: $lBlue;
     font-size: clamp(1.3rem, 1.8vw, 2rem)!important;
     border-color: darken($color:$lBlue, $amount:10%)!important;
