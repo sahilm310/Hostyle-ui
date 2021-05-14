@@ -105,7 +105,7 @@ a {
 
 .btn-primary {
   color: aliceblue !important;
-  background-color: #1B81E0 !important;
+  background-color: #1B81E0;
   font-size: clamp(1.3rem, 1.8vw, 2rem) !important;
   border-color: #1667b2 !important;
   -webkit-transition: 200ms border ease-out;
@@ -113,8 +113,8 @@ a {
 }
 
 .btn-primary:hover {
-  background-color: #1667b2 !important;
-  color: aliceblue !important;
+  background-color: #1667b2;
+  color: aliceblue;
   border-color: #1667b2 !important;
 }
 
@@ -784,6 +784,19 @@ a {
   background-color: #1667b2;
 }
 
+.colour-a11y .sqr3 .nxt-page {
+  color: aliceblue;
+  background-color: #CD8115;
+  margin: 2rem;
+  -webkit-transition: 2s background-color ease,1s color ease;
+  transition: 2s background-color ease,1s color ease;
+}
+
+.colour-a11y .sqr3 .nxt-page:hover {
+  color: red;
+  background-color: #1874c9;
+}
+
 .colour-a11y .sml-sqr1 {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
@@ -954,5 +967,17 @@ a {
   .colour-a11y .heading {
     padding: 0.5rem;
   }
+}
+
+.learn-main {
+  min-height: 100vh;
+  height: 800px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 0.2fr 0.3fr 0.1fr 0.8fr;
+      grid-template-rows: 0.2fr 0.3fr 0.1fr 0.8fr;
+      grid-template-areas: ". . ." ". b1 ." ". . ." "b2 b2 b2";
 }
 /*# sourceMappingURL=style.css.map */

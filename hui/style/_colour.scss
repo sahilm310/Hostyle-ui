@@ -163,7 +163,18 @@
     .sqr2 {grid-area: s2; background-color: $lBlue;}
     .sqr3 {
         grid-area: s3;
-        background-color: darken($color: $lBlue, $amount: 10%)}
+        background-color: darken($color: $lBlue, $amount: 10%);
+        .nxt-page{
+            color: aliceblue;
+            background-color: $accent;
+            margin: 2rem;
+            transition: 2s background-color ease,1s color ease;
+        }
+        .nxt-page:hover{
+            color: red;
+            background-color:  darken($color: $lBlue, $amount: 5%);
+        }
+    }
 
     .sml-sqr1 {grid-area: ss1;}
     .sml-sqr2 {grid-area: ss2;}
