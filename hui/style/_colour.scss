@@ -176,28 +176,45 @@
             transition: 2s background-color ease, 1.5s color ease;
 
         }
+        $bg: darken($color: $lBlue, $amount: 5%);
         .nxt-page:hover{
             color: $blue;
-            background-color:  darken($color: $lBlue, $amount: 5%);
+            background-color: $bg;
         }
         .nxt-page::before{
             content: 'Hover';
             color: aliceblue;
-            transition: 1s opacity ease,
         }
         .nxt-page:hover::before{
-            content: '';
-            opacity: 0;
+            animation: hover-continue 2s ease forwards;
+
+            
         }
-        .nxt-page::after{
-            content: '';
-            opacity: 0;
-            transition: 1s opacity ease,
+
+        @keyframes hover-continue {
+            0% {
+                content: "Hover";
+              }
+              50% {
+                content: "Hover";
+                opacity: 0%;
+              }
+              51%{
+                  content: "Continue";
+                }
+              100% {
+                content: "Continue";
+              }
         }
-        .nxt-page:hover::after{
-            content: 'Continue';
-            opacity: 100;
-        }
+        // .nxt-page::after{
+        //     content: '';
+        //     opacity: 0;
+        //     transition: 1s opacity ease,
+        // }
+        // .nxt-page:hover::after{
+        //     content: 'Continue';
+        //     opacity: 100;
+        // }
     }
 
     .sml-sqr1 {grid-area: ss1;}

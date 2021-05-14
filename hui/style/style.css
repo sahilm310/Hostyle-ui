@@ -804,25 +804,43 @@ a {
 .colour-a11y .sqr3 .nxt-page::before {
   content: 'Hover';
   color: aliceblue;
-  -webkit-transition: 1s opacity ease;
-  transition: 1s opacity ease;
 }
 
 .colour-a11y .sqr3 .nxt-page:hover::before {
-  content: '';
-  opacity: 0;
+  -webkit-animation: hover-continue 2s ease forwards;
+          animation: hover-continue 2s ease forwards;
 }
 
-.colour-a11y .sqr3 .nxt-page::after {
-  content: '';
-  opacity: 0;
-  -webkit-transition: 1s opacity ease;
-  transition: 1s opacity ease;
+@-webkit-keyframes hover-continue {
+  0% {
+    content: "Hover";
+  }
+  50% {
+    content: "Hover";
+    opacity: 0%;
+  }
+  51% {
+    content: "Continue";
+  }
+  100% {
+    content: "Continue";
+  }
 }
 
-.colour-a11y .sqr3 .nxt-page:hover::after {
-  content: 'Continue';
-  opacity: 100;
+@keyframes hover-continue {
+  0% {
+    content: "Hover";
+  }
+  50% {
+    content: "Hover";
+    opacity: 0%;
+  }
+  51% {
+    content: "Continue";
+  }
+  100% {
+    content: "Continue";
+  }
 }
 
 .colour-a11y .sml-sqr1 {
