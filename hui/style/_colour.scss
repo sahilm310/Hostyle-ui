@@ -50,7 +50,7 @@
         box-sizing: border-box;
         cursor: pointer;
         transition: 250ms outline ease;
-        outline:0px solid $blue;;
+        outline:0px solid $blue;
     }
     .highlight.interactive:hover,
     .highlight.interactive:focus-within{
@@ -142,8 +142,8 @@
     grid-template-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
     grid-template-areas:". . . ss1 s1"
                         "h h c c ." 
-                        ". s2 ss2 . s3" 
-                        ". ss3 cb cb ss4";
+                        ". s2 ss2 s3 ." 
+                        " ss3 cb cb ss4 .";
     
     h4 {
         color: $blue;
@@ -166,9 +166,10 @@
         background-color: darken($color: $lBlue, $amount: 10%);
         text-align: center;
         color: aliceblue;
-        padding: 1rem;
+        padding: 0.3rem;
+        padding-bottom: 0.1rem;
         .nxt-page{
-            color: aliceblue;
+            
             background-color: $accent;
             margin: 1rem;
             
@@ -178,6 +179,24 @@
         .nxt-page:hover{
             color: $blue;
             background-color:  darken($color: $lBlue, $amount: 5%);
+        }
+        .nxt-page::before{
+            content: 'Hover';
+            color: aliceblue;
+            transition: 1s opacity ease,
+        }
+        .nxt-page:hover::before{
+            content: '';
+            opacity: 0;
+        }
+        .nxt-page::after{
+            content: '';
+            opacity: 0;
+            transition: 1s opacity ease,
+        }
+        .nxt-page:hover::after{
+            content: 'Continue';
+            opacity: 100;
         }
     }
 

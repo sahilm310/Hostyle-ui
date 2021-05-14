@@ -98,24 +98,25 @@ a {
 /* #region bootstrap button styling */
 /* remove unwanted oulines from all btn */
 .btn:focus {
-  outline: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
 .btn-primary {
-  color: aliceblue;
+  color: aliceblue !important;
   background-color: #1B81E0;
   font-size: clamp(1.3rem, 1.8vw, 2rem) !important;
+  border: none;
+  outline: 0px solid #0a3155;
   border-color: #1667b2 !important;
-  -webkit-transition: 200ms border ease-out;
-  transition: 200ms border ease-out;
+  -webkit-transition: 250ms outline ease, 250ms background-color ease;
+  transition: 250ms outline ease, 250ms background-color ease;
 }
 
 .btn-primary:hover {
   background-color: #1667b2;
   color: aliceblue;
-  border-color: #1667b2 !important;
+  outline: 3px solid #1667b2 !important;
 }
 
 .btn-primary:active {
@@ -739,7 +740,7 @@ a {
       grid-template-columns: 0.3fr 200px 0.35fr 0.35fr 200px;
   -ms-grid-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
       grid-template-rows: 0.2fr 0.3fr  0.2fr  0.3fr;
-      grid-template-areas: ". . . ss1 s1" "h h c c ."  ". s2 ss2 . s3"  ". ss3 cb cb ss4";
+      grid-template-areas: ". . . ss1 s1" "h h c c ."  ". s2 ss2 s3 ."  " ss3 cb cb ss4 .";
   -webkit-transition: 250ms height ease;
   transition: 250ms height ease;
 }
@@ -779,16 +780,16 @@ a {
 
 .colour-a11y .sqr3 {
   -ms-grid-row: 3;
-  -ms-grid-column: 5;
+  -ms-grid-column: 4;
   grid-area: s3;
   background-color: #1667b2;
   text-align: center;
   color: aliceblue;
-  padding: 1rem;
+  padding: 0.3rem;
+  padding-bottom: 0.1rem;
 }
 
 .colour-a11y .sqr3 .nxt-page {
-  color: aliceblue;
   background-color: #CD8115;
   margin: 1rem;
   -webkit-transition: 2s background-color ease, 1.5s color ease;
@@ -798,6 +799,30 @@ a {
 .colour-a11y .sqr3 .nxt-page:hover {
   color: #0a3155;
   background-color: #1874c9;
+}
+
+.colour-a11y .sqr3 .nxt-page::before {
+  content: 'Hover';
+  color: aliceblue;
+  -webkit-transition: 1s opacity ease;
+  transition: 1s opacity ease;
+}
+
+.colour-a11y .sqr3 .nxt-page:hover::before {
+  content: '';
+  opacity: 0;
+}
+
+.colour-a11y .sqr3 .nxt-page::after {
+  content: '';
+  opacity: 0;
+  -webkit-transition: 1s opacity ease;
+  transition: 1s opacity ease;
+}
+
+.colour-a11y .sqr3 .nxt-page:hover::after {
+  content: 'Continue';
+  opacity: 100;
 }
 
 .colour-a11y .sml-sqr1 {
@@ -814,13 +839,13 @@ a {
 
 .colour-a11y .sml-sqr3 {
   -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: ss3;
 }
 
 .colour-a11y .sml-sqr4 {
   -ms-grid-row: 4;
-  -ms-grid-column: 5;
+  -ms-grid-column: 4;
   grid-area: ss4;
 }
 
@@ -885,7 +910,7 @@ a {
 
 .colour-a11y .colour-blind {
   -ms-grid-row: 4;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: cb;
   overflow: scroll;

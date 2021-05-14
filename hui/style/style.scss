@@ -109,21 +109,24 @@ a {font-size: 1.5rem;}
 /* #region bootstrap button styling */
 /* remove unwanted oulines from all btn */
 .btn:focus {
-    outline: none!important;
+    // outline: none!important;
     box-shadow: none!important;
 }
 .btn-primary {
-    color: aliceblue;
+    color: aliceblue!important;
     background-color: $lBlue;
     font-size: clamp(1.3rem, 1.8vw, 2rem)!important;
+    border:none;
+    outline:0px solid $blue;
     border-color: darken($color:$lBlue, $amount:10%)!important;
-    transition: 200ms border ease-out;
+    transition: 250ms outline ease, 250ms background-color ease;
 }
 
 .btn-primary:hover {
     background-color: darken($color:$lBlue, $amount:10%);
     color:aliceblue;
-    border-color: darken($color:$lBlue, $amount:10%)!important;
+
+    outline:  3px solid darken($color:$lBlue, $amount:10%)!important;
 }
 
 .btn-primary:active {
