@@ -785,25 +785,25 @@ a {
   background-color: #1667b2;
   text-align: center;
   color: aliceblue;
-  padding: 0.3rem;
+  padding: 0.5rem 0.3rem 0px 0.3rem;
   padding-bottom: 0.1rem;
 }
 
 .colour-a11y .sqr3 .nxt-page {
-  background-color: #CD8115;
+  background-color: #1874c9;
   margin: 1rem;
-  -webkit-transition: 2s background-color ease, 1.5s color ease;
-  transition: 2s background-color ease, 1.5s color ease;
+  -webkit-transition: 2s background-color;
+  transition: 2s background-color;
 }
 
 .colour-a11y .sqr3 .nxt-page:hover {
   color: #0a3155;
-  background-color: #1874c9;
+  background-color: #CD8115;
 }
 
 .colour-a11y .sqr3 .nxt-page::before {
   content: 'Hover';
-  color: aliceblue;
+  color: white;
 }
 
 .colour-a11y .sqr3 .nxt-page:hover::before {

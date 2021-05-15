@@ -166,29 +166,26 @@
         background-color: darken($color: $lBlue, $amount: 10%);
         text-align: center;
         color: aliceblue;
-        padding: 0.3rem;
+        padding:0.5rem 0.3rem 0px 0.3rem;
         padding-bottom: 0.1rem;
-        .nxt-page{
-            
-            background-color: $accent;
-            margin: 1rem;
-            
-            transition: 2s background-color ease, 1.5s color ease;
 
-        }
         $bg: darken($color: $lBlue, $amount: 5%);
+
+        .nxt-page{
+            background-color: $bg;
+            margin: 1rem;
+            transition: 2s background-color ;
+        }
         .nxt-page:hover{
             color: $blue;
-            background-color: $bg;
+            background-color: $accent;
         }
         .nxt-page::before{
             content: 'Hover';
-            color: aliceblue;
+            color: white;
         }
         .nxt-page:hover::before{
             animation: hover-continue 2s ease forwards;
-
-            
         }
 
         @keyframes hover-continue {
