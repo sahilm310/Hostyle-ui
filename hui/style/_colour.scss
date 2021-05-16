@@ -203,15 +203,6 @@
                 content: "Continue";
               }
         }
-        // .nxt-page::after{
-        //     content: '';
-        //     opacity: 0;
-        //     transition: 1s opacity ease,
-        // }
-        // .nxt-page:hover::after{
-        //     content: 'Continue';
-        //     opacity: 100;
-        // }
     }
 
     .sml-sqr1 {grid-area: ss1;}
@@ -303,7 +294,7 @@
         grid-template-rows: 0.2fr 0.3fr  0.15fr  0.35fr;
         grid-template-areas:"h h h ss1 s1"
                             ". c c c ." 
-                            "s2 ss2 . . s3" 
+                            "s2 ss2 . s3 s3" 
                             "ss3 cb cb cb ss4";
     }
     .or-box{
