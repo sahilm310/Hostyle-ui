@@ -95,7 +95,6 @@ a {font-size: 1.5rem;}
 }
 
 /* Symbol to indicate interactiveness */
-
 .sym {position: relative;}
 .sym::after {
     font-family: "Font Awesome 5 Free";
@@ -105,6 +104,46 @@ a {font-size: 1.5rem;}
     content: '\f0a6';
 }
 /* #endregion */
+
+.nav-bar {
+    position: fixed;
+    width: 40%;
+    z-index: 3;
+    background-color: rgba($blue,0.9);
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        a {
+            display: block;
+            padding: 1rem;
+            text-decoration: none;
+        }
+    }
+    // Hide check box
+    .hb-btn{display: none;}
+    .hamburger {
+        cursor: pointer;
+        padding: 2rem 1.5rem;
+        position: relative;
+        user-select: none;
+
+        .hb-icon{
+            background: $lBlue;
+            display: block;
+            height: 0.3rem;
+            width: 2rem;
+            position: relative;
+            @include border-radius(0.2rem);
+            
+        }
+    }
+}
+
+
+
 
 /* #region bootstrap button styling */
 /* remove unwanted oulines from all btn */

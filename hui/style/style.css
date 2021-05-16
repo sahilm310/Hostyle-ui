@@ -95,6 +95,49 @@ a {
 }
 
 /* #endregion */
+.nav-bar {
+  position: fixed;
+  width: 40%;
+  z-index: 3;
+  background-color: rgba(10, 49, 85, 0.9);
+}
+
+.nav-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.nav-bar ul a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.nav-bar .hb-btn {
+  display: none;
+}
+
+.nav-bar .hamburger {
+  cursor: pointer;
+  padding: 2rem 1.5rem;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.nav-bar .hamburger .hb-icon {
+  background: #1B81E0;
+  display: block;
+  height: 0.3rem;
+  width: 2rem;
+  position: relative;
+  border-radius: 0.2rem;
+}
+
 /* #region bootstrap button styling */
 /* remove unwanted oulines from all btn */
 .btn:focus {
