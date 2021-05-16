@@ -138,6 +138,32 @@ a {
   border-radius: 0.2rem;
 }
 
+.nav-bar .hamburger .hb-icon:before {
+  content: '';
+  background: currentColor;
+  display: block;
+  position: absolute;
+  top: -0.6rem;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  border-radius: 0.2rem;
+}
+
+.nav-bar .hamburger .hb-icon:after {
+  content: '';
+  background: currentColor;
+  display: block;
+  position: absolute;
+  top: 0.6rem;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  border-radius: 0.2rem;
+}
+
 /* #region bootstrap button styling */
 /* remove unwanted oulines from all btn */
 .btn:focus {

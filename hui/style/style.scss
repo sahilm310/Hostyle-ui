@@ -105,6 +105,18 @@ a {font-size: 1.5rem;}
 }
 /* #endregion */
 
+@mixin hamburger($top) {
+    content: '';
+    background: currentColor;
+    display: block;
+    position: absolute;
+    top: $top;
+    height: 100%;
+    width: 100%;
+    transition: all .2s ease-out;
+    @include border-radius(0.2rem);
+}
+
 .nav-bar {
     position: fixed;
     width: 40%;
@@ -137,7 +149,12 @@ a {font-size: 1.5rem;}
             width: 2rem;
             position: relative;
             @include border-radius(0.2rem);
-            
+        }
+        .hb-icon:before{
+            @include hamburger(-0.6rem);
+        }
+        .hb-icon:after{
+            @include hamburger(0.6rem);
         }
     }
 }
