@@ -130,8 +130,13 @@ a {
   text-decoration: none;
 }
 
-.nav-bar .nav-menu a:hover, .nav-bar .nav-menu a:focus-within {
+.nav-bar .nav-menu a:hover,
+.nav-bar .nav-menu a:focus-within {
   color: #0a3155;
+}
+
+.nav-bar .nav-menu .current {
+  font-weight: 900;
 }
 
 .nav-bar .hb-btn {

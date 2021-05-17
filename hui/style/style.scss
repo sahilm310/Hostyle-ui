@@ -142,6 +142,7 @@ a {font-size: 1.5rem;}
         padding: 25px;
         list-style: none;
         overflow: hidden;
+        
         a {
             color: white;
             display: block;
@@ -149,7 +150,12 @@ a {font-size: 1.5rem;}
             margin: 1.5rem 0px 1.5rem 1.5rem;
             text-decoration: none;
         }
-        a:hover, a:focus-within {color:$blue;}
+        a:hover, 
+        a:focus-within {color:$blue;}
+
+        .current{
+            font-weight: 900;
+        }
     }
     
     // Code for hamburger menu button
@@ -199,10 +205,6 @@ a {font-size: 1.5rem;}
             background-color: $blue;
         }
     }
-
-    // .hb-btn:checked ~ .hamburger .hb-icon{
-    //     background: transparent;
-    // }
 }
 
 
