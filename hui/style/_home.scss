@@ -36,8 +36,11 @@
 /* #region media query to rearrange grid */
 @media screen and (max-width: 720px) {
     .home{
-        grid-template-rows: 0.3fr 1fr 1fr 1fr;
-        grid-template-areas:". . ." "b2 b2 b2" "b1 b1 b1" "b3 b3 b3";
+        grid-template-rows: 0.5fr 0.1fr 0.3fr 0.1fr;
+        grid-template-areas:"b2 b2 b2" 
+                            "b1 b1 b1" 
+                            "b1 b1 b1" 
+                            "b3 b3 b3";
     }
 }
 /* #endregion */
