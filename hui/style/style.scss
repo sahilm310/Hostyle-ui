@@ -115,7 +115,8 @@ a {font-size: 1.5rem;}
     height: 100%;
     width: 100%;
     transition: 250ms background-color ease,
-                250ms transform ease;
+                500ms transform ease,
+                500ms top ease;
     @include border-radius(0.2rem);
 }
 @mixin circle($size, $x, $y){
@@ -167,7 +168,7 @@ a {font-size: 1.5rem;}
             width: 2rem;
             position: relative;
             @include border-radius(0.2rem);
-            transition: 250ms background-color ease;
+            transition: 150ms background-color ease;
         }
         .hb-icon:before{
             @include hamburger(-0.6rem);
@@ -178,6 +179,16 @@ a {font-size: 1.5rem;}
         &.hb-close{
             .hb-icon{
                 background: transparent!important;
+            }
+            .hb-icon:before{
+                transform: rotate(45deg);
+                transform-origin: center;
+                top:50%;
+            }
+            .hb-icon:after{
+                transform: rotate(-45deg);
+                transform-origin: center;
+                top:50%;
             }
         }
     }
