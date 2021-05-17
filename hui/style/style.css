@@ -189,14 +189,14 @@ a {
   border-radius: 0.2rem;
 }
 
+.nav-bar .hamburger.hb-close .hb-icon {
+  background: transparent !important;
+}
+
 .nav-bar .hamburger:hover .hb-icon,
 .nav-bar .hamburger:hover .hb-icon:before,
 .nav-bar .hamburger:hover .hb-icon:after {
   background-color: #0a3155;
-}
-
-.nav-bar .hb-btn:checked ~ .hamburger .hb-icon {
-  background: transparent;
 }
 
 /* #region bootstrap button styling */

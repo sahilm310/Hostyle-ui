@@ -21,8 +21,11 @@ function toggleClass(elem,className) {
 }
 
 function toggleNav(id) {
-    let temp = document.getElementById(id);
-    temp.classList.toggle("nav-show");
+    let show = document.getElementById(id);
+    show.classList.toggle("nav-show");
+    let hamburger = document.getElementById("icon");
+    hamburger.classList.toggle("hb-close");
+
 }
 
 gsap.registerPlugin(ScrollTrigger)
