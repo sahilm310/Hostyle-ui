@@ -20,6 +20,11 @@ function toggleClass(elem,className) {
     elem.classList.toggle(className);
 }
 
+function toggleNav(id) {
+    let temp = document.getElementById(id);
+    temp.classList.toggle("nav-show");
+}
+
 gsap.registerPlugin(ScrollTrigger)
 ScrollTrigger.defaults({
     toggleActions: "restart none none none"

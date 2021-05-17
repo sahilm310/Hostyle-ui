@@ -23,9 +23,9 @@
     </head>
     <body>
         <!-- nav bar -->
-        <nav class="nav-bar">
-            <input type="checkbox" class="hb-btn" id="hb-btn">
-            <label class="hamburger" for="hb-btn">
+        <nav class="nav-bar" id="nav-bar">
+            <input type="checkbox" onclick="toggleNav('nav-bar')" class="hb-btn" id="hb-btn">
+            <label class="hamburger" for="hb-btn" tabindex="0">
                 <span class="hb-icon"></span>
             </label>
 
@@ -68,7 +68,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
         <!-- linking the js file -->
-        <script src="script/script.js"></script>
+        <script src="../script/script.js"></script>
     </body>
 </html>
 

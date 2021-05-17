@@ -107,7 +107,7 @@ a {font-size: 1.5rem;}
 
 @mixin hamburger($top) {
     content: '';
-    background: currentColor;
+    background: white;
     display: block;
     position: absolute;
     top: $top;
@@ -120,17 +120,17 @@ a {font-size: 1.5rem;}
 .nav-bar {
     position: fixed;
     width: 600px;
+    clip-path: circle(80px at 0 0);
     
     z-index: 4;
-    .nav-container{
-        transition: 500ms clip-path ease;
-        background-color: rgba($lBlue,0.2);
-        clip-path: circle(200px at 0 0);
-        
-
+    transition: 500ms clip-path ease;
+    background-color: rgba($lBlue,0.9);
+    &.nav-show{
+        clip-path: circle(500px at 0 0)!important;
+        -webkit-clip-path: circle(500px at 0 0);
     }
     .nav-menu {
-
+        
         margin: 0;
         padding: 20px;
         list-style: none;
@@ -151,7 +151,7 @@ a {font-size: 1.5rem;}
         user-select: none;
         
         .hb-icon{
-            background: $lBlue;
+            background: white;
             display: block;
             height: 0.3rem;
             width: 2rem;
@@ -167,11 +167,10 @@ a {font-size: 1.5rem;}
     }
 
     .hb-btn:checked{
-        ~.nav-conatainer{
-            clip-path: circle(500px at 0 0);
-            -webkit-clip-path: circle(500px at 0 0);
-
-        }
+        // ~.nav-menu{
+        //     clip-path: circle(500px at 0 0);
+        //     -webkit-clip-path: circle(500px at 0 0);
+        // }
         
     }
 }
