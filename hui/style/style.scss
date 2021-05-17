@@ -119,19 +119,27 @@ a {font-size: 1.5rem;}
 
 .nav-bar {
     position: fixed;
-    width: 40%;
-    z-index: 3;
-    background-color: rgba($blue,0.9);
+    width: 600px;
     
+    z-index: 4;
+    .nav-container{
+        transition: 500ms clip-path ease;
+        background-color: rgba($lBlue,0.2);
+        clip-path: circle(200px at 0 0);
+        
+
+    }
     .nav-menu {
+
         margin: 0;
-        padding: 0;
+        padding: 20px;
         list-style: none;
         overflow: hidden;
         a {
             display: block;
-            padding: 1rem;
+            padding: 1.5rem;
             text-decoration: none;
+            
         }
     }
     // Hide check box
@@ -141,7 +149,7 @@ a {font-size: 1.5rem;}
         padding: 2rem 1.5rem;
         position: relative;
         user-select: none;
-
+        
         .hb-icon{
             background: $lBlue;
             display: block;
@@ -159,9 +167,12 @@ a {font-size: 1.5rem;}
     }
 
     .hb-btn:checked{
-        ~.nav-menu{
-          display: none;  
+        ~.nav-conatainer{
+            clip-path: circle(500px at 0 0);
+            -webkit-clip-path: circle(500px at 0 0);
+
         }
+        
     }
 }
 

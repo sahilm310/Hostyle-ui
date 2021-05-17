@@ -97,21 +97,30 @@ a {
 /* #endregion */
 .nav-bar {
   position: fixed;
-  width: 40%;
-  z-index: 3;
-  background-color: rgba(10, 49, 85, 0.9);
+  width: 600px;
+  z-index: 4;
+}
+
+.nav-bar .nav-container {
+  -webkit-transition: 500ms -webkit-clip-path ease;
+  transition: 500ms -webkit-clip-path ease;
+  transition: 500ms clip-path ease;
+  transition: 500ms clip-path ease, 500ms -webkit-clip-path ease;
+  background-color: rgba(27, 129, 224, 0.2);
+  -webkit-clip-path: circle(200px at 0 0);
+          clip-path: circle(200px at 0 0);
 }
 
 .nav-bar .nav-menu {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   list-style: none;
   overflow: hidden;
 }
 
 .nav-bar .nav-menu a {
   display: block;
-  padding: 1rem;
+  padding: 1.5rem;
   text-decoration: none;
 }
 
@@ -168,8 +177,9 @@ a {
   border-radius: 0.2rem;
 }
 
-.nav-bar .hb-btn:checked ~ .nav-menu {
-  display: none;
+.nav-bar .hb-btn:checked ~ .nav-conatainer {
+  clip-path: circle(500px at 0 0);
+  -webkit-clip-path: circle(500px at 0 0);
 }
 
 /* #region bootstrap button styling */
