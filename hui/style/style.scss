@@ -114,7 +114,7 @@ a {font-size: 1.5rem;}
     top: $top;
     height: 100%;
     width: 100%;
-    transition: 250ms background-color ease,
+    transition: 150ms background-color ease,
                 500ms transform ease,
                 500ms top ease;
     @include border-radius(0.2rem);
@@ -123,7 +123,7 @@ a {font-size: 1.5rem;}
     clip-path: circle($size at $x $y);
     -webkit-clip-path: circle($size at $x $y);
 }
-
+/* Nav bar styling */
 .nav-bar {
     position: fixed;
     width: 100%;
@@ -136,37 +136,35 @@ a {font-size: 1.5rem;}
     &.nav-show{
         @include circle(300px, 0, 50%);
     }
-
+    // styling for nav menu list
     .nav-menu {
         margin: 0;
         padding: 25px;
         list-style: none;
         overflow: hidden;
-        
+        // nav links
         a {
             color: white;
             display: block;
             padding: .5rem;
             margin: 1.5rem 0px 1.5rem 1.5rem;
             text-decoration: none;
+            // current page nav link
+            &.current {font-weight: 900;}
         }
         a:hover, 
         a:focus-within {color:$blue;}
-
-        .current{
-            font-weight: 900;
-        }
     }
     
-    // Code for hamburger menu button
     // Hide check box
     .hb-btn{display: none;}
+    // Code for hamburger menu button
     .hamburger {
         cursor: pointer;
         padding: 2rem 1.5rem;
         position: relative;
         user-select: none;
-        
+        // main middle segment
         .hb-icon{
             background-color: white;
             display: block;
@@ -176,12 +174,15 @@ a {font-size: 1.5rem;}
             @include border-radius(0.2rem);
             transition: 150ms background-color ease;
         }
+         // top segment
         .hb-icon:before{
             @include hamburger(-0.6rem);
         }
+        // bottom segment
         .hb-icon:after{
             @include hamburger(0.6rem);
         }
+        // class for 2nd state of X
         &.hb-close{
             .hb-icon{
                 background: transparent!important;
@@ -198,6 +199,7 @@ a {font-size: 1.5rem;}
             }
         }
     }
+    // Hamburger icon hover
     .hamburger:hover {
         .hb-icon, 
         .hb-icon:before, 
