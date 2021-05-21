@@ -147,7 +147,7 @@ a {font-size: 1.5rem;}
     &.nav-show{
         @include circle(50%, 0, 50%);
         .nav-menu a{
-            display: block;
+            pointer-events: auto;
             opacity: 100;
         }
     }
@@ -165,11 +165,12 @@ a {font-size: 1.5rem;}
         // nav links
         a {
             color: white;
-            display: none;
+            display: block;
             opacity: 0;
+            pointer-events: none;
             padding: .5rem;
             margin: 1.5rem;
-            transition: 250ms margin ease, 250ms opacity ease 250ms display ease 3s;
+            transition: 250ms margin ease, 250ms opacity ease;
             text-decoration: none;
             // current page nav link
             &.current {font-weight: 900;}
