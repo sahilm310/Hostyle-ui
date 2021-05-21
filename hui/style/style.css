@@ -102,17 +102,17 @@ a {
 /* Nav bar code and mixin for pseudo element */
 /* Nav bar styling */
 .nav-bar {
+  background-color: rgba(27, 129, 224, 0.9);
   position: fixed;
-  width: 100%;
+  width: 600px;
   height: 600px;
-  clip-path: circle(80px at 0 0);
-  -webkit-clip-path: circle(80px at 0 0);
   z-index: 4;
+  clip-path: circle(80px at 10px 10px);
+  -webkit-clip-path: circle(80px at 10px 10px);
   -webkit-transition: 500ms -webkit-clip-path ease;
   transition: 500ms -webkit-clip-path ease;
   transition: 500ms clip-path ease;
   transition: 500ms clip-path ease, 500ms -webkit-clip-path ease;
-  background-color: rgba(27, 129, 224, 0.9);
 }
 
 .nav-bar.nav-show {
@@ -346,10 +346,10 @@ a {
   background-color: currentColor;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: 250ms -webkit-transform ease;
-  transition: 250ms -webkit-transform ease;
-  transition: 250ms transform ease;
-  transition: 250ms transform ease, 250ms -webkit-transform ease;
+  -webkit-transition: 1s background-color ease,  250ms -webkit-transform ease-in-out;
+  transition: 1s background-color ease,  250ms -webkit-transform ease-in-out;
+  transition: 250ms transform ease-in-out,  1s background-color ease;
+  transition: 250ms transform ease-in-out,  1s background-color ease,  250ms -webkit-transform ease-in-out;
 }
 
 .ani-links:hover::after {
