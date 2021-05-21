@@ -120,6 +120,11 @@ a {
   -webkit-clip-path: circle(50% at 0 50%);
 }
 
+.nav-bar.nav-show .nav-menu a {
+  display: block;
+  opacity: 100;
+}
+
 .nav-bar .nav-menu {
   margin: 0;
   padding: 25px;
@@ -131,11 +136,12 @@ a {
 
 .nav-bar .nav-menu a {
   color: white;
-  display: block;
+  display: none;
+  opacity: 0;
   padding: .5rem;
   margin: 1.5rem;
-  -webkit-transition: 250ms margin ease;
-  transition: 250ms margin ease;
+  -webkit-transition: 250ms margin ease, 250ms opacity ease 250ms display ease 3s;
+  transition: 250ms margin ease, 250ms opacity ease 250ms display ease 3s;
   text-decoration: none;
 }
 
