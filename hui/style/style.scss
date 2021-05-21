@@ -161,7 +161,8 @@ a {font-size: 1.5rem;}
     }
     
     // Hide check box
-    .hb-btn{display: none;}
+     .hb-btn{display: none;}// Element not focusable by keyboard
+    
     // Code for hamburger menu button
     .hamburger {
         cursor: pointer;

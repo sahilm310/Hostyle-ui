@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="../style/style.css">
     
 </head>
-<body>
+<body onkeypress="handleEnter(event)">
     <!-- nav bar -->
     <nav class="nav-bar" id="nav-bar">
-        <input type="checkbox" tabindex="0" onclick="toggleNav('nav-bar')" class="hb-btn" id="hb-btn">
+        <input type="checkbox" onclick="toggleNav('nav-bar')" class="hb-btn" id="hb-btn">
         <label class="hamburger" id="icon" for="hb-btn" tabindex="0">
             <span class="hb-icon"></span>
         </label>

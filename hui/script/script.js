@@ -10,6 +10,17 @@ function session() {
 }
 session()
 
+// Make enter key press a click action on active elements 
+// retrieved from https://stackoverflow.com/a/62142145
+// Code posted by Chris Bodenmiller - Stack Overflow
+function handleEnter(e){
+    var keycode = (e.keyCode ? e.keyCode : e.which);
+    if (keycode == '13') {
+        document.activeElement.click();
+    }
+}
+// last accessed: 21 May 2021 4pm
+
 
 function toggle(id){
     var np = document.getElementById(id);
