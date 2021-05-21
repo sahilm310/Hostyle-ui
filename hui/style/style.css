@@ -125,6 +125,8 @@ a {
   padding: 25px;
   list-style: none;
   overflow: hidden;
+  -webkit-transition: 250ms padding ease;
+  transition: 250ms padding ease;
 }
 
 .nav-bar .nav-menu a {
@@ -1155,5 +1157,19 @@ a {
   -ms-grid-rows: 0.2fr 0.3fr 0.1fr 0.4fr;
       grid-template-rows: 0.2fr 0.3fr 0.1fr 0.4fr;
       grid-template-areas: ". . ." ". b1 ." ". . ." "b2 b2 b2";
+}
+
+@media screen and (max-width: 660px) {
+  .nav-bar {
+    clip-path: circle(80px at 0px 0px);
+    -webkit-clip-path: circle(80px at 0px 0px);
+  }
+  .nav-bar.nav-show {
+    clip-path: circle(45% at 0 45%);
+    -webkit-clip-path: circle(45% at 0 45%);
+  }
+  .nav-bar .nav-menu {
+    padding: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
