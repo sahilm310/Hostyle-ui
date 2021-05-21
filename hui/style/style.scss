@@ -129,22 +129,28 @@ a {font-size: 1.5rem;}
 }
 /* Nav bar styling */
 .nav-bar {
+    // --------------------
+    // entire nav styling
+    // ---------------
     background-color: rgba($lBlue,0.9);
     position: fixed;
     width: 600px;
     height: 600px;
     z-index: 4;
     // initial clip path
-    @include circle(80px, 10px, 10px);
+    @include circle(80px, 0px, 15px);
     transition: 500ms clip-path ease;
-
+    // ---------------------------------------
     // clip path showing the rest of content
+    // on nav button click
+    // -----------------------
     &.nav-show{
-        @include circle(300px, 0, 50%);
+        @include circle(50%, 0, 50%);
     }
-    // --------------------
+
+    // --------------------------
     // styling for nav menu list
-    // --------------------
+    // ---------------------
     .nav-menu {
         margin: 0;
         padding: 25px;
@@ -157,7 +163,8 @@ a {font-size: 1.5rem;}
             color: white;
             display: block;
             padding: .5rem;
-            margin: 1.5rem 0px 1.5rem 1.5rem;
+            margin: 1.5rem;
+            transition: 250ms margin ease;
             text-decoration: none;
             // current page nav link
             &.current {font-weight: 900;}
@@ -177,6 +184,7 @@ a {font-size: 1.5rem;}
         padding: 2rem 1.5rem;
         position: relative;
         user-select: none;
+        transition: 250ms padding ease;
         // main middle segment
         .hb-icon{
             background-color: white;
@@ -346,14 +354,16 @@ a {font-size: 1.5rem;}
 
 @media screen and (max-width: 660px) {
     .nav-bar {
-        @include circle(80px, 0px, 0px);
-
+        @include circle(80px, -15px, 10px);
         // clip path showing the rest of content
         &.nav-show{
-            @include circle(45%, 0, 45%);
+            @include circle(40%, 0px, 40%);
         }
+        // reduce space between elements
         .nav-menu {
             padding: 5px;
+            a {margin: 1rem;}
         }
+        .hamburger {padding: 1.5rem 1rem;}
     }
 }

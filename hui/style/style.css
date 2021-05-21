@@ -107,8 +107,8 @@ a {
   width: 600px;
   height: 600px;
   z-index: 4;
-  clip-path: circle(80px at 10px 10px);
-  -webkit-clip-path: circle(80px at 10px 10px);
+  clip-path: circle(80px at 0px 15px);
+  -webkit-clip-path: circle(80px at 0px 15px);
   -webkit-transition: 500ms -webkit-clip-path ease;
   transition: 500ms -webkit-clip-path ease;
   transition: 500ms clip-path ease;
@@ -116,8 +116,8 @@ a {
 }
 
 .nav-bar.nav-show {
-  clip-path: circle(300px at 0 50%);
-  -webkit-clip-path: circle(300px at 0 50%);
+  clip-path: circle(50% at 0 50%);
+  -webkit-clip-path: circle(50% at 0 50%);
 }
 
 .nav-bar .nav-menu {
@@ -133,7 +133,9 @@ a {
   color: white;
   display: block;
   padding: .5rem;
-  margin: 1.5rem 0px 1.5rem 1.5rem;
+  margin: 1.5rem;
+  -webkit-transition: 250ms margin ease;
+  transition: 250ms margin ease;
   text-decoration: none;
 }
 
@@ -158,6 +160,8 @@ a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: 250ms padding ease;
+  transition: 250ms padding ease;
 }
 
 .nav-bar .hamburger .hb-icon {
@@ -1161,15 +1165,21 @@ a {
 
 @media screen and (max-width: 660px) {
   .nav-bar {
-    clip-path: circle(80px at 0px 0px);
-    -webkit-clip-path: circle(80px at 0px 0px);
+    clip-path: circle(80px at -15px 10px);
+    -webkit-clip-path: circle(80px at -15px 10px);
   }
   .nav-bar.nav-show {
-    clip-path: circle(45% at 0 45%);
-    -webkit-clip-path: circle(45% at 0 45%);
+    clip-path: circle(40% at 0px 40%);
+    -webkit-clip-path: circle(40% at 0px 40%);
   }
   .nav-bar .nav-menu {
     padding: 5px;
+  }
+  .nav-bar .nav-menu a {
+    margin: 1rem;
+  }
+  .nav-bar .hamburger {
+    padding: 1.5rem 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
