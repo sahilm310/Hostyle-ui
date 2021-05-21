@@ -68,6 +68,10 @@ a {
   background-color: #CD8115;
 }
 
+.brush {
+  font-family: "Caveat Brush", "Courier New", monospace;
+}
+
 /* Makes originally clickable elements inactive */
 .inactive {
   pointer-events: none;

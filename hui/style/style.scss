@@ -7,6 +7,7 @@ $accentD:#A66317;
 $red : #992624;
 $fontA: 'Oswald', sans-serif;
 $fontB: 'Caveat', 'Courier New', monospace;
+$fontC: 'Caveat Brush', 'Courier New', monospace;
 /* #endregion */
 
 /* #region Mixins*/
@@ -80,6 +81,9 @@ a {font-size: 1.5rem;}
     background-color: $accent;
 }
 
+.brush{
+    font-family: $fontC;
+}
 
 /* Makes originally clickable elements inactive */
 .inactive {
