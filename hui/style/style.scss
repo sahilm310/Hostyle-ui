@@ -134,18 +134,18 @@ a {font-size: 1.5rem;}
     // ---------------
     background-color: rgba($lBlue,0.9);
     position: fixed;
-    width: 600px;
+    width: 300px;
     height: 600px;
     z-index: 4;
     // initial clip path
     @include circle(80px, 0px, 15px);
-    transition: 500ms clip-path ease;
+    transition: 500ms clip-path ease, 250ms width ease-in-out;
     // ---------------------------------------
     // clip path showing the rest of content
     // on nav button click
     // -----------------------
     &.nav-show{
-        @include circle(50%, 0, 50%);
+        @include circle(300px, 0, 50%);
         .nav-menu a{
             pointer-events: auto;
             opacity: 100;
@@ -163,6 +163,7 @@ a {font-size: 1.5rem;}
         transition: 250ms padding ease;
 
         // nav links
+        .nav-items{}
         a {
             color: white;
             display: block;
@@ -174,6 +175,7 @@ a {font-size: 1.5rem;}
             text-decoration: none;
             // current page nav link
             &.current {font-weight: 900;}
+            &::after{transform-origin: left;}
         }
         a:hover, 
         a:focus-within {color:$blue;}
@@ -360,10 +362,11 @@ a {font-size: 1.5rem;}
 
 @media screen and (max-width: 660px) {
     .nav-bar {
+        width: 260px;
         @include circle(80px, -15px, 10px);
         // clip path showing the rest of content
         &.nav-show{
-            @include circle(40%, 0px, 40%);
+            @include circle(250px, 0px, 250px);
         }
         // reduce space between elements
         .nav-menu {

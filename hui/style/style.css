@@ -104,20 +104,20 @@ a {
 .nav-bar {
   background-color: rgba(27, 129, 224, 0.9);
   position: fixed;
-  width: 600px;
+  width: 300px;
   height: 600px;
   z-index: 4;
   clip-path: circle(80px at 0px 15px);
   -webkit-clip-path: circle(80px at 0px 15px);
-  -webkit-transition: 500ms -webkit-clip-path ease;
-  transition: 500ms -webkit-clip-path ease;
-  transition: 500ms clip-path ease;
-  transition: 500ms clip-path ease, 500ms -webkit-clip-path ease;
+  -webkit-transition: 250ms width ease-in-out, 500ms -webkit-clip-path ease;
+  transition: 250ms width ease-in-out, 500ms -webkit-clip-path ease;
+  transition: 500ms clip-path ease, 250ms width ease-in-out;
+  transition: 500ms clip-path ease, 250ms width ease-in-out, 500ms -webkit-clip-path ease;
 }
 
 .nav-bar.nav-show {
-  clip-path: circle(50% at 0 50%);
-  -webkit-clip-path: circle(50% at 0 50%);
+  clip-path: circle(300px at 0 50%);
+  -webkit-clip-path: circle(300px at 0 50%);
 }
 
 .nav-bar.nav-show .nav-menu a {
@@ -148,6 +148,11 @@ a {
 
 .nav-bar .nav-menu a.current {
   font-weight: 900;
+}
+
+.nav-bar .nav-menu a::after {
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .nav-bar .nav-menu a:hover,
@@ -1172,12 +1177,13 @@ a {
 
 @media screen and (max-width: 660px) {
   .nav-bar {
+    width: 260px;
     clip-path: circle(80px at -15px 10px);
     -webkit-clip-path: circle(80px at -15px 10px);
   }
   .nav-bar.nav-show {
-    clip-path: circle(40% at 0px 40%);
-    -webkit-clip-path: circle(40% at 0px 40%);
+    clip-path: circle(250px at 0px 250px);
+    -webkit-clip-path: circle(250px at 0px 250px);
   }
   .nav-bar .nav-menu {
     padding: 5px;
