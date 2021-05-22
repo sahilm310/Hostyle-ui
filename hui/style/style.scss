@@ -163,7 +163,6 @@ a {font-size: 1.5rem;}
         transition: 250ms padding ease;
 
         // nav links
-        .nav-items{}
         a {
             color: white;
             display: block;
@@ -179,7 +178,6 @@ a {font-size: 1.5rem;}
         }
         a:hover, 
         a:focus-within {color:$blue;}
-
     }
     
     // Hide check box
@@ -229,7 +227,8 @@ a {font-size: 1.5rem;}
         }
     }
     // Hamburger icon hover
-    .hamburger:hover {
+    .hamburger:hover, 
+    .hamburger:focus-within{
         .hb-icon, 
         .hb-icon:before, 
         .hb-icon:after{

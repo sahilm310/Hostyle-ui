@@ -239,7 +239,10 @@ a {
 
 .nav-bar .hamburger:hover .hb-icon,
 .nav-bar .hamburger:hover .hb-icon:before,
-.nav-bar .hamburger:hover .hb-icon:after {
+.nav-bar .hamburger:hover .hb-icon:after,
+.nav-bar .hamburger:focus-within .hb-icon,
+.nav-bar .hamburger:focus-within .hb-icon:before,
+.nav-bar .hamburger:focus-within .hb-icon:after {
   background-color: #0a3155;
 }
 
