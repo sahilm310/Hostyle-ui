@@ -496,23 +496,19 @@ a {
 .click .symbol-demo::after {
   font-family: "FontAwesome";
   content: " \f138";
+  z-index: 9999;
   position: absolute;
-  display: inline;
+  display: inline-block;
   bottom: 0;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
   font-size: 1em;
   -webkit-transition: 250ms font-size ease, 250ms font-weight ease, 500ms color ease;
   transition: 250ms font-size ease, 250ms font-weight ease, 500ms color ease;
 }
 
 .click .symbol-demo:hover::after {
+  z-index: 9999;
   font-family: "FontAwesome";
   content: " \f138";
-  position: absolute;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  font-weight: bold;
   color: #CD8115;
   font-size: 1.2em;
 }

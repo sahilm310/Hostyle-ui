@@ -22,6 +22,10 @@ function handleEnter(e){
 // last accessed: 21 May 2021 4pm
 
 
+$('.symbol').on('mouseenter',function(){
+    $(this).parents(".symbol::after").hide().show(0);
+});
+
 function toggle(id){
     var np = document.getElementById(id);
     np.classList.toggle("inactive");

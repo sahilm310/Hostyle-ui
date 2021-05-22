@@ -40,21 +40,23 @@
     .symbol-demo::after{
         font-family: "FontAwesome";
         content: " \f138";
+        z-index: 9999;
+
         position: absolute;
-        display: inline;
+        display: inline-block;
         bottom: 0;
-        transform-origin: bottom;
+        // transform-origin: bottom;
         font-size: 1em;
         transition: 250ms font-size ease,
                     250ms font-weight ease,
                     500ms color ease;
     }
     .symbol-demo:hover::after{
+        z-index: 9999;
         font-family: "FontAwesome";
         content: " \f138";
-        position: absolute;
-        transform-origin:bottom;
-        font-weight: bold;
+        // transform-origin:bottom;
+        // font-weight: bold;
         color: $accent;
         font-size: 1.2em;
     }
