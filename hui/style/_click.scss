@@ -35,28 +35,31 @@
     .symbol-demo{
         box-sizing: border-box;
         position: relative;
+        text-decoration: none;
         cursor:pointer;
+        transition: 250ms color ease;
+        &:hover{
+            color: currentColor;
+        }
     }
     .symbol-demo::after{
         font-family: "FontAwesome";
         content: " \f138";
-        z-index: 9999;
-
         position: absolute;
-        display: inline-block;
+        display: inline;
         bottom: 0;
-        // transform-origin: bottom;
+        right: -1em;
         font-size: 1em;
-        transition: 250ms font-size ease,
-                    250ms font-weight ease,
-                    500ms color ease;
+        transition: 250ms font-size ease, 250ms font-weight ease,
+                    250ms right ease, 250ms color ease;
     }
-    .symbol-demo:hover::after{
-        z-index: 9999;
+    .symbol-demo:hover::after,
+    .symbol-demo:focus-within::after{
         font-family: "FontAwesome";
         content: " \f138";
-        // transform-origin:bottom;
-        // font-weight: bold;
+        position: absolute;
+        right:-1.2em;
+        font-weight: bold;
         color: $accent;
         font-size: 1.2em;
     }

@@ -490,25 +490,35 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  text-decoration: none;
   cursor: pointer;
+  -webkit-transition: 250ms color ease;
+  transition: 250ms color ease;
+}
+
+.click .symbol-demo:hover {
+  color: currentColor;
 }
 
 .click .symbol-demo::after {
   font-family: "FontAwesome";
   content: " \f138";
-  z-index: 9999;
   position: absolute;
-  display: inline-block;
+  display: inline;
   bottom: 0;
+  right: -1em;
   font-size: 1em;
-  -webkit-transition: 250ms font-size ease, 250ms font-weight ease, 500ms color ease;
-  transition: 250ms font-size ease, 250ms font-weight ease, 500ms color ease;
+  -webkit-transition: 250ms font-size ease, 250ms font-weight ease, 250ms right ease, 250ms color ease;
+  transition: 250ms font-size ease, 250ms font-weight ease, 250ms right ease, 250ms color ease;
 }
 
-.click .symbol-demo:hover::after {
-  z-index: 9999;
+.click .symbol-demo:hover::after,
+.click .symbol-demo:focus-within::after {
   font-family: "FontAwesome";
   content: " \f138";
+  position: absolute;
+  right: -1.2em;
+  font-weight: bold;
   color: #CD8115;
   font-size: 1.2em;
 }
