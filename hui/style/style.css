@@ -512,8 +512,7 @@ a {
   transition: 250ms font-size ease, 250ms font-weight ease, 250ms right ease, 250ms color ease;
 }
 
-.click .symbol-demo:hover::after,
-.click .symbol-demo:focus-within::after {
+.click .symbol-demo:hover::after, .click .symbol-demo:focus-within::after {
   font-family: "FontAwesome";
   content: " \f138";
   position: absolute;
