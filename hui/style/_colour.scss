@@ -18,7 +18,9 @@
     border: 0.5rem solid $lBlue;
     @include border-radius(1rem);
     transition: 200ms width ease,150ms margin ease;
-    &.large{width: 50%;}
+    &.large{
+        width: clamp(400px,50vw,600px);
+    }
 
 
     .card-title{

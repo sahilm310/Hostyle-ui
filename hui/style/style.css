@@ -695,7 +695,7 @@ a {
 }
 
 .cards.large {
-  width: 50%;
+  width: clamp(400px, 50vw, 600px);
 }
 
 .cards .card-title {
@@ -1164,9 +1164,6 @@ a {
     display: block;
     margin: 25px auto;
     width: 60%;
-  }
-  .cards.large {
-    width: 80%;
   }
   .colour-a11y {
     -ms-grid-columns: 100px 0.3fr 0.4fr 0.3fr 150px;
