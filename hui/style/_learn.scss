@@ -16,16 +16,19 @@
         width: 100%;
         height: 150px;
         padding: 10px;
-
+        
         .fas{
             font-size: 3rem;
         }
+        .r-arrow-btn{display: none;}
         .r-arrow-icon{
-            display: flex;
-            justify-content: flex-start;
+            float: left;
+            padding-left: 0px;
+            transition: 1s padding-left ease-in-out;
         }
         .r-arrow-btn:checked ~ .r-arrow-icon{
-            justify-content: flex-end;
+            padding-left:90%;
+
 
         }
     }
