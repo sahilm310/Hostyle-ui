@@ -36,6 +36,16 @@
 }
 
 @media screen and (max-width: 720px) {
+    /* #region home page*/
+    .home{
+        grid-template-rows: 0.5fr 0.1fr 0.3fr 0.1fr;
+        grid-template-areas:"b2 b2 b2" 
+                            "b1 b1 b1" 
+                            "b1 b1 b1" 
+                            "b3 b3 b3";
+    }
+    /* #endregion home page*/
+
     /* #region clickability page*/
     .click{
         height: 120vh;
