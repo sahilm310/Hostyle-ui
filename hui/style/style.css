@@ -1116,7 +1116,17 @@ a {
   font-size: clamp(2.5rem, 2vw, 3.5rem);
 }
 
+.predict .arrows .fas::before {
+  -webkit-transition: 250ms font-size ease;
+  transition: 250ms font-size ease;
+}
+
+.predict .arrows .fas:hover::before {
+  font-size: 1.2em;
+}
+
 .predict .arrows .arrow-wrapper {
+  text-align: left;
   width: 100%;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
@@ -1132,7 +1142,7 @@ a {
 
 .predict .arrows .r-arrow-icon {
   cursor: pointer;
-  float: left;
+  display: inline-block;
   -webkit-transform: translateX(0px) rotate(0deg);
           transform: translateX(0px) rotate(0deg);
   -webkit-transform-origin: center center;
