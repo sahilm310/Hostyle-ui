@@ -11,39 +11,40 @@
 }
 
 .predict{
+    // ----------------------------
+    /* #region Arrow div */
     .arrows{
         width: 100%;
         height: 200px;
         padding: 10px;
         
-        .fas{
-            font-size: clamp(2.5rem, 2vw, 3.5rem);
-            
-            &::before{transition: 250ms font-size ease;}
-            &:hover::before{
-                font-size: 1.2em;
-            }
-        }
+        // .fas{
+            // font-size: clamp(2.5rem, 2vw, 3.5rem);
+            // &::before {transition: 250ms font-size ease;}
+            // &:hover::before {font-size: 1.2em;}
+        // }
+        // hide check box
+        .r-arrow-btn{display: none;}
         .arrow-wrapper{
             text-align: left;
             width: 100%;
             transform: translateX(0px);
             transition: 1.5s transform ease;
         }
-        .r-arrow-btn{display: none;}
         .r-arrow-icon{
+            font-size: clamp(2.5rem, 2vw, 3.5rem);
             cursor: pointer;
-            // float: left;
-            display: inline-block;
             transform: translateX(0px) rotate(0deg) ;
-            transform-origin: center center;
             transition: 1.5s padding-left ease-in-out,
                         1.5s transform ease,
                         250ms color ease;
-            &:hover{
-                color: $blue;
-            }
+                        
+            // pseudo element font size
+            &::before {transition: 250ms font-size ease;}
+            &:hover::before {color: $blue; font-size: 1.2em;}
         }
+
+        // ----------------------------
         .r-arrow-btn:checked {
             ~.arrow-wrapper{
                 transform: translateX(100%);
@@ -51,10 +52,9 @@
                     transform: translateX(-100%) rotate(180deg);
                 }
             }
-            
-
-
         }
     }
+    /* #endregion Arrow div */
+
 
 }

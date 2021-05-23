@@ -1106,23 +1106,19 @@ a {
       grid-template-areas: ". . ." ". b1 ." ". . ." "b2 b2 b2";
 }
 
+.predict {
+  /* #region Arrow div */
+  /* #endregion Arrow div */
+}
+
 .predict .arrows {
   width: 100%;
   height: 200px;
   padding: 10px;
 }
 
-.predict .arrows .fas {
-  font-size: clamp(2.5rem, 2vw, 3.5rem);
-}
-
-.predict .arrows .fas::before {
-  -webkit-transition: 250ms font-size ease;
-  transition: 250ms font-size ease;
-}
-
-.predict .arrows .fas:hover::before {
-  font-size: 1.2em;
+.predict .arrows .r-arrow-btn {
+  display: none;
 }
 
 .predict .arrows .arrow-wrapper {
@@ -1136,25 +1132,25 @@ a {
   transition: 1.5s transform ease, 1.5s -webkit-transform ease;
 }
 
-.predict .arrows .r-arrow-btn {
-  display: none;
-}
-
 .predict .arrows .r-arrow-icon {
+  font-size: clamp(2.5rem, 2vw, 3.5rem);
   cursor: pointer;
-  display: inline-block;
   -webkit-transform: translateX(0px) rotate(0deg);
           transform: translateX(0px) rotate(0deg);
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
   -webkit-transition: 1.5s padding-left ease-in-out, 250ms color ease, 1.5s -webkit-transform ease;
   transition: 1.5s padding-left ease-in-out, 250ms color ease, 1.5s -webkit-transform ease;
   transition: 1.5s padding-left ease-in-out, 1.5s transform ease, 250ms color ease;
   transition: 1.5s padding-left ease-in-out, 1.5s transform ease, 250ms color ease, 1.5s -webkit-transform ease;
 }
 
-.predict .arrows .r-arrow-icon:hover {
+.predict .arrows .r-arrow-icon::before {
+  -webkit-transition: 250ms font-size ease;
+  transition: 250ms font-size ease;
+}
+
+.predict .arrows .r-arrow-icon:hover::before {
   color: #0a3155;
+  font-size: 1.2em;
 }
 
 .predict .arrows .r-arrow-btn:checked ~ .arrow-wrapper {
