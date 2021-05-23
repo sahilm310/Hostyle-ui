@@ -18,16 +18,21 @@
         padding: 10px;
         
         .fas{
-            font-size: 3rem;
+            font-size: clamp(2.5rem, 2vw, 3rem);
         }
         .r-arrow-btn{display: none;}
         .r-arrow-icon{
             float: left;
-            padding-left: 0px;
-            transition: 1s padding-left ease-in-out;
+            // padding-left: 0px;
+            transform: translateX(0px) rotate(0deg) ;
+            transform-origin: center center;
+            transition: 1s padding-left ease-in-out,
+                        1s transform ease;
         }
         .r-arrow-btn:checked ~ .r-arrow-icon{
-            padding-left:90%;
+            // padding-left:90%;
+            transform: translateX(300%) rotate(180deg) ;
+
 
 
         }
