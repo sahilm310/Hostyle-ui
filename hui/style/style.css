@@ -1148,7 +1148,7 @@ a {
   transition: 250ms font-size ease;
 }
 
-.predict .arrows .r-arrow-icon:hover::before {
+.predict .arrows .r-arrow-icon:hover::before, .predict .arrows .r-arrow-icon:focus-within::before {
   color: #0a3155;
   font-size: 1.2em;
 }

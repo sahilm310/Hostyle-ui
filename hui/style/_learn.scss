@@ -17,20 +17,20 @@
         width: 100%;
         height: 200px;
         padding: 10px;
-        
-        // .fas{
-            // font-size: clamp(2.5rem, 2vw, 3.5rem);
-            // &::before {transition: 250ms font-size ease;}
-            // &:hover::before {font-size: 1.2em;}
-        // }
+        // ----------------------------
         // hide check box
         .r-arrow-btn{display: none;}
+        // ----------------------------
+        // arrow icon wrapper 
+        // full width of parent element
         .arrow-wrapper{
             text-align: left;
             width: 100%;
             transform: translateX(0px);
             transition: 1.5s transform ease;
         }
+        // ----------------------------
+        // arrow icon element
         .r-arrow-icon{
             font-size: clamp(2.5rem, 2vw, 3.5rem);
             cursor: pointer;
@@ -38,13 +38,13 @@
             transition: 1.5s padding-left ease-in-out,
                         1.5s transform ease,
                         250ms color ease;
-                        
             // pseudo element font size
             &::before {transition: 250ms font-size ease;}
-            &:hover::before {color: $blue; font-size: 1.2em;}
+            &:hover::before, 
+            &:focus-within::before {color: $blue; font-size: 1.2em;}
         }
-
         // ----------------------------
+        // toggled state, check box/arrow checked
         .r-arrow-btn:checked {
             ~.arrow-wrapper{
                 transform: translateX(100%);
@@ -55,6 +55,4 @@
         }
     }
     /* #endregion Arrow div */
-
-
 }
