@@ -1116,13 +1116,19 @@ a {
   font-size: 3rem;
 }
 
-.predict .arrows .anim-right {
+.predict .arrows .r-arrow-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.predict .arrows .r-arrow-btn:checked ~ .r-arrow-icon {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media screen and (max-width: 940px) {

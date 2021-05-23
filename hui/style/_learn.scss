@@ -20,9 +20,13 @@
         .fas{
             font-size: 3rem;
         }
-        .anim-right{
+        .r-arrow-icon{
             display: flex;
             justify-content: flex-start;
+        }
+        .r-arrow-btn:checked ~ .r-arrow-icon{
+            justify-content: flex-end;
+
         }
     }
 
