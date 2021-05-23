@@ -361,18 +361,18 @@ a {font-size: 1.5rem;}
 @import "responsive";
 
 @media screen and (max-width: 660px) {
-    .nav-bar {
-        width: 260px;
-        @include circle(80px, -15px, 10px);
-        // clip path showing the rest of content
-        &.nav-show{
-            @include circle(250px, 0px, 250px);
-        }
-        // reduce space between elements
-        .nav-menu {
-            padding: 5px;
-            a {margin: 1rem;}
-        }
-        .hamburger {padding: 1.5rem 1rem;}
-    }
+    // .nav-bar {
+    //     width: 260px;
+    //     @include circle(80px, -15px, 10px);
+    //     // clip path showing the rest of content
+    //     &.nav-show{
+    //         @include circle(250px, 0px, 250px);
+    //     }
+    //     // reduce space between elements
+    //     .nav-menu {
+    //         padding: 5px;
+    //         a {margin: 1rem;}
+    //     }
+    //     .hamburger {padding: 1.5rem 1rem;}
+    // }
 }

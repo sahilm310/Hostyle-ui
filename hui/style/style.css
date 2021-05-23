@@ -1168,6 +1168,26 @@ a {
 }
 
 @media screen and (max-width: 660px) {
+  /* #region nav bar*/
+  .nav-bar {
+    width: 260px;
+    clip-path: circle(80px at -15px 10px);
+    -webkit-clip-path: circle(80px at -15px 10px);
+  }
+  .nav-bar.nav-show {
+    clip-path: circle(250px at 0px 250px);
+    -webkit-clip-path: circle(250px at 0px 250px);
+  }
+  .nav-bar .nav-menu {
+    padding: 5px;
+  }
+  .nav-bar .nav-menu a {
+    margin: 1rem;
+  }
+  .nav-bar .hamburger {
+    padding: 1.5rem 1rem;
+  }
+  /* #endregion nav bar*/
   /* #region colour page*/
   .colour-a11y {
     min-height: 150vh;
@@ -1203,26 +1223,5 @@ a {
     padding: 0.5rem;
   }
   /* #endregion colour page*/
-}
-
-@media screen and (max-width: 660px) {
-  .nav-bar {
-    width: 260px;
-    clip-path: circle(80px at -15px 10px);
-    -webkit-clip-path: circle(80px at -15px 10px);
-  }
-  .nav-bar.nav-show {
-    clip-path: circle(250px at 0px 250px);
-    -webkit-clip-path: circle(250px at 0px 250px);
-  }
-  .nav-bar .nav-menu {
-    padding: 5px;
-  }
-  .nav-bar .nav-menu a {
-    margin: 1rem;
-  }
-  .nav-bar .hamburger {
-    padding: 1.5rem 1rem;
-  }
 }
 /*# sourceMappingURL=style.css.map */
