@@ -1116,6 +1116,16 @@ a {
   font-size: clamp(2.5rem, 2vw, 3rem);
 }
 
+.predict .arrows .arrow-wrapper {
+  width: 100%;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: 1.5s -webkit-transform ease;
+  transition: 1.5s -webkit-transform ease;
+  transition: 1.5s transform ease;
+  transition: 1.5s transform ease, 1.5s -webkit-transform ease;
+}
+
 .predict .arrows .r-arrow-btn {
   display: none;
 }
@@ -1126,15 +1136,20 @@ a {
           transform: translateX(0px) rotate(0deg);
   -webkit-transform-origin: center center;
           transform-origin: center center;
-  -webkit-transition: 1s padding-left ease-in-out, 1s -webkit-transform ease;
-  transition: 1s padding-left ease-in-out, 1s -webkit-transform ease;
-  transition: 1s padding-left ease-in-out, 1s transform ease;
-  transition: 1s padding-left ease-in-out, 1s transform ease, 1s -webkit-transform ease;
+  -webkit-transition: 1.5s padding-left ease-in-out, 1.5s -webkit-transform ease;
+  transition: 1.5s padding-left ease-in-out, 1.5s -webkit-transform ease;
+  transition: 1.5s padding-left ease-in-out, 1.5s transform ease;
+  transition: 1.5s padding-left ease-in-out, 1.5s transform ease, 1.5s -webkit-transform ease;
 }
 
-.predict .arrows .r-arrow-btn:checked ~ .r-arrow-icon {
-  -webkit-transform: translateX(300%) rotate(180deg);
-          transform: translateX(300%) rotate(180deg);
+.predict .arrows .r-arrow-btn:checked ~ .arrow-wrapper {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.predict .arrows .r-arrow-btn:checked ~ .arrow-wrapper .r-arrow-icon {
+  -webkit-transform: translateX(-100%) rotate(180deg);
+          transform: translateX(-100%) rotate(180deg);
 }
 
 @media screen and (max-width: 940px) {
