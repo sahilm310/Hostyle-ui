@@ -11,14 +11,13 @@
 }
 
 .predict{
-    
     .arrows{
         width: 100%;
-        height: 150px;
+        height: 200px;
         padding: 10px;
         
         .fas{
-            font-size: clamp(2.5rem, 2vw, 3rem);
+            font-size: clamp(2.5rem, 2vw, 3.5rem);
         }
         .arrow-wrapper{
             width: 100%;
@@ -27,11 +26,16 @@
         }
         .r-arrow-btn{display: none;}
         .r-arrow-icon{
+            cursor: pointer;
             float: left;
             transform: translateX(0px) rotate(0deg) ;
             transform-origin: center center;
             transition: 1.5s padding-left ease-in-out,
-                        1.5s transform ease;
+                        1.5s transform ease,
+                        250ms color ease;
+            &:hover{
+                color: $blue;
+            }
         }
         .r-arrow-btn:checked {
             ~.arrow-wrapper{

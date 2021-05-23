@@ -1108,12 +1108,12 @@ a {
 
 .predict .arrows {
   width: 100%;
-  height: 150px;
+  height: 200px;
   padding: 10px;
 }
 
 .predict .arrows .fas {
-  font-size: clamp(2.5rem, 2vw, 3rem);
+  font-size: clamp(2.5rem, 2vw, 3.5rem);
 }
 
 .predict .arrows .arrow-wrapper {
@@ -1131,15 +1131,20 @@ a {
 }
 
 .predict .arrows .r-arrow-icon {
+  cursor: pointer;
   float: left;
   -webkit-transform: translateX(0px) rotate(0deg);
           transform: translateX(0px) rotate(0deg);
   -webkit-transform-origin: center center;
           transform-origin: center center;
-  -webkit-transition: 1.5s padding-left ease-in-out, 1.5s -webkit-transform ease;
-  transition: 1.5s padding-left ease-in-out, 1.5s -webkit-transform ease;
-  transition: 1.5s padding-left ease-in-out, 1.5s transform ease;
-  transition: 1.5s padding-left ease-in-out, 1.5s transform ease, 1.5s -webkit-transform ease;
+  -webkit-transition: 1.5s padding-left ease-in-out, 250ms color ease, 1.5s -webkit-transform ease;
+  transition: 1.5s padding-left ease-in-out, 250ms color ease, 1.5s -webkit-transform ease;
+  transition: 1.5s padding-left ease-in-out, 1.5s transform ease, 250ms color ease;
+  transition: 1.5s padding-left ease-in-out, 1.5s transform ease, 250ms color ease, 1.5s -webkit-transform ease;
+}
+
+.predict .arrows .r-arrow-icon:hover {
+  color: #0a3155;
 }
 
 .predict .arrows .r-arrow-btn:checked ~ .arrow-wrapper {
