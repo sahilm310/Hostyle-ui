@@ -404,8 +404,7 @@ a {
 }
 
 .b2 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: b2;
@@ -714,6 +713,10 @@ a {
   border-radius: 1rem;
   -webkit-transition: 200ms width ease,150ms margin ease;
   transition: 200ms width ease,150ms margin ease;
+}
+
+.cards.large {
+  width: 50%;
 }
 
 .cards .card-title {
@@ -1124,6 +1127,9 @@ a {
     margin: 25px auto;
     width: 60%;
   }
+  .cards.large {
+    width: 80%;
+  }
   .colour-a11y {
     -ms-grid-columns: 100px 0.3fr 0.4fr 0.3fr 150px;
         grid-template-columns: 100px 0.3fr 0.4fr 0.3fr 150px;
@@ -1150,6 +1156,9 @@ a {
 
 @media screen and (max-width: 540px) {
   .cards {
+    width: 100%;
+  }
+  .cards.large {
     width: 100%;
   }
   .colour-a11y {
@@ -1179,9 +1188,9 @@ a {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 0.1fr 0.3fr 0.2fr 0.4fr;
-      grid-template-rows: 0.1fr 0.3fr 0.2fr 0.4fr;
-      grid-template-areas: ". . ." ". b1 ." "b2 b2 b2" "b2 b2 b2";
+  -ms-grid-rows: 0.1fr 0.3fr 0.1fr 0.5fr;
+      grid-template-rows: 0.1fr 0.3fr 0.1fr 0.5fr;
+      grid-template-areas: ". . ." ". b1 ." ". . ." "b2 b2 b2";
 }
 
 .predict .arrows {

@@ -18,6 +18,9 @@
     border: 0.5rem solid $lBlue;
     @include border-radius(1rem);
     transition: 200ms width ease,150ms margin ease;
+    &.large{width: 50%;}
+
+
     .card-title{
         color: $blue; 
         transition: 1s color ease;
@@ -287,6 +290,7 @@
         display: block;
         margin: 25px auto;
         width: 60%;
+        &.large{width: 80%;}
     }
 
     .colour-a11y {
@@ -315,7 +319,10 @@
 }
 
 @media screen and (max-width: 540px) {
-    .cards {width: 100%;}
+    .cards {
+        width: 100%;
+        &.large{width: 100%;}
+    }
     .colour-a11y{
         min-height: 160vh;
         height:1200px;
