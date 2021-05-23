@@ -1134,6 +1134,7 @@ a {
 }
 
 @media screen and (max-width: 940px) {
+  /* #region colour page*/
   .colour-main {
     height: 100%;
     -ms-grid-rows: 0.2fr 0.2fr 0.1fr 0.9fr;
@@ -1163,16 +1164,20 @@ a {
     width: 75px !important;
     height: 75px !important;
   }
+  /* #endregion symbol demo animation*/
 }
 
 @media screen and (max-width: 660px) {
+  /* #region colour page*/
   .colour-a11y {
     min-height: 150vh;
     height: 1000px;
   }
+  /* #endregion colour page*/
 }
 
 @media screen and (max-width: 540px) {
+  /* #region colour page*/
   .cards {
     width: 100%;
   }
@@ -1197,6 +1202,7 @@ a {
   .colour-a11y .heading {
     padding: 0.5rem;
   }
+  /* #endregion colour page*/
 }
 
 @media screen and (max-width: 660px) {
