@@ -35,6 +35,21 @@
     /* #endregion symbol demo animation*/
 }
 
+@media screen and (max-width: 720px) {
+    /* #region clickability page*/
+    .click{
+        height: 120vh;
+        grid-template-columns:  1fr 1fr 1fr ;
+        grid-template-rows: 0.05fr 0.8fr 1fr 0.1fr 1fr;
+        grid-template-areas:"b1 b1 b1" 
+                            "b1 b1 b1" 
+                            "b2 b2 b2" 
+                            ". . ." 
+                            "b3 b3 b3";
+    }
+    /* #endregion clickability page*/
+} 
+
 @media screen and (max-width: 660px) {
     /* #region nav bar*/
     .nav-bar {

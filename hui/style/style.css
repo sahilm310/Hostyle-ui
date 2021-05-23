@@ -678,17 +678,6 @@ a {
 }
 
 /* #endregion */
-@media screen and (max-width: 720px) {
-  .click {
-    height: 120vh;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.05fr 0.8fr 1fr 0.1fr 1fr;
-        grid-template-rows: 0.05fr 0.8fr 1fr 0.1fr 1fr;
-        grid-template-areas: "b1 b1 b1"  "b1 b1 b1"  "b2 b2 b2"  ". . ."  "b3 b3 b3";
-  }
-}
-
 .colour-main {
   min-height: 100vh;
   height: 800px;
@@ -1165,6 +1154,19 @@ a {
     height: 75px !important;
   }
   /* #endregion symbol demo animation*/
+}
+
+@media screen and (max-width: 720px) {
+  /* #region clickability page*/
+  .click {
+    height: 120vh;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 0.05fr 0.8fr 1fr 0.1fr 1fr;
+        grid-template-rows: 0.05fr 0.8fr 1fr 0.1fr 1fr;
+        grid-template-areas: "b1 b1 b1"  "b1 b1 b1"  "b2 b2 b2"  ". . ."  "b3 b3 b3";
+  }
+  /* #endregion clickability page*/
 }
 
 @media screen and (max-width: 660px) {
