@@ -430,7 +430,8 @@ a {
 /* #region main content grid */
 .click {
   /* #region general setup*/
-  height: 100vh;
+  min-height: 100vh;
+  height: 800px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 0.5fr 0.5fr 1fr;
@@ -542,7 +543,8 @@ a {
 /* #region next page buttons */
 .click-next-page {
   /* #region general stylings and grid setup*/
-  height: 100vh;
+  min-height: 100vh;
+  height: 800px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.5fr 0.5fr 0.5fr;
