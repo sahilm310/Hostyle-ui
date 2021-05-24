@@ -14,17 +14,32 @@
     ~.card-wrapper{
         transform: translateY(-110%);
     }
+    ~.card-wrapper2{
+        transform: translateY(-50%);
+    }
 }
+
+
 .all-cards{
     overflow: hidden;
+    .card-wrapper2{
+        height: 100%;
+        transform: translateY(100%);
+        transition: 1s transform ease-in-out;
+
+    }
 
     .card-wrapper{
         height: 100%;
+        transform: translateY(50%);
         transition: 1s transform ease-in-out;
+        
+        &.cards{
+            display: flex;
+            flex-direction: column;
+        }
     }
-    // .predict{
-    //     transform: translateY(0%);
-    // }
+    
 
     // ----------------------------
     /* #region Arrow div */ 
