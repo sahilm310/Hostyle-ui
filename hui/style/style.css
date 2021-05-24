@@ -1176,8 +1176,16 @@ a {
           align-items: center;
 }
 
-.all-cards .arrows.txt-center {
-  display: initial;
+.all-cards .arrows.txt-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+  height: 3rem;
+  padding-right: 10px;
 }
 
 .all-cards .arrows .r-arrow-btn {
@@ -1199,6 +1207,7 @@ a {
 .all-cards .arrows .r-arrow-icon {
   font-size: clamp(2.5rem, 2vw, 3.5rem);
   cursor: pointer;
+  color: #0a3155;
 }
 
 .all-cards .arrows .d-arrow-icon::before,
@@ -1210,7 +1219,7 @@ a {
 .all-cards .arrows .d-arrow-icon:hover::before, .all-cards .arrows .d-arrow-icon:focus-within::before,
 .all-cards .arrows .r-arrow-icon:hover::before,
 .all-cards .arrows .r-arrow-icon:focus-within::before {
-  color: #0a3155;
+  color: white;
   font-size: 1.2em;
 }
 
