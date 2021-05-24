@@ -109,13 +109,14 @@ a {
   z-index: 4;
   clip-path: circle(80px at 0px 15px);
   -webkit-clip-path: circle(80px at 0px 15px);
-  -webkit-transition: 250ms width ease-in-out, 500ms -webkit-clip-path ease;
-  transition: 250ms width ease-in-out, 500ms -webkit-clip-path ease;
-  transition: 500ms clip-path ease, 250ms width ease-in-out;
-  transition: 500ms clip-path ease, 250ms width ease-in-out, 500ms -webkit-clip-path ease;
+  -webkit-transition: 250ms width ease-in-out, 500ms background-color ease,  500ms -webkit-clip-path ease;
+  transition: 250ms width ease-in-out, 500ms background-color ease,  500ms -webkit-clip-path ease;
+  transition: 500ms clip-path ease,  250ms width ease-in-out, 500ms background-color ease;
+  transition: 500ms clip-path ease,  250ms width ease-in-out, 500ms background-color ease,  500ms -webkit-clip-path ease;
 }
 
 .nav-bar.nav-show {
+  background-color: rgba(27, 129, 224, 0.8);
   clip-path: circle(300px at 0 50%);
   -webkit-clip-path: circle(300px at 0 50%);
 }

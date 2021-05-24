@@ -28,12 +28,16 @@
     z-index: 4;
     // initial clip path
     @include circle(80px, 0px, 15px);
-    transition: 500ms clip-path ease, 250ms width ease-in-out;
+    transition: 500ms clip-path ease, 
+                250ms width ease-in-out,
+                500ms background-color ease;
     // ---------------------------------------
     // clip path showing the rest of content
     // on nav button click
     // -----------------------
     &.nav-show{
+        background-color: rgba($lBlue,0.8);
+
         @include circle(300px, 0, 50%);
         .nav-menu a{
             pointer-events: auto;
