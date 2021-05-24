@@ -9,7 +9,12 @@
                         ". . ."
                         "b2 b2 b2";
 }
-
+.toggleCards{display: none;}
+.toggleCards:checked {
+    ~.predict{
+        transform: translateY(-50%);
+    }
+}
 .all-cards{
     overflow: hidden;
     .predict{
@@ -28,7 +33,7 @@
         // ----------------------------
         // hide check box
         .r-arrow-btn{display: none;}
-        .u-arrow-btn{display: none;}
+        
 
         // ----------------------------
         // arrow icon wrapper 
@@ -71,11 +76,7 @@
             }
         }
 
-        .d-arrow-icon:checked {
-            ~*.predict{
-                transform: translateY(50%);
-            }
-        }
+        
     }
     /* #endregion Arrow div */
 }

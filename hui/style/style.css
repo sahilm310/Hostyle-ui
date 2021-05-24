@@ -1114,6 +1114,15 @@ a {
       grid-template-areas: ". . ." ". b1 ." ". . ." "b2 b2 b2";
 }
 
+.toggleCards {
+  display: none;
+}
+
+.toggleCards:checked ~ .predict {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .all-cards {
   overflow: hidden;
   /* #region Arrow div */
@@ -1142,10 +1151,6 @@ a {
 }
 
 .all-cards .arrows .r-arrow-btn {
-  display: none;
-}
-
-.all-cards .arrows .u-arrow-btn {
   display: none;
 }
 
@@ -1196,11 +1201,6 @@ a {
 .all-cards .arrows .r-arrow-btn:checked ~ .arrow-wrapper .r-arrow-icon {
   -webkit-transform: translateX(-100%) rotate(180deg);
           transform: translateX(-100%) rotate(180deg);
-}
-
-.all-cards .arrows .d-arrow-icon:checked ~ *.predict {
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
 }
 
 @media screen and (max-width: 940px) {
