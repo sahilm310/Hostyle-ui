@@ -458,10 +458,6 @@ a {
   /* #endregion */
 }
 
-.click h3 {
-  font-size: clamp(1.8rem, 3vw, 2.3rem);
-}
-
 .click .demo-box {
   background: #092c4c;
   padding: 10px;
@@ -570,10 +566,6 @@ a {
 
 .click-next-page h2 {
   font-size: clamp(2rem, 3.5vw, 3rem);
-}
-
-.click-next-page h3 {
-  font-size: clamp(1.9rem, 2.8vw, 2.2rem);
 }
 
 .click-next-page a {
@@ -1295,6 +1287,12 @@ a {
     -ms-grid-rows: 0.1fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
         grid-template-rows: 0.1fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
         grid-template-areas: ". ." "q q" "cc cc" "np1 np2"  "np3 np4"  "np5 np6"  "np7 np9"  "np8 np8";
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container-xl {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

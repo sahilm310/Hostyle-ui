@@ -124,3 +124,9 @@
                             "np8 np8";
     }
 }
+
+@media screen and (max-width: 420px) {
+    .container-xl{
+        padding: 0;
+    }
+}
