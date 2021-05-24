@@ -1,0 +1,127 @@
+/* Nav bar code and mixin for pseudo element */
+@mixin hamburger($top) {
+    content: '';
+    background: white;
+    display: block;
+    position: absolute;
+    top: $top;
+    height: 100%;
+    width: 100%;
+    transition: 150ms background-color ease,
+                500ms transform ease,
+                500ms top ease;
+    @include border-radius(0.2rem);
+}
+@mixin circle($size, $x, $y){
+    clip-path: circle($size at $x $y);
+    -webkit-clip-path: circle($size at $x $y);
+}
+/* Nav bar styling */
+.nav-bar {
+    // --------------------
+    // entire nav styling
+    // ---------------
+    background-color: rgba($lBlue,0.9);
+    position: fixed;
+    width: 300px;
+    height: 600px;
+    z-index: 4;
+    // initial clip path
+    @include circle(80px, 0px, 15px);
+    transition: 500ms clip-path ease, 250ms width ease-in-out;
+    // ---------------------------------------
+    // clip path showing the rest of content
+    // on nav button click
+    // -----------------------
+    &.nav-show{
+        @include circle(300px, 0, 50%);
+        .nav-menu a{
+            pointer-events: auto;
+            opacity: 100;
+        }
+    }
+
+    // --------------------------
+    // styling for nav menu list
+    // ---------------------
+    .nav-menu {
+        margin: 0;
+        padding: 25px;
+        list-style: none;
+        overflow: hidden;
+        transition: 250ms padding ease;
+
+        // nav links
+        a {
+            color: white;
+            display: block;
+            opacity: 0;
+            pointer-events: none;
+            padding: .5rem;
+            margin: 1.5rem;
+            transition: 250ms margin ease, 250ms opacity ease;
+            text-decoration: none;
+            // current page nav link
+            &.current {font-weight: 900;}
+            &::after{transform-origin: left;}
+        }
+        a:hover, 
+        a:focus-within {color:$blue;}
+    }
+    
+    // Hide check box
+    // Element not focusable by keyboard
+    .hb-btn{display: none;}
+    
+    // Code for hamburger menu button
+    .hamburger {
+        cursor: pointer;
+        padding: 2rem 1.5rem;
+        position: relative;
+        user-select: none;
+        transition: 250ms padding ease;
+        // main middle segment
+        .hb-icon{
+            background-color: white;
+            display: block;
+            height: 0.3rem;
+            width: 2rem;
+            position: relative;
+            @include border-radius(0.2rem);
+            transition: 150ms background-color ease;
+        }
+         // top segment
+        .hb-icon:before{
+            @include hamburger(-0.6rem);
+        }
+        // bottom segment
+        .hb-icon:after{
+            @include hamburger(0.6rem);
+        }
+        // class for 2nd state of X
+        &.hb-close{
+            .hb-icon{
+                background: transparent!important;
+            }
+            .hb-icon:before{
+                transform: rotate(45deg);
+                transform-origin: center;
+                top:50%;
+            }
+            .hb-icon:after{
+                transform: rotate(-45deg);
+                transform-origin: center;
+                top:50%;
+            }
+        }
+    }
+    // Hamburger icon hover
+    .hamburger:hover, 
+    .hamburger:focus-within{
+        .hb-icon, 
+        .hb-icon:before, 
+        .hb-icon:after{
+            background-color: $blue;
+        }
+    }
+}
