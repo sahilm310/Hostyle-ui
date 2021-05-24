@@ -1121,13 +1121,13 @@ a {
 }
 
 .all-cards .predict {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .all-cards .arrows {
   width: 100%;
-  height: 130px;
+  height: 80px;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1137,7 +1137,15 @@ a {
           align-items: center;
 }
 
+.all-cards .arrows.txt-center {
+  display: initial;
+}
+
 .all-cards .arrows .r-arrow-btn {
+  display: none;
+}
+
+.all-cards .arrows .u-arrow-btn {
   display: none;
 }
 
@@ -1152,25 +1160,32 @@ a {
   transition: 1.5s transform ease, 1.5s -webkit-transform ease;
 }
 
+.all-cards .arrows .d-arrow-icon,
 .all-cards .arrows .r-arrow-icon {
   font-size: clamp(2.5rem, 2vw, 3.5rem);
   cursor: pointer;
+}
+
+.all-cards .arrows .d-arrow-icon::before,
+.all-cards .arrows .r-arrow-icon::before {
+  -webkit-transition: 250ms font-size ease;
+  transition: 250ms font-size ease;
+}
+
+.all-cards .arrows .d-arrow-icon:hover::before, .all-cards .arrows .d-arrow-icon:focus-within::before,
+.all-cards .arrows .r-arrow-icon:hover::before,
+.all-cards .arrows .r-arrow-icon:focus-within::before {
+  color: #0a3155;
+  font-size: 1.2em;
+}
+
+.all-cards .arrows .r-arrow-icon {
   -webkit-transform: translateX(0px) rotate(0deg);
           transform: translateX(0px) rotate(0deg);
   -webkit-transition: 1.5s padding-left ease-in-out, 250ms color ease, 1.5s -webkit-transform ease;
   transition: 1.5s padding-left ease-in-out, 250ms color ease, 1.5s -webkit-transform ease;
   transition: 1.5s padding-left ease-in-out, 1.5s transform ease, 250ms color ease;
   transition: 1.5s padding-left ease-in-out, 1.5s transform ease, 250ms color ease, 1.5s -webkit-transform ease;
-}
-
-.all-cards .arrows .r-arrow-icon::before {
-  -webkit-transition: 250ms font-size ease;
-  transition: 250ms font-size ease;
-}
-
-.all-cards .arrows .r-arrow-icon:hover::before, .all-cards .arrows .r-arrow-icon:focus-within::before {
-  color: #0a3155;
-  font-size: 1.2em;
 }
 
 .all-cards .arrows .r-arrow-btn:checked ~ .arrow-wrapper {
@@ -1181,6 +1196,11 @@ a {
 .all-cards .arrows .r-arrow-btn:checked ~ .arrow-wrapper .r-arrow-icon {
   -webkit-transform: translateX(-100%) rotate(180deg);
           transform: translateX(-100%) rotate(180deg);
+}
+
+.all-cards .arrows .d-arrow-icon:checked ~ *.predict {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 @media screen and (max-width: 940px) {
