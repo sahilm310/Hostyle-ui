@@ -11,12 +11,22 @@
 }
 
 .predict{
+    overflow: hidden;
+    .cards{
+        transform: translateY(-50%);
+    }
+
+
+
     // ----------------------------
     /* #region Arrow div */ 
     .arrows{
         width: 100%;
-        height: 200px;
+        height: 130px;
         padding: 10px;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
         // ----------------------------
         // hide check box
         .r-arrow-btn{display: none;}

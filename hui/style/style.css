@@ -1115,14 +1115,26 @@ a {
 }
 
 .predict {
+  overflow: hidden;
   /* #region Arrow div */
   /* #endregion Arrow div */
 }
 
+.predict .cards {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .predict .arrows {
   width: 100%;
-  height: 200px;
+  height: 130px;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .predict .arrows .r-arrow-btn {
