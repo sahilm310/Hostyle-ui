@@ -112,8 +112,6 @@ a {font-size: 1.5rem;}
 @import "nav";
 
 
-
-
 /* #region bootstrap button styling */
 /* remove unwanted oulines from all btn */
 .btn:focus {
@@ -121,9 +119,10 @@ a {font-size: 1.5rem;}
     box-shadow: none!important;
 }
 .btn-primary {
-    color: aliceblue!important;
+    color: white!important;
     background-color: $lBlue;
     font-size: clamp(1.3rem, 1.8vw, 2rem)!important;
+    font-weight: bold;
     border:none;
     outline:0px solid $blue;
     border-color: darken($color:$lBlue, $amount:10%)!important;
@@ -132,8 +131,7 @@ a {font-size: 1.5rem;}
 
 .btn-primary:hover {
     background-color: darken($color:$lBlue, $amount:10%);
-    color:aliceblue;
-
+    color: white;
     outline:  3px solid darken($color:$lBlue, $amount:10%)!important;
 }
 
@@ -144,6 +142,7 @@ a {font-size: 1.5rem;}
 .btn-outline-primary{
     color: $lBlue !important;
     border-color: $lBlue!important;
+    font-weight: bold;
     vertical-align: baseline;
     padding: 4px 10px;
 }
@@ -151,7 +150,7 @@ a {font-size: 1.5rem;}
 .btn-outline-primary:hover, .btn-outline-primary:focus,
 .btn-outline-primary:active, .btn-outline-primary:visited {
     background-color: $lBlue!important;
-    color:aliceblue !important;
+    color:white !important;
     border-color: $lBlue!important;
 }
 

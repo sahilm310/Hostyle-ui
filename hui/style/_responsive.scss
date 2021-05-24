@@ -62,7 +62,8 @@
     /* #region nav bar */
     .nav-bar {
         width: 260px;
-        @include circle(80px, -15px, 10px);
+        // initial clip path
+        @include circle(80px, -10px, -10px);
         // clip path showing the rest of content
         &.nav-show{
             @include circle(250px, 0px, 250px);

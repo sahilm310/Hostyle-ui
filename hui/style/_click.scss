@@ -112,7 +112,10 @@
                         ". . .";
     text-align: center;
     h3{font-size:clamp(1.9rem,2.8vw,2.2rem);}
-    a{font-size: clamp(1.4rem, 2.5vw, 2rem)}
+    a{
+        font-size: clamp(1.4rem, 2.5vw, 2rem);
+        font-weight: bold;
+    }
     /* #endregion */
 
     /* #region grid items setup */
@@ -133,6 +136,7 @@
     .symbol{
         box-sizing: border-box;
         position: relative;
+        font-weight: bold;
         cursor:text;
     }
     .symbol::after{

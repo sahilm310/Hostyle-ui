@@ -102,7 +102,7 @@ a {
 /* Nav bar code and mixin for pseudo element */
 /* Nav bar styling */
 .nav-bar {
-  background-color: rgba(27, 129, 224, 0.9);
+  background-color: rgba(27, 129, 224, 0.55);
   position: fixed;
   width: 300px;
   height: 600px;
@@ -254,9 +254,10 @@ a {
 }
 
 .btn-primary {
-  color: aliceblue !important;
+  color: white !important;
   background-color: #1B81E0;
   font-size: clamp(1.3rem, 1.8vw, 2rem) !important;
+  font-weight: bold;
   border: none;
   outline: 0px solid #0a3155;
   border-color: #1667b2 !important;
@@ -266,7 +267,7 @@ a {
 
 .btn-primary:hover {
   background-color: #1667b2;
-  color: aliceblue;
+  color: white;
   outline: 3px solid #1667b2 !important;
 }
 
@@ -277,6 +278,7 @@ a {
 .btn-outline-primary {
   color: #1B81E0 !important;
   border-color: #1B81E0 !important;
+  font-weight: bold;
   vertical-align: baseline;
   padding: 4px 10px;
 }
@@ -284,7 +286,7 @@ a {
 .btn-outline-primary:hover, .btn-outline-primary:focus,
 .btn-outline-primary:active, .btn-outline-primary:visited {
   background-color: #1B81E0 !important;
-  color: aliceblue !important;
+  color: white !important;
   border-color: #1B81E0 !important;
 }
 
@@ -566,6 +568,7 @@ a {
 
 .click-next-page a {
   font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: bold;
 }
 
 .click-next-page .np-task {
@@ -639,6 +642,7 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  font-weight: bold;
   cursor: text;
 }
 
@@ -1219,8 +1223,8 @@ a {
   /* #region nav bar */
   .nav-bar {
     width: 260px;
-    clip-path: circle(80px at -15px 10px);
-    -webkit-clip-path: circle(80px at -15px 10px);
+    clip-path: circle(80px at -10px -10px);
+    -webkit-clip-path: circle(80px at -10px -10px);
   }
   .nav-bar.nav-show {
     clip-path: circle(250px at 0px 250px);
