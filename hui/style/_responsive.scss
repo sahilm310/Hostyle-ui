@@ -1,5 +1,5 @@
 @media screen and (max-width: 940px) {
-    /* #region colour page*/
+    /* #region colour page */
     .colour-main {
         height: 100%;
         grid-template-rows: 0.2fr 0.2fr 0.1fr 0.9fr;
@@ -31,11 +31,11 @@
         width: 75px!important;
         height: 75px!important;
     }
-    /* #endregion symbol demo animation*/
+    /* #endregion symbol demo animation */
 }
 
 @media screen and (max-width: 720px) {
-    /* #region home page*/
+    /* #region home page */
     .home{
         grid-template-rows: 0.5fr 0.1fr 0.3fr 0.1fr;
         grid-template-areas:"b2 b2 b2" 
@@ -43,9 +43,9 @@
                             "b1 b1 b1" 
                             "b3 b3 b3";
     }
-    /* #endregion home page*/
+    /* #endregion home page */
 
-    /* #region clickability page*/
+    /* #region clickability page */
     .click{
         height: 120vh;
         grid-template-columns:  1fr 1fr 1fr ;
@@ -56,11 +56,11 @@
                             ". . ." 
                             "b3 b3 b3";
     }
-    /* #endregion clickability page*/
+    /* #endregion clickability page */
 } 
 
 @media screen and (max-width: 660px) {
-    /* #region nav bar*/
+    /* #region nav bar */
     .nav-bar {
         width: 260px;
         @include circle(80px, -15px, 10px);
@@ -75,19 +75,19 @@
         }
         .hamburger {padding: 1.5rem 1rem;}
     }
-    /* #endregion nav bar*/
+    /* #endregion nav bar */
 
 
-    /* #region colour page*/
+    /* #region colour page */
     .colour-a11y{
         min-height: 150vh;
         height:1000px;
     }
-    /* #endregion colour page*/
+    /* #endregion colour page */
 }
 
 @media screen and (max-width: 540px) {
-    /* #region colour page*/
+    /* #region colour page */
     .cards {
         width: 100%;
         &.large{width: 100%;}
@@ -107,5 +107,18 @@
         .sqr1 {background-color: $accent;}
         .heading {padding: 0.5rem;}
     }
-    /* #endregion colour page*/
+    /* #endregion colour page */
+    /* #region colour page */
+
+    .click-next-page{
+        grid-template-columns:  0.5fr 0.5fr   ;
+        grid-template-rows:  0.2fr 0.1fr 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr;
+        grid-template-areas:"q q"
+                            "cc cc"
+                            "np1 np2" 
+                            "np3 np4" 
+                            "np5 np6" 
+                            "np7 np8" 
+                            "np9 np9";
+    }
 }
