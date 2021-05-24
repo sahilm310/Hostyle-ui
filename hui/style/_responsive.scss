@@ -47,7 +47,6 @@
 
     /* #region clickability page */
     .click{
-        height: 120vh;
         grid-template-columns:  1fr 1fr 1fr ;
         grid-template-rows: 0.05fr 0.8fr 1fr 0.1fr 1fr;
         grid-template-areas:"b1 b1 b1" 
@@ -112,13 +111,14 @@
 
     .click-next-page{
         grid-template-columns:  0.5fr 0.5fr   ;
-        grid-template-rows:  0.2fr 0.1fr 0.2fr 0.2fr 0.2fr 0.2fr 0.1fr;
-        grid-template-areas:"q q"
+        grid-template-rows:  0.1fr 0.3fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+        grid-template-areas:". ."
+                            "q q"
                             "cc cc"
                             "np1 np2" 
                             "np3 np4" 
                             "np5 np6" 
-                            "np7 np8" 
-                            "np9 np9";
+                            "np7 np9" 
+                            "np8 np8";
     }
 }
