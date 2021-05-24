@@ -36,7 +36,7 @@ h2 {
 
 h3 {
   font-family: "Caveat", "Courier New", monospace;
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.6rem, 2.5vw, 2.3rem);
 }
 
 h4 {
@@ -384,7 +384,8 @@ a {
 /* #endregion */
 /* #region set up grid */
 .home {
-  height: 100vh;
+  min-height: 100vh;
+  height: 700px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -406,6 +407,10 @@ a {
   padding: 5px;
 }
 
+.b1 h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
 .b2 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -417,7 +422,7 @@ a {
 }
 
 .b2 img {
-  width: clamp(180px, 20vw, 270px);
+  width: clamp(150px, 25vw, 270px);
 }
 
 .b3 {
@@ -1254,6 +1259,9 @@ a {
 }
 
 @media screen and (max-width: 540px) {
+  .home {
+    height: 550px;
+  }
   /* #region colour page */
   .cards {
     width: 100%;
