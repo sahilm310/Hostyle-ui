@@ -563,6 +563,10 @@ a {
   /* #endregion */
 }
 
+.click-next-page h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+
 .click-next-page h3 {
   font-size: clamp(1.9rem, 2.8vw, 2.2rem);
 }
