@@ -14,9 +14,11 @@
 .toggleCards:checked {
     ~.card-wrapper{
         transform: translateY(-100%);
+        opacity: 0;
     }
     ~.card-wrapper2{
         transform: translateY(-100%);
+        opacity: 100%;
     }
 }
 
@@ -25,13 +27,15 @@
     overflow: hidden;
     .card-wrapper2{
         height: 100%;
-        // transform: translateY(20%);
-        transition: 1s transform ease-in-out;
+        opacity: 0;
+        transition: 1s transform ease-in-out,
+                    1s opacity ease-in-out;
     }
 
     .card-wrapper{
         height: 100%;
-        transition: 1s transform ease-in-out;
+        transition: 1s transform ease-in-out, 
+        1s opacity ease-in-out;
     }
     .card-title{
         font-size: clamp(1.8rem,2vw, 2.5rem);

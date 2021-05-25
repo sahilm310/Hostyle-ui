@@ -1125,11 +1125,13 @@ a {
 .toggleCards:checked ~ .card-wrapper {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  opacity: 0;
 }
 
 .toggleCards:checked ~ .card-wrapper2 {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  opacity: 100%;
 }
 
 .all-cards {
@@ -1142,18 +1144,19 @@ a {
 
 .all-cards .card-wrapper2 {
   height: 100%;
-  -webkit-transition: 1s -webkit-transform ease-in-out;
-  transition: 1s -webkit-transform ease-in-out;
-  transition: 1s transform ease-in-out;
-  transition: 1s transform ease-in-out, 1s -webkit-transform ease-in-out;
+  opacity: 0;
+  -webkit-transition: 1s opacity ease-in-out, 1s -webkit-transform ease-in-out;
+  transition: 1s opacity ease-in-out, 1s -webkit-transform ease-in-out;
+  transition: 1s transform ease-in-out, 1s opacity ease-in-out;
+  transition: 1s transform ease-in-out, 1s opacity ease-in-out, 1s -webkit-transform ease-in-out;
 }
 
 .all-cards .card-wrapper {
   height: 100%;
-  -webkit-transition: 1s -webkit-transform ease-in-out;
-  transition: 1s -webkit-transform ease-in-out;
-  transition: 1s transform ease-in-out;
-  transition: 1s transform ease-in-out, 1s -webkit-transform ease-in-out;
+  -webkit-transition: 1s opacity ease-in-out,  1s -webkit-transform ease-in-out;
+  transition: 1s opacity ease-in-out,  1s -webkit-transform ease-in-out;
+  transition: 1s transform ease-in-out,  1s opacity ease-in-out;
+  transition: 1s transform ease-in-out,  1s opacity ease-in-out,  1s -webkit-transform ease-in-out;
 }
 
 .all-cards .card-title {
