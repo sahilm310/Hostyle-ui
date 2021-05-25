@@ -1,0 +1,12 @@
+.consist-main{
+    min-height: 100vh;
+    height:800px;
+    display: grid; 
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 0.05fr 0.3fr 0.05fr 0.6fr;
+    grid-template-areas:". . ."
+                        ". b1 ."
+                        ". . ."
+                        "b2 b2 b2";
+
+}
