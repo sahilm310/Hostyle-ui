@@ -1260,6 +1260,10 @@ a {
   color: #0a3155;
 }
 
+.modal .modal-content .modal-header h5 {
+  color: #0a3155;
+}
+
 .modal .modal-content .modal-header .x-square {
   font-size: 1.3rem;
 }
@@ -1278,6 +1282,11 @@ a {
 
 .modal .modal-content .modal-footer button.blue {
   background-color: #1B81E0;
+  width: 100px;
+}
+
+.modal .modal-content .modal-footer button.blue:hover {
+  background-color: #1667b2;
 }
 
 @media screen and (max-width: 940px) {

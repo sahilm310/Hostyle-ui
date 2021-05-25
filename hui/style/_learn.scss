@@ -129,10 +129,12 @@
 .modal{
     .modal-content{
         .modal-header{
+            h5{color:$blue;}
             .x-square{
                 font-size: 1.3rem;
             }
         }
+        
         
         .modal-footer{
             button{
@@ -142,7 +144,13 @@
                 width: 60px;
                 height: 40px;
                 line-height: 1;
-                &.blue{background-color: $lBlue;}
+                &.blue{
+                    background-color: $lBlue;
+                    width: 100px;
+                }
+                &.blue:hover{
+                    background-color: darken($color: $lBlue, $amount: 10%);
+                }
             }
         }
     }
