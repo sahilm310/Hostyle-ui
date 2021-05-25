@@ -1130,6 +1130,7 @@ a {
       grid-template-areas: ". . ." ". b1 ." ". . ." "b2 b2 b2";
 }
 
+/* #region entire page style change */
 body.con-body {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -1142,13 +1143,19 @@ body.con-body .con-main {
 
 .inconsistant {
   background: #D9A1EA;
-  color: #FBF7FF !important;
+  color: #74508A !important;
+}
+
+.inconsistant h1,
+.inconsistant h2 {
+  font-family: 'Grenze Gotisch', cursive;
 }
 
 .inconsistant .con-main {
   background-color: #D9A1EA !important;
 }
 
+/* #endregion entire page style change */
 .learn-main {
   min-height: 100vh;
   height: 800px;

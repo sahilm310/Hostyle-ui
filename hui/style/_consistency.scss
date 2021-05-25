@@ -1,4 +1,4 @@
-$incon-prim: #897A9E;
+$incon-prim: #74508A;
 $incon-sec: #FBF7FF;
 $incon-sec2: #D9A1EA;
 $incon-acc: #9E9D37;
@@ -16,19 +16,23 @@ $incon-acc: #9E9D37;
 
 }
 
+
+/* #region entire page style change */
 body.con-body{
     transition: all 1s ease;
+    
     .con-main{
         transition: 1s background-color ease;
     }
 }
 
 .inconsistant{
-    // transition: all 1s ease;
-
+    h1,
+    h2{font-family: 'Grenze Gotisch', cursive;}
     background: $incon-sec2;
-    color: $incon-sec!important;
+    color: $incon-prim!important;
     .con-main{
         background-color: $incon-sec2!important;
     }
 }
+/* #endregion entire page style change */
