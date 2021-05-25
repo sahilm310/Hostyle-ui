@@ -1131,11 +1131,12 @@ a {
 }
 
 .inconsistant {
-  background-color: red;
+  background: #D9A1EA;
+  color: #FBF7FF !important;
 }
 
 .inconsistant .con-main {
-  background-color: red !important;
+  background-color: #D9A1EA !important;
 }
 
 .learn-main {

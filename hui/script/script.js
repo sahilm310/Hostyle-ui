@@ -29,6 +29,10 @@ function handleEnter(e){
 function toggleClass(elem,className) {
     elem.classList.toggle(className);
 }
+function toggleClassM(elem,className) {
+    let toggle = document.getElementById(elem);
+    toggle.classList.toggle(className);
+}
 // class list toggle specific for nav menu
 function toggleNav(id) {
     let show = document.getElementById(id);

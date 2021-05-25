@@ -1,4 +1,7 @@
-$incon-bg: red;
+$incon-prim: #897A9E;
+$incon-sec: #FBF7FF;
+$incon-sec2: #D9A1EA;
+$incon-acc: #9E9D37;
 
 .con-main{
     min-height: 100vh;
@@ -15,8 +18,9 @@ $incon-bg: red;
 
 
 .inconsistant{
-    background-color: $incon-bg;
+    background: $incon-sec2;
+    color: $incon-sec!important;
     .con-main{
-        background-color: $incon-bg!important;
+        background-color: $incon-sec2!important;
     }
 }
