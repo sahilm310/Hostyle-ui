@@ -31,13 +31,7 @@
 
     .card-wrapper{
         height: 100%;
-        // transform: translateY(0%);
         transition: 1s transform ease-in-out;
-        
-        &.cards{
-            // display: flex;
-            // flex-direction: column;
-        }
     }
     .card-title{
         font-size: clamp(1.8rem,2vw, 2.5rem);

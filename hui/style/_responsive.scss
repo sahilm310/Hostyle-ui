@@ -84,6 +84,21 @@
         height:1000px;
     }
     /* #endregion colour page */
+
+
+    /* #region learnability page */
+    .learn-main{
+        min-height: 100vh;
+        height:850px;
+        // grid-template-columns:  1fr 1fr 1fr ;
+        grid-template-rows: 0.05fr 0.2fr 0.75fr;
+        grid-template-areas:". . ."
+                            "b1 b1 b1"
+                            
+                            "b2 b2 b2";
+    }
+    /* #region learnability page */
+
 }
 
 @media screen and (max-width: 540px) {
