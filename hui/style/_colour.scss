@@ -88,7 +88,7 @@
     display: grid;
     height: 100%;
     grid-template-columns: 0.4fr 0.2fr 0.4fr;
-    grid-template-rows: 0.1fr 0.1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
     grid-template-areas:"w . c"
                         "bar bar bar" 
                         "aw . ac" 
