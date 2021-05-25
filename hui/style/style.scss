@@ -47,25 +47,35 @@ body {
 * {box-sizing: border-box;}
 
 h1 {
+    min-height: 0vw;
     font-size:clamp(2.7rem,4vw, 3.2rem);
     font-weight: bold;
 }
 
-h2 {font-size:clamp(2.5rem,3.5vw, 3rem)}
+h2 {
+    min-height: 0vw;
+    font-size:clamp(2.5rem,3.5vw, 3rem);
+}
 
 h3 {
+    min-height: 0vw;
     font-family: $fontB;
     font-size:clamp(1.6rem,2.5vw, 2.3rem);
 }
 
 h4 {
+    min-height: 0vw;
     font-size:clamp(1.6rem,1.8vw, 2rem);
     font-weight: bold;
 }
 
-h5 {font-size:clamp(1.5rem,2vw, 1.8rem);}
+h5 {
+    min-height: 0vw;
+    font-size:clamp(1.5rem,2vw, 1.8rem);
+}
 
 p {
+    min-height: 0vw;
     font-family: $fontB;
     font-size:clamp(1.5rem,2vw, 1.8rem);
 }
@@ -119,6 +129,7 @@ a {font-size: 1.5rem;}
     box-shadow: none!important;
 }
 .btn-primary {
+    min-height: 0vw;
     color: white!important;
     background-color: $lBlue;
     font-size: clamp(1.3rem, 1.8vw, 2rem)!important;

@@ -19,6 +19,7 @@
     @include border-radius(1rem);
     transition: 200ms width ease,150ms margin ease;
     &.large{
+        min-height: 0vw;
         width: clamp(400px,50vw,600px);
     }
 
@@ -64,16 +65,16 @@
 
 }
 
-.gap{margin-right:10px;}
-.gap:last-child{margin-right:0px;}
+.gap {margin-right:10px;}
+.gap:last-child {margin-right:0px;}
 
-.ratio{
+.ratio {
     text-align: center;
     color: white;
     width:30%;
     box-sizing: border-box;
     background-repeat: no-repeat;
-    background-image:   linear-gradient($blue, $blue), 
+    background-image: linear-gradient($blue, $blue), 
     linear-gradient($lBlue, $lBlue), 
     linear-gradient($accent, $accent);
     background-size: 100% 50%,100% 80%,100% 100%;

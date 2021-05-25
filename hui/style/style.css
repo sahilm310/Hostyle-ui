@@ -26,29 +26,35 @@ body {
 }
 
 h1 {
+  min-height: 0vw;
   font-size: clamp(2.7rem, 4vw, 3.2rem);
   font-weight: bold;
 }
 
 h2 {
+  min-height: 0vw;
   font-size: clamp(2.5rem, 3.5vw, 3rem);
 }
 
 h3 {
+  min-height: 0vw;
   font-family: "Caveat", "Courier New", monospace;
   font-size: clamp(1.6rem, 2.5vw, 2.3rem);
 }
 
 h4 {
+  min-height: 0vw;
   font-size: clamp(1.6rem, 1.8vw, 2rem);
   font-weight: bold;
 }
 
 h5 {
+  min-height: 0vw;
   font-size: clamp(1.5rem, 2vw, 1.8rem);
 }
 
 p {
+  min-height: 0vw;
   font-family: "Caveat", "Courier New", monospace;
   font-size: clamp(1.5rem, 2vw, 1.8rem);
 }
@@ -255,6 +261,7 @@ a {
 }
 
 .btn-primary {
+  min-height: 0vw;
   color: white !important;
   background-color: #1B81E0;
   font-size: clamp(1.3rem, 1.8vw, 2rem) !important;
@@ -459,21 +466,25 @@ a {
 }
 
 .click .demo-box {
+  min-height: 0vw;
+  height: clamp(280px, 22vw, 50px);
   background: #092c4c;
   padding: 10px;
   border-radius: 10px;
-  height: clamp(260px, 22vw, 50px);
 }
 
 .click .demo-box h3 {
+  min-height: 0vw;
   font-size: clamp(1.6rem, 2.5vw, 2rem);
 }
 
 .click .demo-box a {
+  min-height: 0vw;
   font-size: clamp(1.2rem, 2.3vw, 1.8rem);
 }
 
 .click .demo-box #demo-btn-basic {
+  min-height: 0vw;
   font-size: clamp(1rem, 2.3vw, 1.5rem);
 }
 
@@ -518,6 +529,7 @@ a {
 }
 
 .click .demo-btn-1 {
+  min-height: 0vw;
   font-size: clamp(0.8rem, 2vw, 0.9rem);
   padding: 3px;
   border: none;
@@ -565,10 +577,12 @@ a {
 }
 
 .click-next-page h2 {
+  min-height: 0vw;
   font-size: clamp(2rem, 3.5vw, 3rem);
 }
 
 .click-next-page a {
+  min-height: 0vw;
   font-size: clamp(1.4rem, 2.5vw, 2rem);
   font-weight: bold;
 }
@@ -657,8 +671,8 @@ a {
   bottom: 0;
   -webkit-transform-origin: center;
           transform-origin: center;
+  min-height: 0vw;
   font-size: clamp(1.5rem, 1.5vw, 3em);
-  /* set rotation to start at 300 deg (facing upwards)*/
   -webkit-transition: 250ms font-size ease, 250ms -webkit-transform ease;
   transition: 250ms font-size ease, 250ms -webkit-transform ease;
   transition: 250ms font-size ease, 250ms transform ease;
@@ -668,6 +682,7 @@ a {
 .click-next-page .symbol:hover::after {
   font-family: "FontAwesome";
   content: " \F138";
+  min-height: 0vw;
   position: absolute;
   /* rotation on hover becomes 360 deg (right) */
   -webkit-transform: rotate(360deg);
@@ -703,6 +718,7 @@ a {
 }
 
 .cards.large {
+  min-height: 0vw;
   width: clamp(400px, 50vw, 600px);
 }
 
@@ -1123,14 +1139,14 @@ a {
 }
 
 .toggleCards:checked ~ .card-wrapper {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: scale(0.7) translateY(-100%);
+          transform: scale(0.7) translateY(-100%);
   opacity: 0;
 }
 
 .toggleCards:checked ~ .card-wrapper2 {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: scale(1) translateY(-100%);
+          transform: scale(1) translateY(-100%);
   opacity: 100%;
 }
 
@@ -1145,6 +1161,8 @@ a {
 .all-cards .card-wrapper2 {
   height: 100%;
   opacity: 0;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
   -webkit-transition: 1s opacity ease-in-out, 1s -webkit-transform ease-in-out;
   transition: 1s opacity ease-in-out, 1s -webkit-transform ease-in-out;
   transition: 1s transform ease-in-out, 1s opacity ease-in-out;
@@ -1204,6 +1222,7 @@ a {
 
 .all-cards .arrows .d-arrow-icon,
 .all-cards .arrows .r-arrow-icon {
+  min-height: 0vw;
   font-size: clamp(2.5rem, 2vw, 3.5rem);
   cursor: pointer;
   color: #0a3155;

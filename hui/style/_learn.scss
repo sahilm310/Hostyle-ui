@@ -13,21 +13,23 @@
 .toggleCards{display: none;}
 .toggleCards:checked {
     ~.card-wrapper{
-        transform: translateY(-100%);
+        transform: scale(0.7) translateY(-100%) ;
         opacity: 0;
     }
     ~.card-wrapper2{
-        transform: translateY(-100%);
+        transform: scale(1) translateY(-100%);
         opacity: 100%;
     }
 }
 
 
 .all-cards{
+    
     overflow: hidden;
     .card-wrapper2{
         height: 100%;
         opacity: 0;
+        transform: scale(0.7);
         transition: 1s transform ease-in-out,
                     1s opacity ease-in-out;
     }
@@ -76,6 +78,7 @@
         // arrow icon element
         .d-arrow-icon,
         .r-arrow-icon {
+            min-height: 0vw;
             font-size: clamp(2.5rem, 2vw, 3.5rem);
             cursor: pointer;
             color: $blue;

@@ -9,20 +9,25 @@
     grid-template-rows: 0.2fr 1fr 0.3fr 1fr;
     grid-template-areas:". . . ." ". b1 b1 ." ". . . ." "b2 b2 b3 b3";
     
-    // h3{font-size:clamp(1.8rem,3vw, 2.3rem);}
     /* #endregion */
 
     /* #region setup demo box/card*/
     .demo-box{
+        min-height: 0vw;
+        height: clamp(280px, 22vw,50px);
         background: darken($color: $blue, $amount: 2%);
         padding: 10px;
         @include border-radius(10px);
-        height:clamp(260px, 22vw,50px);
-        h3{
+        h3 {
+            min-height: 0vw;
             font-size: clamp(1.6rem, 2.5vw, 2rem);
         }
-        a{font-size: clamp(1.2rem, 2.3vw, 1.8rem);}
-        #demo-btn-basic{
+        a {
+            min-height: 0vw;
+            font-size: clamp(1.2rem, 2.3vw, 1.8rem);
+        }
+        #demo-btn-basic {
+            min-height: 0vw;
             font-size: clamp(1rem, 2.3vw, 1.5rem);
         }
     }
@@ -68,6 +73,7 @@
     
     /* #region demo click button styling*/
     .demo-btn-1{
+        min-height: 0vw;
         font-size: clamp(0.8rem,2vw,0.9rem);
         padding: 3px;
         border:none;
@@ -111,9 +117,13 @@
                         "np7 np8 np9" 
                         ". . .";
     text-align: center;
-    h2 {font-size:clamp(2rem,3.5vw, 3rem)}
-    
+    h2 {
+        min-height: 0vw;
+        font-size:clamp(2rem,3.5vw, 3rem);
+    }
+
     a{
+        min-height: 0vw;
         font-size: clamp(1.4rem, 2.5vw, 2rem);
         font-weight: bold;
     }
@@ -148,15 +158,15 @@
         margin-left: 5px;
         bottom: 0;
         transform-origin:center;
-        font-size: clamp(1.5rem, 1.5vw ,3em);
-        /* set rotation to start at 300 deg (facing upwards)*/
-        // transform: rotate(300deg);
+        min-height: 0vw;
+        font-size: clamp(1.5rem, 1.5vw, 3em);
         transition: 250ms font-size ease,
                     250ms transform ease;
     }
     .symbol:hover::after{
         font-family: "FontAwesome";
         content: " \F138";
+        min-height: 0vw;
         position: absolute;
         /* rotation on hover becomes 360 deg (right) */
         transform: rotate(360deg);
