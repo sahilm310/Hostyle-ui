@@ -1166,6 +1166,10 @@ a {
           flex-direction: column;
 }
 
+.all-cards .card-title {
+  font-size: clamp(1.8rem, 2vw, 2.5rem);
+}
+
 .all-cards .arrows {
   width: 100%;
   height: 80px;
@@ -1244,9 +1248,16 @@ a {
           transform: translateX(-100%) rotate(180deg);
 }
 
-.all-cards .familiar .fas {
+.all-cards .familiar .icon-btn {
   font-size: clamp(2.2rem, 2vw, 3rem);
-  padding: 15px;
+  margin: clamp(2px, 1.5vw, 20px);
+  color: white;
+  -webkit-transition: 250ms color ease;
+  transition: 250ms color ease;
+}
+
+.all-cards .familiar .icon-btn:hover, .all-cards .familiar .icon-btn:focus-within {
+  color: #0a3155;
 }
 
 @media screen and (max-width: 940px) {
