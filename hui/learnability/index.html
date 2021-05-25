@@ -64,7 +64,7 @@
                         <div class="arrows ">
                             <input type="checkbox" class="r-arrow-btn" id="r-arrow-btn" autocomplete="off">
                             <div class="arrow-wrapper">
-                                <label class="r-arrow-icon fas fa-arrow-circle-right" id="r-arrow-icon" for="r-arrow-btn" tabindex="0"></label>
+                                <label data-toggle="modal" data-target="#staticBackdrop" class="r-arrow-icon fas fa-arrow-circle-right" id="r-arrow-icon" for="r-arrow-btn" tabindex="0"></label>
                             </div>
                             
                             
@@ -89,10 +89,10 @@
                         </p>
                         <br>
                         <p>
-                            Are you familiar with the settings button?
+                            Are you familiar with the <span class="accent-inv brush">settings</span> button?
                         </p>
                         <i class="icon-btn fas fa-save"></i>
-                        <i onclick="" class="icon-btn fas fa-cog"></i>
+                        <i data-toggle="modal" data-target="#staticBackdrop" class="icon-btn fas fa-cog"></i>
                         <i class="icon-btn fas fa-home"></i>
                         <i class="icon-btn fas fa-user-circle"></i>
                         <i class="icon-btn fas fa-magnet"></i>
@@ -100,6 +100,30 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel"><b>Continue to the next page</b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="x-square far fa-square"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    <p>Can you find the right way to the next page?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"></button>
+                        <button type="button" class="btn btn-secondary blue"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
     </main>
 
 

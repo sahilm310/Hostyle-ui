@@ -1260,6 +1260,26 @@ a {
   color: #0a3155;
 }
 
+.modal .modal-content .modal-header .x-square {
+  font-size: 1.3rem;
+}
+
+.modal .modal-content .modal-footer button {
+  font-size: 3rem;
+  padding: 0 !important;
+  width: 60px;
+  height: 40px;
+  line-height: 1;
+}
+
+.modal .modal-content .modal-footer button span {
+  text-align: center;
+}
+
+.modal .modal-content .modal-footer button.blue {
+  background-color: #1B81E0;
+}
+
 @media screen and (max-width: 940px) {
   /* #region colour page */
   .colour-main {
