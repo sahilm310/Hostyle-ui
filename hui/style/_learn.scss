@@ -152,6 +152,8 @@
                 &.blue{
                     background-color: $lBlue;
                     width: 100px;
+                    height: 50px;
+
                 }
                 &.blue:hover{
                     background-color: darken($color: $lBlue, $amount: 10%);

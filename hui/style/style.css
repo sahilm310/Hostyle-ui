@@ -1303,6 +1303,7 @@ a {
 .modal .modal-content .modal-footer button.blue {
   background-color: #1B81E0;
   width: 100px;
+  height: 50px;
 }
 
 .modal .modal-content .modal-footer button.blue:hover {
