@@ -1268,6 +1268,14 @@ a {
   font-size: 1.3rem;
 }
 
+.modal .modal-content .modal-body a {
+  color: #0a3155;
+}
+
+.modal .modal-content .modal-body a:hover {
+  text-decoration: underline;
+}
+
 .modal .modal-content .modal-footer button {
   font-size: 3rem;
   padding: 0 !important;
