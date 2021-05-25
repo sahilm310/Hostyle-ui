@@ -16,8 +16,16 @@ $incon-acc: #9E9D37;
 
 }
 
+body.con-body{
+    transition: all 1s ease;
+    .con-main{
+        transition: 1s background-color ease;
+    }
+}
 
 .inconsistant{
+    // transition: all 1s ease;
+
     background: $incon-sec2;
     color: $incon-sec!important;
     .con-main{

@@ -1130,6 +1130,16 @@ a {
       grid-template-areas: ". . ." ". b1 ." ". . ." "b2 b2 b2";
 }
 
+body.con-body {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+body.con-body .con-main {
+  -webkit-transition: 1s background-color ease;
+  transition: 1s background-color ease;
+}
+
 .inconsistant {
   background: #D9A1EA;
   color: #FBF7FF !important;
