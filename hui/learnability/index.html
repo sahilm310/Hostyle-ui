@@ -29,7 +29,7 @@
 <body onkeypress="handleEnter(event)">
     <!-- nav bar -->
     <nav class="nav-bar" id="nav-bar">
-        <input type="checkbox" onclick="toggleNav('nav-bar')" class="hb-btn" id="hb-btn">
+        <input type="checkbox" onclick="toggleNav('nav-bar')" class="hb-btn" id="hb-btn" aria-hidden="true">
         <label class="hamburger" id="icon" for="hb-btn" tabindex="0">
             <span class="hb-icon"></span>
         </label>
@@ -52,7 +52,7 @@
 
 
             <div class="b2 all-cards tr-main ">
-                <input type="checkbox" class="toggleCards" id="toggleCards" autocomplete="off">
+                <input type="checkbox" class="toggleCards" id="toggleCards" autocomplete="off" aria-hidden="true">
                 <div class="card-wrapper flex-center">
                     <div class="cards large predict">
                         <h4 class="card-title">Predictable</h4>
@@ -102,19 +102,19 @@
         
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
+            <div class="modal-dialog modal-dialog-centered" aria-hidden="true" role="document">
+                <div class="modal-content" >
+                    <div class="modal-header" aria-hidden="true">
                         <h5 class="modal-title" id="staticBackdropLabel"><b>Continue to the next page</b></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <i class="x-square far fa-square"></i>
                         </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body" aria-hidden="true">
                     <p>Can you find the right button to the <a href="#">next page</a>?</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary"></button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close"></button>
                         <button type="button" class="btn btn-secondary blue"></button>
                     </div>
                 </div>
