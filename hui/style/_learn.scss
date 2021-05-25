@@ -3,19 +3,20 @@
     height:800px;
     display: grid; 
     grid-template-columns:  1fr 1fr 1fr ;
-    grid-template-rows: 0.1fr 0.3fr 0.1fr 0.5fr;
+    grid-template-rows: 0.05fr 0.3fr 0.05fr 0.6fr;
     grid-template-areas:". . ."
                         ". b1 ."
                         ". . ."
                         "b2 b2 b2";
+    .b2{overflow: hidden;}
 }
 .toggleCards{display: none;}
 .toggleCards:checked {
     ~.card-wrapper{
-        transform: translateY(-110%);
+        transform: translateY(-100%);
     }
     ~.card-wrapper2{
-        transform: translateY(-50%);
+        transform: translateY(-100%);
     }
 }
 
@@ -24,18 +25,18 @@
     overflow: hidden;
     .card-wrapper2{
         height: 100%;
-        transform: translateY(100%);
+        // transform: translateY(20%);
         transition: 1s transform ease-in-out;
     }
 
     .card-wrapper{
         height: 100%;
-        transform: translateY(50%);
+        // transform: translateY(0%);
         transition: 1s transform ease-in-out;
         
         &.cards{
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // flex-direction: column;
         }
     }
     .card-title{

@@ -1109,9 +1109,13 @@ a {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 0.1fr 0.3fr 0.1fr 0.5fr;
-      grid-template-rows: 0.1fr 0.3fr 0.1fr 0.5fr;
+  -ms-grid-rows: 0.05fr 0.3fr 0.05fr 0.6fr;
+      grid-template-rows: 0.05fr 0.3fr 0.05fr 0.6fr;
       grid-template-areas: ". . ." ". b1 ." ". . ." "b2 b2 b2";
+}
+
+.learn-main .b2 {
+  overflow: hidden;
 }
 
 .toggleCards {
@@ -1119,13 +1123,13 @@ a {
 }
 
 .toggleCards:checked ~ .card-wrapper {
-  -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .toggleCards:checked ~ .card-wrapper2 {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .all-cards {
@@ -1138,8 +1142,6 @@ a {
 
 .all-cards .card-wrapper2 {
   height: 100%;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
   -webkit-transition: 1s -webkit-transform ease-in-out;
   transition: 1s -webkit-transform ease-in-out;
   transition: 1s transform ease-in-out;
@@ -1148,22 +1150,10 @@ a {
 
 .all-cards .card-wrapper {
   height: 100%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
   -webkit-transition: 1s -webkit-transform ease-in-out;
   transition: 1s -webkit-transform ease-in-out;
   transition: 1s transform ease-in-out;
   transition: 1s transform ease-in-out, 1s -webkit-transform ease-in-out;
-}
-
-.all-cards .card-wrapper.cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .all-cards .card-title {
