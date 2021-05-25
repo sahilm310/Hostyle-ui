@@ -1118,7 +1118,7 @@ a {
   }
 }
 
-.consist-main {
+.con-main {
   min-height: 100vh;
   height: 800px;
   display: -ms-grid;
@@ -1128,6 +1128,14 @@ a {
   -ms-grid-rows: 0.05fr 0.3fr 0.05fr 0.6fr;
       grid-template-rows: 0.05fr 0.3fr 0.05fr 0.6fr;
       grid-template-areas: ". . ." ". b1 ." ". . ." "b2 b2 b2";
+}
+
+.inconsistant {
+  background-color: red;
+}
+
+.inconsistant .con-main {
+  background-color: red !important;
 }
 
 .learn-main {

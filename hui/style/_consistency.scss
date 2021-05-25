@@ -1,4 +1,6 @@
-.consist-main{
+$incon-bg: red;
+
+.con-main{
     min-height: 100vh;
     height:800px;
     display: grid; 
@@ -9,4 +11,12 @@
                         ". . ."
                         "b2 b2 b2";
 
+}
+
+
+.inconsistant{
+    background-color: $incon-bg;
+    .con-main{
+        background-color: $incon-bg!important;
+    }
 }
