@@ -1132,6 +1132,8 @@ a {
   overflow: hidden;
   /* #region Arrow div */
   /* #endregion Arrow div */
+  /* #region card2 - Familiar div */
+  /* #endregion card2 - Familiar div */
 }
 
 .all-cards .card-wrapper2 {
@@ -1220,7 +1222,7 @@ a {
 .all-cards .arrows .r-arrow-icon:hover::before,
 .all-cards .arrows .r-arrow-icon:focus-within::before {
   color: white;
-  font-size: 1.2em;
+  font-size: 1.15em;
 }
 
 .all-cards .arrows .r-arrow-icon {
@@ -1240,6 +1242,11 @@ a {
 .all-cards .arrows .r-arrow-btn:checked ~ .arrow-wrapper .r-arrow-icon {
   -webkit-transform: translateX(-100%) rotate(180deg);
           transform: translateX(-100%) rotate(180deg);
+}
+
+.all-cards .familiar .fas {
+  font-size: clamp(2.2rem, 2vw, 3rem);
+  padding: 15px;
 }
 
 @media screen and (max-width: 940px) {

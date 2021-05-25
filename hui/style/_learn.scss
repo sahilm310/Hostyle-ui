@@ -26,7 +26,6 @@
         height: 100%;
         transform: translateY(100%);
         transition: 1s transform ease-in-out;
-
     }
 
     .card-wrapper{
@@ -60,7 +59,6 @@
         // hide check box
         .r-arrow-btn{display: none;}
         
-
         // ----------------------------
         // arrow icon wrapper 
         // full width of parent element
@@ -81,7 +79,7 @@
             // pseudo element font size
             &::before {transition: 250ms font-size ease;}
             &:hover::before, 
-            &:focus-within::before {color: white; font-size: 1.2em;}
+            &:focus-within::before {color: white; font-size: 1.15em;}
         }
 
         .r-arrow-icon{
@@ -101,8 +99,19 @@
                 }
             }
         }
-
-        
     }
     /* #endregion Arrow div */
+
+
+
+    // ----------------------------
+    /* #region card2 - Familiar div */
+    .familiar{
+        .fas{
+            font-size:clamp(2.2rem, 2vw, 3rem);
+            padding: 15px;
+        }
+    }
+
+    /* #endregion card2 - Familiar div */
 }
