@@ -204,8 +204,8 @@ a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: 250ms padding ease;
-  transition: 250ms padding ease;
+  -webkit-transition: 100ms padding ease;
+  transition: 100ms padding ease;
 }
 
 .nav-bar .hamburger .hb-icon {
@@ -1194,6 +1194,12 @@ body.con-body .cards.white p {
   -webkit-clip-path: inset(0 10% 10% 0) !important;
 }
 
+.inconsistent .hb-btn:checked ~ .nav-bar .nav-menu {
+  -webkit-transition: 100ms opacity ease;
+  transition: 100ms opacity ease;
+  opacity: 100;
+}
+
 .inconsistent .nav-bar {
   clip-path: inset(0 75% 90% 0) !important;
   -webkit-clip-path: inset(0 75% 90% 0) !important;
@@ -1209,7 +1215,10 @@ body.con-body .cards.white p {
 }
 
 .inconsistent .nav-bar .nav-menu {
+  opacity: 0;
   background-color: rgba(158, 136, 45, 0.9);
+  -webkit-transition: 250ms opacity ease;
+  transition: 250ms opacity ease;
 }
 
 .inconsistent h1,
@@ -1550,6 +1559,11 @@ body.con-body .cards.white p {
         grid-template-areas: ". . ." "b1 b1 b1"  "b2 b2 b2";
   }
   /* #region learnability page */
+  .con-main {
+    min-height: 110vh;
+    height: 900px;
+        grid-template-areas: ". . ." "b1 b1 b1" ". . ." "b2 b2 b2";
+  }
 }
 
 @media screen and (max-width: 540px) {

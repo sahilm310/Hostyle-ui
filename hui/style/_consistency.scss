@@ -67,6 +67,10 @@ body.con-body{
         ~.nav-bar{
             background-color: rgba(#9E9D37,0);
             @include sqr(0, 10%, 10%, 0);
+            .nav-menu{
+                transition: 100ms opacity ease;
+                opacity: 100;
+            }
         }
     }
     
@@ -82,7 +86,9 @@ body.con-body{
             }
         }
         .nav-menu{
+            opacity: 0;
             background-color: rgba(#9E882D,0.9);
+            transition: 250ms opacity ease;
         }
     }
     
