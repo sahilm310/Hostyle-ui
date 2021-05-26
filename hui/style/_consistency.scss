@@ -62,14 +62,15 @@ body.con-body{
     clip-path: inset($t $l $d $r)!important;
     -webkit-clip-path: inset($t $l $d $r)!important;
 }
-.hb-btn:checked{
-    display: initial;
-    ~.nav-bar{
-        @include sqr(0, 0, 10%, 0);
-    }
-}
+
 
 .inconsistent{
+    .hb-btn:checked{
+        display: initial;
+        ~.nav-bar{
+            @include sqr(0, 0, 10%, 0);
+        }
+    }
     
     .nav-bar{
         // initial clip path

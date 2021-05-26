@@ -107,6 +107,41 @@ a {
 
 /* #endregion */
 /* Nav bar code and mixin for pseudo element */
+.hb-btn {
+  display: none !important;
+}
+
+.hb-btn:checked ~ .nav-bar {
+  background-color: rgba(27, 129, 224, 0.8);
+  clip-path: circle(300px at 0 50%) !important;
+  -webkit-clip-path: circle(300px at 0 50%) !important;
+}
+
+.hb-btn:checked ~ .nav-bar .nav-menu a {
+  pointer-events: auto;
+  opacity: 100;
+}
+
+.hb-btn:checked ~ .nav-bar .hamburger .hb-icon {
+  background: transparent !important;
+}
+
+.hb-btn:checked ~ .nav-bar .hamburger .hb-icon:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  top: 50%;
+}
+
+.hb-btn:checked ~ .nav-bar .hamburger .hb-icon:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  top: 50%;
+}
+
 /* Nav bar styling */
 .nav-bar {
   background-color: rgba(27, 129, 224, 0.55);
@@ -114,23 +149,12 @@ a {
   width: 300px;
   height: 600px;
   z-index: 4;
-  clip-path: circle(80px at 0px 15px);
-  -webkit-clip-path: circle(80px at 0px 15px);
+  clip-path: circle(80px at 0px 15px) !important;
+  -webkit-clip-path: circle(80px at 0px 15px) !important;
   -webkit-transition: 250ms width ease-in-out, 500ms background-color ease,  500ms -webkit-clip-path ease;
   transition: 250ms width ease-in-out, 500ms background-color ease,  500ms -webkit-clip-path ease;
   transition: 500ms clip-path ease,  250ms width ease-in-out, 500ms background-color ease;
   transition: 500ms clip-path ease,  250ms width ease-in-out, 500ms background-color ease,  500ms -webkit-clip-path ease;
-}
-
-.nav-bar.nav-show {
-  background-color: rgba(27, 129, 224, 0.8);
-  clip-path: circle(300px at 0 50%);
-  -webkit-clip-path: circle(300px at 0 50%);
-}
-
-.nav-bar.nav-show .nav-menu a {
-  pointer-events: auto;
-  opacity: 100;
 }
 
 .nav-bar .nav-menu {
@@ -223,26 +247,6 @@ a {
   transition: 150ms background-color ease, 500ms transform ease, 500ms top ease;
   transition: 150ms background-color ease, 500ms transform ease, 500ms top ease, 500ms -webkit-transform ease;
   border-radius: 0.2rem;
-}
-
-.nav-bar .hamburger.hb-close .hb-icon {
-  background: transparent !important;
-}
-
-.nav-bar .hamburger.hb-close .hb-icon:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  top: 50%;
-}
-
-.nav-bar .hamburger.hb-close .hb-icon:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  top: 50%;
 }
 
 .nav-bar .hamburger:hover .hb-icon,
@@ -1180,18 +1184,18 @@ body.con-body .cards.white p {
   transition: 1s color ease;
 }
 
-.hb-btn:checked {
-  display: initial;
-}
-
-.hb-btn:checked ~ .nav-bar {
-  clip-path: inset(0 0 10% 0) !important;
-  -webkit-clip-path: inset(0 0 10% 0) !important;
-}
-
 .inconsistent {
   background: #D9A1EA;
   color: #74508A !important;
+}
+
+.inconsistent .hb-btn:checked {
+  display: initial;
+}
+
+.inconsistent .hb-btn:checked ~ .nav-bar {
+  clip-path: inset(0 0 10% 0) !important;
+  -webkit-clip-path: inset(0 0 10% 0) !important;
 }
 
 .inconsistent .nav-bar {
@@ -1510,12 +1514,12 @@ body.con-body .cards.white p {
   /* #region nav bar */
   .nav-bar {
     width: 260px;
-    clip-path: circle(80px at -10px -10px);
-    -webkit-clip-path: circle(80px at -10px -10px);
+    clip-path: circle(80px at -10px -10px) !important;
+    -webkit-clip-path: circle(80px at -10px -10px) !important;
   }
   .nav-bar.nav-show {
-    clip-path: circle(250px at 0px 250px);
-    -webkit-clip-path: circle(250px at 0px 250px);
+    clip-path: circle(250px at 0px 250px) !important;
+    -webkit-clip-path: circle(250px at 0px 250px) !important;
   }
   .nav-bar .nav-menu {
     padding: 5px;
