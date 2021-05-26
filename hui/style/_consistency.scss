@@ -110,7 +110,7 @@ body.con-body{
         background-color: $incon-prim;
         border: 8px solid $incon-prim;
         
-        margin: -2px;
+        margin: auto -2px ;
         @include border-radius(0);
         &.white p{color: $incon-sec;}
 
