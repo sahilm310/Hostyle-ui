@@ -12,7 +12,7 @@
     <link rel="icon" href="../assets/icon.png" type="image/png" sizes="32x32">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&Caveat:wght@600&family=Oswald:wght@400;700&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Caveat:wght@600&family=Oswald:wght@400;700&display=swap" 
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
@@ -27,7 +27,10 @@
     <link rel="stylesheet" href="../style/style.css">
     
 </head>
-<body onkeypress="handleEnter(event)" class="con-body inconsistant" id="con-body">
+<body onkeypress="handleEnter(event)" class="con-body" id="con-body">
+    <!-- Toggle -->
+    <!-- <a onclick="toggleClassM('con-body','inconsistant')">test toggle</a> -->
+
     <!-- nav bar -->
     <nav class="nav-bar" id="nav-bar">
         <input type="checkbox" onclick="toggleNav('nav-bar')" class="hb-btn" id="hb-btn">
@@ -45,14 +48,14 @@
     </nav>
 
     <!-- main div containing all content -->
-    <main class="container-xl">
+    <main class="container-xxl">
         <div class="con-main tr-hide">
             <div class="b1 tr-main">
-                <h1>Hello</h1>
-                <a onclick="toggleClassM('con-body','inconsistant')">test toggle</a>
+                <h1>Consistency</h1>
+                <h3>The repetition of certain stylings can build up a user's familiarity with the the UI.</h3>
             </div>
             <div class="b2 tr-main">
-                <h2>World</h2>
+                <div class="cards large"></div>
             </div>
             
         </div>
