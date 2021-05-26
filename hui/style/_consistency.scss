@@ -35,10 +35,6 @@ $incon-acc: #9E9D37;
             border-radius: 3rem;
         }
     }
-    .cards{
-        min-height: 40vh;
-        height: 250px;
-    }
 }
 
 
@@ -53,6 +49,7 @@ body.con-body{
                     1s border ease,
                     1s border-radius ease,
                     .5s height ease,
+                    1s margin ease,
                     1s min-height ease;
         &.white p{transition: 1s color ease;}
 
@@ -68,7 +65,8 @@ body.con-body{
     .hb-btn:checked{
         display: initial;
         ~.nav-bar{
-            @include sqr(0, 0, 10%, 0);
+            background-color: rgba(#9E9D37,0);
+            @include sqr(0, 10%, 10%, 0);
         }
     }
     
@@ -84,7 +82,7 @@ body.con-body{
             }
         }
         .nav-menu{
-            background-color: rgba(#9E9D37,0.8);
+            background-color: rgba(#9E882D,0.9);
         }
     }
     
@@ -107,11 +105,12 @@ body.con-body{
         transform: scale(0.95);
     }
     .cards{
-
+        min-height: 40vh;
+        height: 250px;
         background-color: $incon-prim;
         border: 8px solid $incon-prim;
-        min-height: initial;
-        height: initial;
+        
+        margin: -2px;
         @include border-radius(0);
         &.white p{color: $incon-sec;}
 

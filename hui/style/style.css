@@ -112,7 +112,7 @@ a {
 }
 
 .hb-btn:checked ~ .nav-bar {
-  background-color: rgba(27, 129, 224, 0.8);
+  background-color: rgba(27, 129, 224, 0.9);
   clip-path: circle(300px at 0 50%) !important;
   -webkit-clip-path: circle(300px at 0 50%) !important;
 }
@@ -512,7 +512,7 @@ a {
 }
 
 .click .symbol-demo::after {
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Free";
   content: " \f138";
   position: absolute;
   display: inline;
@@ -524,7 +524,7 @@ a {
 }
 
 .click .symbol-demo:hover::after, .click .symbol-demo:focus-within::after {
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Free";
   content: " \f138";
   position: absolute;
   right: -1.2em;
@@ -669,7 +669,7 @@ a {
 
 .click-next-page .symbol::after {
   /* code for rounded arrow */
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Free";
   content: " \f138";
   position: absolute;
   margin-left: 5px;
@@ -685,7 +685,7 @@ a {
 }
 
 .click-next-page .symbol:hover::after {
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Free";
   content: " \F138";
   min-height: 0vw;
   position: absolute;
@@ -1163,11 +1163,6 @@ a {
   border-radius: 3rem;
 }
 
-.con-main .cards {
-  min-height: 40vh;
-  height: 250px;
-}
-
 /* #region entire page style change */
 body.con-body .con-main {
   -webkit-transition: 1s background-color ease;
@@ -1175,8 +1170,8 @@ body.con-body .con-main {
 }
 
 body.con-body .cards {
-  -webkit-transition: 1s background-color ease, 1s border ease, 1s border-radius ease, .5s height ease, 1s min-height ease;
-  transition: 1s background-color ease, 1s border ease, 1s border-radius ease, .5s height ease, 1s min-height ease;
+  -webkit-transition: 1s background-color ease, 1s border ease, 1s border-radius ease, .5s height ease, 1s margin ease, 1s min-height ease;
+  transition: 1s background-color ease, 1s border ease, 1s border-radius ease, .5s height ease, 1s margin ease, 1s min-height ease;
 }
 
 body.con-body .cards.white p {
@@ -1194,8 +1189,9 @@ body.con-body .cards.white p {
 }
 
 .inconsistent .hb-btn:checked ~ .nav-bar {
-  clip-path: inset(0 0 10% 0) !important;
-  -webkit-clip-path: inset(0 0 10% 0) !important;
+  background-color: rgba(158, 157, 55, 0);
+  clip-path: inset(0 10% 10% 0) !important;
+  -webkit-clip-path: inset(0 10% 10% 0) !important;
 }
 
 .inconsistent .nav-bar {
@@ -1213,7 +1209,7 @@ body.con-body .cards.white p {
 }
 
 .inconsistent .nav-bar .nav-menu {
-  background-color: rgba(158, 157, 55, 0.8);
+  background-color: rgba(158, 136, 45, 0.9);
 }
 
 .inconsistent h1,
@@ -1240,10 +1236,11 @@ body.con-body .cards.white p {
 }
 
 .inconsistent .cards {
+  min-height: 40vh;
+  height: 250px;
   background-color: #74508A;
   border: 8px solid #74508A;
-  min-height: initial;
-  height: initial;
+  margin: -2px;
   border-radius: 0;
 }
 

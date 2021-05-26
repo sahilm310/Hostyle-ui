@@ -47,7 +47,7 @@
         &:hover{color: currentColor;}
         // symbol pseudo
         &::after{
-            font-family: "FontAwesome";
+            font-family: "Font Awesome 5 Free";
             content: " \f138";
             position: absolute;
             display: inline;
@@ -60,7 +60,7 @@
         // symbol pseudo hover
         &:hover::after,
         &:focus-within::after{
-            font-family: "FontAwesome";
+            font-family: "Font Awesome 5 Free";
             content: " \f138";
             position: absolute;
             right:-1.2em;
@@ -152,7 +152,7 @@
     }
     .symbol::after{
         /* code for rounded arrow */
-        font-family: "FontAwesome";
+        font-family: "Font Awesome 5 Free";
         content: " \f138";
         position: absolute;
         margin-left: 5px;
@@ -164,7 +164,7 @@
                     250ms transform ease;
     }
     .symbol:hover::after{
-        font-family: "FontAwesome";
+        font-family: "Font Awesome 5 Free";
         content: " \F138";
         min-height: 0vw;
         position: absolute;

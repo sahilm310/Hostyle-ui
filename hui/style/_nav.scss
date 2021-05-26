@@ -22,7 +22,7 @@
     // clip path showing the rest of content
     // on nav button click
     ~.nav-bar {
-        background-color: rgba($lBlue,0.8);
+        background-color: rgba($lBlue,0.9);
         @include circle(300px, 0, 50%);
         .nav-menu a{
             pointer-events: auto;
