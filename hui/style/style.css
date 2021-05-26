@@ -68,6 +68,7 @@ a {
 }
 
 .accent-inv {
+  white-space: nowrap;
   padding: 0px 0.3rem;
   border-radius: 0.2rem;
   color: white;
