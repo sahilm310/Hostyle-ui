@@ -1131,6 +1131,11 @@ a {
       grid-template-areas: ". . ." ". b1 ." ". . ." "b2 b2 b2";
 }
 
+.con-main .con-toggle {
+  min-height: 0vw;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
 /* #region entire page style change */
 body.con-body {
   -webkit-transition: all 1s ease;

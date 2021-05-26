@@ -13,7 +13,10 @@ $incon-acc: #9E9D37;
                         ". b1 ."
                         ". . ."
                         "b2 b2 b2";
-
+    .con-toggle{
+        min-height: 0vw;
+        font-size: clamp(1.2rem, 2vw, 1.4rem);
+    }
 }
 
 

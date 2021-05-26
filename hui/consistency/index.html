@@ -29,15 +29,14 @@
 </head>
 <body onkeypress="handleEnter(event)" class="con-body" id="con-body">
     <!-- Toggle -->
-    <!-- <a onclick="toggleClassM('con-body','inconsistant')">test toggle</a> -->
-
+    
     <!-- nav bar -->
     <nav class="nav-bar" id="nav-bar">
         <input type="checkbox" onclick="toggleNav('nav-bar')" class="hb-btn" id="hb-btn">
         <label class="hamburger" id="icon" for="hb-btn" tabindex="0">
             <span class="hb-icon"></span>
         </label>
-
+        
         <ul class="nav-menu">
             <li class="nav-items"><a href="../" class="ani-links" tabindex="0">Home</a></li>
             <li class="nav-items"><a href="../clickability/" class="ani-links" tabindex="0">Clickability</a></li>
@@ -46,33 +45,39 @@
             <li class="nav-items"><a href="../learnability/" class="ani-links" tabindex="0">Learnability</a></li>
         </ul>
     </nav>
-
+    
     <!-- main div containing all content -->
     <main class="container-xxl">
         <div class="con-main tr-hide">
             <div class="b1 tr-main">
                 <h1>Consistency</h1>
-                <h3>The repetition of certain stylings can build up a user's familiarity with the the UI.</h3>
+                <h3>Repetition of certain stylings can build up a user's familiarity with an interface.</h3>
             </div>
             <div class="b2 tr-main">
-                <div class="cards large">
+                <div class="cards">
                     <h4 class="card-title">Usability</h4>
                     <p>
-                        Keeping aspects like: <br>
+                        Keeping aspects like: 
                         <span class="accent-inv brush">layout</span>  
                         <span class="accent-inv brush">font choices</span>
                         <span class="accent-inv brush">stylings-like colour</span>
-                        <br>
                         consistent throughout the UI improves the usability of the interface.
                     </p>
+                </div>
+                <div class="cards">
+
+                    <h4 class="card-title">Find all inconsistencies</h4>
+                    <button class="con-toggle btn btn-danger" onclick="toggleClassM('con-body','inconsistant')">Toggle Design</button>
+                    <p>Visual consistency makes a UI easier to navigate and to hightlight or prioritise important content.</p>
+                </div>
+                <div class="cards">
+                    <h4 class="card-title">Next Page?</h4>
                     
                 </div>
             </div>
             
         </div>
     </main>
-
-
     <!-- jquery and boostrap -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
