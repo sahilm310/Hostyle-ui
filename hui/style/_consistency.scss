@@ -17,6 +17,24 @@ $incon-acc: #9E9D37;
         min-height: 0vw;
         font-size: clamp(1.2rem, 2vw, 1.4rem);
     }
+    .white{
+        background-color: rgb(216, 216, 216);
+        border: 8px solid rgb(216, 216, 216);
+        p{color: $blue;}
+    }
+    .con-btns{
+
+        font-size: clamp(1.1rem, 1.8vw,1.5rem);
+        &.a{
+            font-family: $fontD;
+            padding:2px;
+        }
+        &.b{
+            
+            font-family: $fontC;
+            border-radius: 3rem;
+        }
+    }
 }
 
 

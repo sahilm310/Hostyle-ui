@@ -8,6 +8,7 @@ $red : #992624;
 $fontA: 'Oswald', sans-serif;
 $fontB: 'Caveat', 'Courier New', monospace;
 $fontC: 'Caveat Brush', 'Courier New', monospace;
+$fontD: 'Grenze Gotisch', cursive;
 /* #endregion */
 
 /* #region Mixins*/
@@ -133,7 +134,7 @@ a {font-size: 1.5rem;}
     min-height: 0vw;
     color: white!important;
     background-color: $lBlue;
-    font-size: clamp(1.3rem, 1.8vw, 2rem)!important;
+    font-size: clamp(1.3rem, 1.8vw, 2rem);
     font-weight: bold;
     border:none;
     outline:0px solid $blue;

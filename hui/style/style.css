@@ -265,7 +265,7 @@ a {
   min-height: 0vw;
   color: white !important;
   background-color: #1B81E0;
-  font-size: clamp(1.3rem, 1.8vw, 2rem) !important;
+  font-size: clamp(1.3rem, 1.8vw, 2rem);
   font-weight: bold;
   border: none;
   outline: 0px solid #0a3155;
@@ -1134,6 +1134,29 @@ a {
 .con-main .con-toggle {
   min-height: 0vw;
   font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
+.con-main .white {
+  background-color: #d8d8d8;
+  border: 8px solid #d8d8d8;
+}
+
+.con-main .white p {
+  color: #0a3155;
+}
+
+.con-main .con-btns {
+  font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+}
+
+.con-main .con-btns.a {
+  font-family: "Grenze Gotisch", cursive;
+  padding: 2px;
+}
+
+.con-main .con-btns.b {
+  font-family: "Caveat Brush", "Courier New", monospace;
+  border-radius: 3rem;
 }
 
 /* #region entire page style change */
