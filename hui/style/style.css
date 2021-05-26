@@ -1180,15 +1180,24 @@ body.con-body .cards.white p {
   transition: 1s color ease;
 }
 
+.hb-btn:checked {
+  display: initial;
+}
+
+.hb-btn:checked ~ .nav-bar {
+  clip-path: inset(0 0 10% 0) !important;
+  -webkit-clip-path: inset(0 0 10% 0) !important;
+}
+
 .inconsistent {
   background: #D9A1EA;
   color: #74508A !important;
 }
 
 .inconsistent .nav-bar {
-  clip-path: inset(0 75% 90% 0);
-  -webkit-clip-path: inset(0 75% 90% 0);
-  background-color: #fbf7ff;
+  clip-path: inset(0 75% 90% 0) !important;
+  -webkit-clip-path: inset(0 75% 90% 0) !important;
+  background-color: rgba(251, 247, 255, 0);
 }
 
 .inconsistent .nav-bar .hb-icon {
@@ -1200,7 +1209,7 @@ body.con-body .cards.white p {
 }
 
 .inconsistent .nav-bar .nav-menu {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(158, 157, 55, 0.8);
 }
 
 .inconsistent h1,

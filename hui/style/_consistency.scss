@@ -59,8 +59,14 @@ body.con-body{
     }
 }
 @mixin sqr($t, $l, $d, $r){
-    clip-path: inset($t $l $d $r);
-    -webkit-clip-path: inset($t $l $d $r);
+    clip-path: inset($t $l $d $r)!important;
+    -webkit-clip-path: inset($t $l $d $r)!important;
+}
+.hb-btn:checked{
+    display: initial;
+    ~.nav-bar{
+        @include sqr(0, 0, 10%, 0);
+    }
 }
 
 .inconsistent{
@@ -68,7 +74,7 @@ body.con-body{
     .nav-bar{
         // initial clip path
         @include sqr(0, 75%, 90%, 0);
-        background-color: rgba($incon-sec,1);
+        background-color: rgba($incon-sec,0);
         .hb-icon{
             background-color: $incon-prim;
             &:after,
@@ -77,7 +83,7 @@ body.con-body{
             }
         }
         .nav-menu{
-            background-color: rgba(red,0.5);
+            background-color: rgba(#9E9D37,0.8);
         }
     }
     
