@@ -16,18 +16,19 @@
     clip-path: circle($size at $x $y)!important;
     -webkit-clip-path: circle($size at $x $y)!important;
 }
+// ---------------------------------------
 .hb-btn {display: none!important;}
 .hb-btn:checked{
+    // clip path showing the rest of content
+    // on nav button click
     ~.nav-bar {
         background-color: rgba($lBlue,0.8);
         @include circle(300px, 0, 50%);
-
-            
-
-            .nav-menu a{
-                pointer-events: auto;
-                opacity: 100;
-            }
+        .nav-menu a{
+            pointer-events: auto;
+            opacity: 100;
+        }
+        // class for hamburger into X
         .hamburger{
             .hb-icon{
                 background: transparent!important;
@@ -61,19 +62,7 @@
     transition: 500ms clip-path ease, 
                 250ms width ease-in-out,
                 500ms background-color ease;
-    // ---------------------------------------
-    // clip path showing the rest of content
-    // on nav button click
-    // -----------------------
-    // &.nav-show{
-    //     background-color: rgba($lBlue,0.8);
-
-    //     @include circle(300px, 0, 50%);
-    //     .nav-menu a{
-    //         pointer-events: auto;
-    //         opacity: 100;
-    //     }
-    // }
+    
 
     // --------------------------
     // styling for nav menu list
@@ -132,22 +121,7 @@
         .hb-icon:after{
             @include hamburger(0.6rem);
         }
-        // class for 2nd state of X
-        // &.hb-close{
-        //     .hb-icon{
-        //         background: transparent!important;
-        //     }
-        //     .hb-icon:before{
-        //         transform: rotate(45deg);
-        //         transform-origin: center;
-        //         top:50%;
-        //     }
-        //     .hb-icon:after{
-        //         transform: rotate(-45deg);
-        //         transform-origin: center;
-        //         top:50%;
-        //     }
-        // }
+        
     }
     // Hamburger icon hover
     .hamburger:hover, 
