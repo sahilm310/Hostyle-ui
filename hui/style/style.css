@@ -1159,6 +1159,11 @@ a {
   border-radius: 3rem;
 }
 
+.con-main .cards {
+  min-height: 40vh;
+  height: 250px;
+}
+
 /* #region entire page style change */
 body.con-body .con-main {
   -webkit-transition: 1s background-color ease;
@@ -1166,13 +1171,36 @@ body.con-body .con-main {
 }
 
 body.con-body .cards {
-  -webkit-transition: 1s background-color ease, 1s border ease;
-  transition: 1s background-color ease, 1s border ease;
+  -webkit-transition: 1s background-color ease, 1s border ease, 1s border-radius ease, .5s height ease, 1s min-height ease;
+  transition: 1s background-color ease, 1s border ease, 1s border-radius ease, .5s height ease, 1s min-height ease;
+}
+
+body.con-body .cards.white p {
+  -webkit-transition: 1s color ease;
+  transition: 1s color ease;
 }
 
 .inconsistent {
   background: #D9A1EA;
   color: #74508A !important;
+}
+
+.inconsistent .nav-bar {
+  clip-path: inset(0 75% 90% 0);
+  -webkit-clip-path: inset(0 75% 90% 0);
+  background-color: #fbf7ff;
+}
+
+.inconsistent .nav-bar .hb-icon {
+  background-color: #74508A;
+}
+
+.inconsistent .nav-bar .hb-icon:after, .inconsistent .nav-bar .hb-icon::before {
+  background-color: #74508A;
+}
+
+.inconsistent .nav-bar .nav-menu {
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .inconsistent h1,
@@ -1186,6 +1214,7 @@ body.con-body .cards {
 .inconsistent h1.card-title,
 .inconsistent h2.card-title,
 .inconsistent h4.card-title {
+  text-transform: lowercase;
   color: #FBF7FF;
 }
 
@@ -1200,6 +1229,13 @@ body.con-body .cards {
 .inconsistent .cards {
   background-color: #74508A;
   border: 8px solid #74508A;
+  min-height: initial;
+  height: initial;
+  border-radius: 0;
+}
+
+.inconsistent .cards.white p {
+  color: #FBF7FF;
 }
 
 .inconsistent .cards .accent-inv {

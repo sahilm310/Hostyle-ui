@@ -35,29 +35,60 @@ $incon-acc: #9E9D37;
             border-radius: 3rem;
         }
     }
+    .cards{
+        min-height: 40vh;
+        height: 250px;
+    }
 }
 
 
 /* #region entire page style change */
 body.con-body{
     // transition: all 1s ease;
-    
     .con-main{
         transition: 1s background-color ease;
     }
     .cards{
         transition: 1s background-color ease,
-                    1s border ease;
+                    1s border ease,
+                    1s border-radius ease,
+                    .5s height ease,
+                    1s min-height ease;
+        &.white p{transition: 1s color ease;}
 
     }
 }
+@mixin sqr($t, $l, $d, $r){
+    clip-path: inset($t $l $d $r);
+    -webkit-clip-path: inset($t $l $d $r);
+}
 
 .inconsistent{
+    
+    .nav-bar{
+        // initial clip path
+        @include sqr(0, 75%, 90%, 0);
+        background-color: rgba($incon-sec,1);
+        .hb-icon{
+            background-color: $incon-prim;
+            &:after,
+            &::before{
+                background-color: $incon-prim;
+            }
+        }
+        .nav-menu{
+            background-color: rgba(red,0.5);
+        }
+    }
+    
+    background: $incon-sec2;
+    color: $incon-prim!important;
     h1,
     h2,
     h4{
         font-family: $fontD; transform: scale(1.1);
         &.card-title{
+            text-transform: lowercase;
             color: $incon-sec;
         }
     }
@@ -69,16 +100,20 @@ body.con-body{
         transform: scale(0.95);
     }
     .cards{
+
         background-color: $incon-prim;
         border: 8px solid $incon-prim;
+        min-height: initial;
+        height: initial;
+        @include border-radius(0);
+        &.white p{color: $incon-sec;}
+
         .accent-inv{
             font-family: $fontD;
             font-size: 0.9em;
         }
     }
 
-    background: $incon-sec2;
-    color: $incon-prim!important;
     .con-main{
         background-color: $incon-sec2!important;
     }
