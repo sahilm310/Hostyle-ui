@@ -1165,6 +1165,11 @@ body.con-body .con-main {
   transition: 1s background-color ease;
 }
 
+body.con-body .cards {
+  -webkit-transition: 1s background-color ease, 1s border ease;
+  transition: 1s background-color ease, 1s border ease;
+}
+
 .inconsistent {
   background: #D9A1EA;
   color: #74508A !important;
@@ -1194,6 +1199,7 @@ body.con-body .con-main {
 
 .inconsistent .cards {
   background-color: #74508A;
+  border: 8px solid #74508A;
 }
 
 .inconsistent .cards .accent-inv {

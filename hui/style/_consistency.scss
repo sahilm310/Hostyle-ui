@@ -45,6 +45,11 @@ body.con-body{
     .con-main{
         transition: 1s background-color ease;
     }
+    .cards{
+        transition: 1s background-color ease,
+                    1s border ease;
+
+    }
 }
 
 .inconsistent{
@@ -65,6 +70,7 @@ body.con-body{
     }
     .cards{
         background-color: $incon-prim;
+        border: 8px solid $incon-prim;
         .accent-inv{
             font-family: $fontD;
             font-size: 0.9em;
