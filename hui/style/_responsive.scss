@@ -32,6 +32,18 @@
         height: 75px!important;
     }
     /* #endregion symbol demo animation */
+
+
+    .con-main{
+        min-height: 110vh;
+        height:900px;
+
+        grid-template-rows: 0.1fr 0.2fr 0.1fr 0.6fr;
+        grid-template-areas:". . ."
+                            "b1 b1 b1"
+                            ". . ."
+                            "b2 b2 b2";
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -56,6 +68,7 @@
                             "b3 b3 b3";
     }
     /* #endregion clickability page */
+
 } 
 
 @media screen and (max-width: 660px) {
@@ -142,4 +155,8 @@
 
 @media screen and (max-width: 420px) {
     .container-xl{padding: 0;}
+    .con-main{
+        min-height: 140vh;
+        height:1100px;
+    }
 }

@@ -1406,6 +1406,13 @@ body.con-body .con-main {
     height: 75px !important;
   }
   /* #endregion symbol demo animation */
+  .con-main {
+    min-height: 110vh;
+    height: 900px;
+    -ms-grid-rows: 0.1fr 0.2fr 0.1fr 0.6fr;
+        grid-template-rows: 0.1fr 0.2fr 0.1fr 0.6fr;
+        grid-template-areas: ". . ." "b1 b1 b1" ". . ." "b2 b2 b2";
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -1508,6 +1515,10 @@ body.con-body .con-main {
 @media screen and (max-width: 420px) {
   .container-xl {
     padding: 0;
+  }
+  .con-main {
+    min-height: 140vh;
+    height: 1100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
