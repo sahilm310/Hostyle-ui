@@ -40,16 +40,37 @@ $incon-acc: #9E9D37;
 
 /* #region entire page style change */
 body.con-body{
-    transition: all 1s ease;
+    // transition: all 1s ease;
     
     .con-main{
         transition: 1s background-color ease;
     }
 }
 
-.inconsistant{
+.inconsistent{
     h1,
-    h2{font-family: 'Grenze Gotisch', cursive;}
+    h2,
+    h4{
+        font-family: $fontD; transform: scale(1.1);
+        &.card-title{
+            color: $incon-sec;
+        }
+    }
+
+    h3,
+    p{
+        font-family: $fontE;
+        line-height: 1.3;
+        transform: scale(0.95);
+    }
+    .cards{
+        background-color: $incon-prim;
+        .accent-inv{
+            font-family: $fontD;
+            font-size: 0.9em;
+        }
+    }
+
     background: $incon-sec2;
     color: $incon-prim!important;
     .con-main{

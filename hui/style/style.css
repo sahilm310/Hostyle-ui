@@ -1160,27 +1160,48 @@ a {
 }
 
 /* #region entire page style change */
-body.con-body {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
 body.con-body .con-main {
   -webkit-transition: 1s background-color ease;
   transition: 1s background-color ease;
 }
 
-.inconsistant {
+.inconsistent {
   background: #D9A1EA;
   color: #74508A !important;
 }
 
-.inconsistant h1,
-.inconsistant h2 {
-  font-family: 'Grenze Gotisch', cursive;
+.inconsistent h1,
+.inconsistent h2,
+.inconsistent h4 {
+  font-family: "Grenze Gotisch", cursive;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.inconsistant .con-main {
+.inconsistent h1.card-title,
+.inconsistent h2.card-title,
+.inconsistent h4.card-title {
+  color: #FBF7FF;
+}
+
+.inconsistent h3,
+.inconsistent p {
+  font-family: "Marck Script", cursive;
+  line-height: 1.3;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.inconsistent .cards {
+  background-color: #74508A;
+}
+
+.inconsistent .cards .accent-inv {
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 0.9em;
+}
+
+.inconsistent .con-main {
   background-color: #D9A1EA !important;
 }
 
