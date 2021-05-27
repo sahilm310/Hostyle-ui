@@ -513,14 +513,15 @@ a {
 
 .click .symbol-demo::after {
   font-family: "Font Awesome 5 Free";
+  font-weight: bold;
   content: " \f138";
   position: absolute;
   display: inline;
   bottom: 0;
   right: -1em;
   font-size: 1em;
-  -webkit-transition: 250ms font-size ease, 250ms font-weight ease, 250ms right ease, 250ms color ease;
-  transition: 250ms font-size ease, 250ms font-weight ease, 250ms right ease, 250ms color ease;
+  -webkit-transition: 250ms font-size ease,  250ms font-weight ease, 250ms right ease,  250ms color ease;
+  transition: 250ms font-size ease,  250ms font-weight ease, 250ms right ease,  250ms color ease;
 }
 
 .click .symbol-demo:hover::after, .click .symbol-demo:focus-within::after {
@@ -667,32 +668,26 @@ a {
   cursor: text;
 }
 
-.click-next-page .symbol::after {
+.click-next-page .symbol .r-arrow::before {
   /* code for rounded arrow */
-  font-family: "Font Awesome 5 Free";
-  content: " \f138";
   position: absolute;
-  margin-left: 5px;
+  line-height: 1.5;
   bottom: 0;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  min-height: 0vw;
   font-size: clamp(1.5rem, 1.5vw, 3em);
-  -webkit-transition: 250ms font-size ease, 250ms -webkit-transform ease;
-  transition: 250ms font-size ease, 250ms -webkit-transform ease;
-  transition: 250ms font-size ease, 250ms transform ease;
-  transition: 250ms font-size ease, 250ms transform ease, 250ms -webkit-transform ease;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  min-height: 0vw;
+  -webkit-transition: 300ms -webkit-transform ease;
+  transition: 300ms -webkit-transform ease;
+  transition: 300ms transform ease;
+  transition: 300ms transform ease, 300ms -webkit-transform ease;
 }
 
-.click-next-page .symbol:hover::after {
-  font-family: "Font Awesome 5 Free";
-  content: " \F138";
-  min-height: 0vw;
-  position: absolute;
+.click-next-page .symbol:hover .r-arrow::before {
+  min-height: 0px;
   /* rotation on hover becomes 360 deg (right) */
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  font-size: clamp(1.6rem, 2vw, 3.5em);
+  -webkit-transform: scale(1.4) rotate(360deg);
+          transform: scale(1.4) rotate(360deg);
 }
 
 /* #endregion */
