@@ -24,17 +24,9 @@ $incon-acc: #9E9D37;
         p{color: $blue;}
     }
     .con-btns{
-
         font-size: clamp(1.1rem, 1.8vw,1.5rem);
-        &.a{
-            font-family: $fontD;
-            padding:2px;
-        }
-        &.b{
-            
-            font-family: $fontC;
-            border-radius: 3rem;
-        }
+        &.a{font-family: $fontD; padding:2px;}
+        &.b{font-family: $fontC; border-radius: 3rem;}
     }
     .text-anim{
         text-align: center;
@@ -42,28 +34,22 @@ $incon-acc: #9E9D37;
         white-space: nowrap;
         transition: 1s width ease;
     }
-    
 }
-
 
 /* #region entire page style change */
 body.con-body{
-    .con-main{
-        transition: 0.25s background-color ease;
-
-        
-        
-    }
+    .con-main{transition: 0.25s background-color ease;}
     .cards{
         transition: 1s background-color ease,
                     1s border ease,
                     1s border-radius ease,
                     .5s height ease,
                     1s margin ease,
-                    1s min-height ease;
+                    .5s min-height ease;
         &.white p{transition: 1s color ease;}
-
+        &.usability .accent-inv{transition: .5s background-color ease;}
     }
+    .nav-bar{transition: 250ms clip-path ease;}
 }
 @mixin sqr($t, $l, $d, $r){
     clip-path: inset($t $l $d $r)!important;
@@ -76,7 +62,6 @@ body.con-body{
         display: initial;
         ~.nav-bar{
             background-color: rgba(#9E9D37,0);
-            
             @include sqr(0, 10%, 10%, 0);
             .nav-menu{
                 transition: 100ms opacity ease;
@@ -84,7 +69,6 @@ body.con-body{
             }
         }
     }
-    
     
     .nav-bar{
         // initial clip path
@@ -128,17 +112,14 @@ body.con-body{
         height: 250px;
         background-color: $incon-prim;
         border: 8px solid $incon-prim;
-        
         margin: auto -2px ;
         @include border-radius(0);
         &.white p{color: $incon-sec;}
-
-        .accent-inv{
+        &.usability .accent-inv{
+            background-color: #9E882D;
             font-family: $fontD;
-            font-size: 0.9em;
         }
     }
-
     .con-main{
         background-color: $incon-sec2!important;
         .text-anim{

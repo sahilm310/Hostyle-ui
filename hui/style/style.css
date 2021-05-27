@@ -1182,13 +1182,25 @@ body.con-body .con-main {
 }
 
 body.con-body .cards {
-  -webkit-transition: 1s background-color ease, 1s border ease, 1s border-radius ease, .5s height ease, 1s margin ease, 1s min-height ease;
-  transition: 1s background-color ease, 1s border ease, 1s border-radius ease, .5s height ease, 1s margin ease, 1s min-height ease;
+  -webkit-transition: 1s background-color ease, 1s border ease, 1s border-radius ease, .5s height ease, 1s margin ease, .5s min-height ease;
+  transition: 1s background-color ease, 1s border ease, 1s border-radius ease, .5s height ease, 1s margin ease, .5s min-height ease;
 }
 
 body.con-body .cards.white p {
   -webkit-transition: 1s color ease;
   transition: 1s color ease;
+}
+
+body.con-body .cards.usability .accent-inv {
+  -webkit-transition: .5s background-color ease;
+  transition: .5s background-color ease;
+}
+
+body.con-body .nav-bar {
+  -webkit-transition: 250ms -webkit-clip-path ease;
+  transition: 250ms -webkit-clip-path ease;
+  transition: 250ms clip-path ease;
+  transition: 250ms clip-path ease, 250ms -webkit-clip-path ease;
 }
 
 .inconsistent {
@@ -1271,9 +1283,9 @@ body.con-body .cards.white p {
   color: #FBF7FF;
 }
 
-.inconsistent .cards .accent-inv {
+.inconsistent .cards.usability .accent-inv {
+  background-color: #9E882D;
   font-family: "Grenze Gotisch", cursive;
-  font-size: 0.9em;
 }
 
 .inconsistent .con-main {
