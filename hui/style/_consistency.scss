@@ -61,11 +61,12 @@ body.con-body{
     .hb-btn:checked{
         display: initial;
         ~.nav-bar{
-            background-color: rgba(#9E9D37,0);
-            @include sqr(0, 10%, 10%, 0);
+            background-color: rgba(#9E882D,0.9);
+
+            @include sqr(0, 10%, 20%, 0);
             .nav-menu{
                 transition: 100ms opacity ease;
-                opacity: 100;
+                 opacity: 100;
             }
         }
     }
@@ -73,7 +74,7 @@ body.con-body{
     .nav-bar{
         // initial clip path
         @include sqr(0, 75%, 90%, 0);
-        background-color: rgba($incon-sec,0);
+        background-color: rgba(#9E882D,0.9);
         transition: 100ms background-color ease;
         .hb-icon{
             background-color: $incon-prim;
@@ -84,7 +85,7 @@ body.con-body{
         }
         .nav-menu{
             opacity: 0;
-            background-color: rgba(#9E882D,0.9);
+            // background-color: rgba(#9E882D,0.9);
             transition: 250ms opacity ease;
         }
     }

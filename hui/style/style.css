@@ -1225,9 +1225,9 @@ body.con-body .nav-bar {
 }
 
 .inconsistent .hb-btn:checked ~ .nav-bar {
-  background-color: rgba(158, 157, 55, 0);
-  clip-path: inset(0 10% 10% 0) !important;
-  -webkit-clip-path: inset(0 10% 10% 0) !important;
+  background-color: rgba(158, 136, 45, 0.9);
+  clip-path: inset(0 10% 20% 0) !important;
+  -webkit-clip-path: inset(0 10% 20% 0) !important;
 }
 
 .inconsistent .hb-btn:checked ~ .nav-bar .nav-menu {
@@ -1239,7 +1239,7 @@ body.con-body .nav-bar {
 .inconsistent .nav-bar {
   clip-path: inset(0 75% 90% 0) !important;
   -webkit-clip-path: inset(0 75% 90% 0) !important;
-  background-color: rgba(251, 247, 255, 0);
+  background-color: rgba(158, 136, 45, 0.9);
   -webkit-transition: 100ms background-color ease;
   transition: 100ms background-color ease;
 }
@@ -1254,7 +1254,6 @@ body.con-body .nav-bar {
 
 .inconsistent .nav-bar .nav-menu {
   opacity: 0;
-  background-color: rgba(158, 136, 45, 0.9);
   -webkit-transition: 250ms opacity ease;
   transition: 250ms opacity ease;
 }
