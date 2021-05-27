@@ -34,7 +34,7 @@
             <span class="hb-icon"></span>
         </label>
 
-        <ul class="nav-menu">
+        <ul class="nav-menu" tabindex="0">
             <li class="nav-items"><a href="../" class="ani-links" tabindex="0">Home</a></li>
             <li class="nav-items"><a href="#" class="ani-links current" tabindex="0">Clickability</a></li>
             <li class="nav-items"><a href="../colour/" class="ani-links" tabindex="0">Colour</a></li>
@@ -59,7 +59,7 @@
                             <h3>Users need to know what they're able to click...</h3>
                             <br>
                             <a  class="ani-links" href="#clicked-a-link" data-toggle="tooltip" data-placement="top" 
-                                data-html="true" title="<b>Notice how the text changes...</b>">
+                                data-html="true" title="<b>Notice how the text changes...</b>" tabindex="0" aria-hidden="true">
                                 Text Links
                             </a>
                             <span class="space-sep"></span>
@@ -84,7 +84,7 @@
                         <div class="al-vert ">
                             <h3>Take a look at how <span class="accent">difficult</span> it is <span class="accent">to click</span> this!</h3>
                             <br>
-                            <button class="demo-btn-1" onclick="toggleClass(this,'demo-btn-1-click')">Click me</button>
+                            <button class="demo-btn-1" onclick="toggleClass(this,'demo-btn-1-click')" tabindex="0" aria-hidden="true">Click me</button>
                             <br><br>
                             <h3 class="sym">Buttons with larger <span class="accent">surface areas</span> are always easier to click.<br></h3>
                         </div>
@@ -97,32 +97,32 @@
                     <h3 class="clicks al-vert">clicks: <span id="click-counter">0</span></h3>
                     
                     
-                    <div onclick="npClick()" class="np1 al-vert">
-                        <a class="btn btn-primary inactive">Continue</a>
+                    <div onclick="npClick()" class="np1 al-vert" aria-hidden="true">
+                        <a class="btn btn-primary inactive" aria-hidden="true">Continue</a>
                     </div>
-                    <div class="np2 al-vert">
-                        <a href="#top-page" onclick="npClick()" class="alias ani-links">Continue</a>
+                    <div class="np2 al-vert" >
+                        <a href="#top-page" onclick="npClick()" class="alias ani-links" tabindex="0" aria-hidden="true">Continue</a>
                     </div>
-                    <div class="np3 al-vert">
-                        <h3 onclick="npClick()">Continue</h3>
+                    <div class="np3 al-vert" >
+                        <h3 onclick="npClick()" aria-hidden="true">Continue</h3>
                     </div>
-                    <div class="np4 accent al-vert">
-                        <h3 onclick="npClick()" class="not-allowed">Continue</h3>
+                    <div class="np4 accent al-vert" >
+                        <h3 onclick="npClick()" class="not-allowed" aria-hidden="true">Continue</h3>
                     </div>
-                    <div class="np5 al-vert">
-                        <a href="../colour/" onclick="npClick()" class="btn btn-primary">Continue</a>
+                    <div class="np5 al-vert"  >
+                        <a href="../colour/" onclick="npClick()" class="btn btn-primary" aria-label="Next-Page">Continue</a>
                     </div>
                     <div class="np6 symbol accent al-vert">
-                        <a onclick="npClick()" class="">Next Page</a><i class="r-arrow fas fa-arrow-circle-right"></i>
+                        <a onclick="npClick()" tabindex="0" aria-hidden="true">Next Page</a><i class="r-arrow fas fa-chevron-circle-right"></i>
                     </div>
-                    <div class="np7 al-vert">
-                        <a onclick="npClick()" class="btn crosshair btn-outline-primary">Continue</a>
+                    <div class="np7 al-vert" >
+                        <a onclick="npClick()" class="btn crosshair btn-outline-primary" tabindex="0" aria-hidden="true">Continue</a>
                     </div>
-                    <div class="np8 symbol al-vert">
-                        <a onclick="npClick()">Next Page</a>
+                    <div class="np8 symbol al-vert" >
+                        <a onclick="npClick()" tabindex="0" aria-hidden="true">Next Page</a><i class="r-arrow fas fa-arrow-circle-right"></i>
                     </div>
-                    <div class="np9   al-vert">
-                        <a onclick="npClick()" class="wait ani-links">Continue</a>
+                    <div class="np9   al-vert" >
+                        <a onclick="npClick()" class="wait ani-links" tabindex="0" aria-hidden="true">Continue</a>
                     </div>
                 </div>
             </div>

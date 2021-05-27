@@ -154,10 +154,8 @@
         cursor:text;
         .r-arrow::before{
             /* code for rounded arrow */
-            // font-family: "Font Awesome 5 Free";
-            // content: " \f138";
             position: absolute;
-            // margin-left: 5px;
+             margin-left: 5px;
             // left: initial;
             line-height: 1.5;
             bottom: 0;
@@ -166,15 +164,12 @@
             min-height: 0vw;
             transition: 300ms transform ease;
         }
-        &:hover{
+        &:hover,
+        &:focus-within{
             .r-arrow::before{
-                // font-family: "Font Awesome 5 Free";
-                // content: " \F138";
-                // position: absolute;
                 min-height: 0px;
                 /* rotation on hover becomes 360 deg (right) */
                 transform: scale(1.4) rotate(360deg);
-                // font-size: clamp(1.6rem, 2vw ,3.5em);
             }
         }   
     }

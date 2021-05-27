@@ -278,7 +278,8 @@ a {
   transition: 250ms outline ease, 250ms background-color ease;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus-within {
   background-color: #1667b2;
   color: white;
   outline: 3px solid #1667b2 !important;
@@ -366,7 +367,7 @@ a {
   transition: 250ms color ease;
 }
 
-.ani-links:hover {
+.ani-links:hover, .ani-links:focus-within {
   text-decoration: none;
   color: #b67213;
 }
@@ -388,7 +389,7 @@ a {
   transition: 250ms transform ease-in-out,  1s background-color ease,  250ms -webkit-transform ease-in-out;
 }
 
-.ani-links:hover::after {
+.ani-links:hover::after, .ani-links:focus-within::after {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -671,6 +672,7 @@ a {
 .click-next-page .symbol .r-arrow::before {
   /* code for rounded arrow */
   position: absolute;
+  margin-left: 5px;
   line-height: 1.5;
   bottom: 0;
   font-size: clamp(1.5rem, 1.5vw, 3em);
@@ -683,7 +685,7 @@ a {
   transition: 300ms transform ease, 300ms -webkit-transform ease;
 }
 
-.click-next-page .symbol:hover .r-arrow::before {
+.click-next-page .symbol:hover .r-arrow::before, .click-next-page .symbol:focus-within .r-arrow::before {
   min-height: 0px;
   /* rotation on hover becomes 360 deg (right) */
   -webkit-transform: scale(1.4) rotate(360deg);

@@ -144,7 +144,8 @@ a {font-size: 1.5rem;}
     transition: 250ms outline ease, 250ms background-color ease;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus-within {
     background-color: darken($color:$lBlue, $amount:10%);
     color: white;
     outline:  3px solid darken($color:$lBlue, $amount:10%)!important;
@@ -209,30 +210,33 @@ a {font-size: 1.5rem;}
     color: lighten($color: $accent, $amount:10%);
     position: relative;
     transition: 250ms color ease;
+    &:hover,
+    &:focus-within {
+        text-decoration: none;
+        color: darken($color: $accent, $amount:5%);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-radius: 5px;
+        width: 100%;
+        height: 3px;
+        background-color: currentColor;
+        @include scale-x(0);
+        transition: 250ms transform ease-in-out, 
+                    1s background-color ease;
+    }
+
+    &:hover::after,
+    &:focus-within::after {
+        @include scale-x(1);
+    }
 }
 
-.ani-links:hover {
-    text-decoration: none;
-    color: darken($color: $accent, $amount:5%);
-}
 
-.ani-links::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-radius: 5px;
-    width: 100%;
-    height: 3px;
-    background-color: currentColor;
-    @include scale-x(0);
-    transition: 250ms transform ease-in-out, 
-                1s background-color ease;
-}
-
-.ani-links:hover::after {
-    @include scale-x(1);
-}
 
 
 /* #endregion */
