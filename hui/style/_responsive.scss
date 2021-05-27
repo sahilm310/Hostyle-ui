@@ -101,14 +101,12 @@
     }
     /* #endregion nav bar */
 
-
     /* #region colour page */
     .colour-a11y{
         min-height: 150vh;
         height:1000px;
     }
     /* #endregion colour page */
-
 
     /* #region learnability page */
     .learn-main{
@@ -118,15 +116,15 @@
         grid-template-rows: 0.05fr 0.2fr 0.75fr;
         grid-template-areas:". . ."
                             "b1 b1 b1"
-                            
                             "b2 b2 b2";
     }
     /* #region learnability page */
     .con-main{
         min-height: 110vh;
         height:900px;
-        
-
+    }
+    .inconsistent .hb-btn:checked ~.nav-bar{
+        @include sqr(0, 10%, 20%, 0);
         
     }
 }

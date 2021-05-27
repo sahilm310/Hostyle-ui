@@ -63,7 +63,7 @@ body.con-body{
         ~.nav-bar{
             background-color: rgba(#9E882D,0.9);
 
-            @include sqr(0, 10%, 20%, 0);
+            @include sqr(0, 10%, 10%, 0);
             .nav-menu{
                 transition: 100ms opacity ease;
                  opacity: 100;

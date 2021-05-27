@@ -1226,8 +1226,8 @@ body.con-body .nav-bar {
 
 .inconsistent .hb-btn:checked ~ .nav-bar {
   background-color: rgba(158, 136, 45, 0.9);
-  clip-path: inset(0 10% 20% 0) !important;
-  -webkit-clip-path: inset(0 10% 20% 0) !important;
+  clip-path: inset(0 10% 10% 0) !important;
+  -webkit-clip-path: inset(0 10% 10% 0) !important;
 }
 
 .inconsistent .hb-btn:checked ~ .nav-bar .nav-menu {
@@ -1603,12 +1603,16 @@ body.con-body .nav-bar {
     height: 850px;
     -ms-grid-rows: 0.05fr 0.2fr 0.75fr;
         grid-template-rows: 0.05fr 0.2fr 0.75fr;
-        grid-template-areas: ". . ." "b1 b1 b1"  "b2 b2 b2";
+        grid-template-areas: ". . ." "b1 b1 b1" "b2 b2 b2";
   }
   /* #region learnability page */
   .con-main {
     min-height: 110vh;
     height: 900px;
+  }
+  .inconsistent .hb-btn:checked ~ .nav-bar {
+    clip-path: inset(0 10% 20% 0) !important;
+    -webkit-clip-path: inset(0 10% 20% 0) !important;
   }
 }
 
