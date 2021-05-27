@@ -44,6 +44,11 @@
     .con-main{
         min-height: 110vh;
         height:900px;
+        grid-template-areas:". . ."
+                            "b1 b1 b1"
+                            ". . ."
+                            "b2 b2 b2";
+        .b1{padding: 0px 20%;}
         
     }
     .inconsistent .cards {
@@ -128,10 +133,7 @@
         height:900px;
         
 
-        grid-template-areas:". . ."
-                            "b1 b1 b1"
-                            ". . ."
-                            "b2 b2 b2";
+        
     }
 }
 
