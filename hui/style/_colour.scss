@@ -182,7 +182,8 @@
             margin: 1rem;
             transition: 2s background-color ;
         }
-        .nxt-page:hover{
+        .nxt-page:hover,
+        .nxt-page:focus-within{
             color: $blue;
             background-color: $accent;
         }
@@ -190,7 +191,8 @@
             content: 'Hover';
             color: white;
         }
-        .nxt-page:hover::before{
+        .nxt-page:hover::before,
+        .nxt-page:focus-within::before {
             animation: hover-continue 2s ease forwards;
         }
 

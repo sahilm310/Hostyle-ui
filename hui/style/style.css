@@ -974,7 +974,8 @@ a {
   transition: 2s background-color;
 }
 
-.colour-a11y .sqr3 .nxt-page:hover {
+.colour-a11y .sqr3 .nxt-page:hover,
+.colour-a11y .sqr3 .nxt-page:focus-within {
   color: #0a3155;
   background-color: #CD8115;
 }
@@ -984,7 +985,8 @@ a {
   color: white;
 }
 
-.colour-a11y .sqr3 .nxt-page:hover::before {
+.colour-a11y .sqr3 .nxt-page:hover::before,
+.colour-a11y .sqr3 .nxt-page:focus-within::before {
   -webkit-animation: hover-continue 2s ease forwards;
           animation: hover-continue 2s ease forwards;
 }
