@@ -411,8 +411,9 @@ a {
 /* #endregion */
 /* #region  grid items set up and styling*/
 .b1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: b1;
   -ms-flex-item-align: center !important;
       align-self: center !important;
@@ -425,7 +426,8 @@ a {
 }
 
 .b2 {
-  -ms-grid-row: 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: b2;
@@ -1646,5 +1648,28 @@ body.con-body .nav-bar {
     min-height: 140vh;
     height: 1100px;
   }
+}
+
+.thanks {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 0.2fr 0.2fr 0.6fr;
+      grid-template-rows: 0.2fr 0.2fr 0.6fr;
+      grid-template-areas: "b1 b1 b1" "b2 b2 b2" "b2 b2 b2";
+}
+
+.thanks h3 {
+  font-size: clamp(1.3rem, 2.5vw, 2.3rem);
+}
+
+.thanks iframe {
+  cursor: auto;
+}
+
+.thanks .b2 {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
