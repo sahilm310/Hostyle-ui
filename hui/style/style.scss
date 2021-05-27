@@ -37,9 +37,14 @@ $fontE: 'Marck Script', cursive;
 
 html {
     scroll-behavior: smooth;
+    min-height: -webkit-fill-available;
+
 }
 
 body {
+    // fix for mobile height
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     background: $blue;
     color: $lBlue;
     font-family: $fontA;

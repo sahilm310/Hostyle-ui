@@ -5,9 +5,12 @@
 /* #region general page styling */
 html {
   scroll-behavior: smooth;
+  min-height: -webkit-fill-available;
 }
 
 body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   background: #0a3155;
   color: #1B81E0;
   font-family: "Oswald", sans-serif;
