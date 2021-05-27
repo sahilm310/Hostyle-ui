@@ -367,6 +367,14 @@ a {
   transition: 250ms color ease;
 }
 
+.ani-links.blue {
+  color: #1B81E0;
+}
+
+.ani-links.blue:hover, .ani-links.blue:focus-within {
+  color: rgba(27, 129, 224, 0.8);
+}
+
 .ani-links:hover, .ani-links:focus-within {
   text-decoration: none;
   color: #b67213;
@@ -437,7 +445,7 @@ a {
 }
 
 .b2 img {
-  width: clamp(150px, 25vw, 270px);
+  width: clamp(170px, 25vw, 270px);
 }
 
 .b3 {

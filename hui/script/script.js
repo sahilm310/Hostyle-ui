@@ -65,14 +65,14 @@ function showTooltip(elem){
 // ------------------------------------------
 // #region could potentially use or not use
 // cookies
-function session() {
-    if (document.cookie.indexOf("visited") >= 0) {
-        // nav bar hidden by default
-        // and displayed here if user has visited site before
-    }
-    else {
-        document.cookie = "visited; Secure";
-    }
-}
-session()
+// function session() {
+//     if (document.cookie.indexOf("visited") >= 0) {
+//         // nav bar hidden by default
+//         // and displayed here if user has visited site before
+//     }
+//     else {
+//         document.cookie = "visited; Secure";
+//     }
+// }
+// session()
 // #endregion

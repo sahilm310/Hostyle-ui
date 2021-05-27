@@ -34,6 +34,7 @@ $fontE: 'Marck Script', cursive;
 /* #endregion */
 
 /* #region general page styling */
+
 html {
     scroll-behavior: smooth;
 }
@@ -210,6 +211,10 @@ a {font-size: 1.5rem;}
     color: lighten($color: $accent, $amount:10%);
     position: relative;
     transition: 250ms color ease;
+    &.blue{color: $lBlue}
+    &.blue:hover,
+    &.blue:focus-within{color: rgba($lBlue, 0.8)}
+    
     &:hover,
     &:focus-within {
         text-decoration: none;
